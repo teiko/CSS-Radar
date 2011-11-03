@@ -8,7 +8,7 @@ title: Back Number
 		<h2><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
 		<ul>
 			{% for toc in post.toc %}
-				<li>{{ toc }}</li>
+				<li><a href="{{ post.url }}index.html#{{ toc.hash }}">{{ toc.text }}</a></li>
 			{% endfor %}
 		</ul>
 		<div class="meta">
