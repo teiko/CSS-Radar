@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  <link rel="hub" href="https://pubsubhubbub.appspot.com"/>
- <title>CSS Radar | For Frond End Developers</title>
+ <title>CSS Radar | For Front End Developers</title>
  <link href="http://css.studiomohawk.com/atom.xml" rel="self"/>
  <link href="http://css.studiomohawk.com"/>
- <updated>2011-11-06T11:34:08+09:00</updated>
+ <updated>2011-11-06T17:17:26+09:00</updated>
  <id>http://layouts.studiomohawk.com/</id>
 
  
  <entry>
    <title>Vim</title>
    <link href="http://css.studiomohawk.com/tool/2011/07/24/vim-bits-and-pieces/"/>
-   <updated>2011-07-24T00:57:55+09:00</updated>
+   <updated>Liquid error: undefined method `xmlschema' for "2011-07-29 23:01:04":String</updated>
    <id>http://css.studiomohawk.com/tool/2011/07/24/vim-bits-and-pieces</id>
    <content type="html">&lt;h2 id=&quot;preface&quot;&gt;はじめに&lt;/h2&gt;
 
@@ -239,7 +239,7 @@ imap &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;C&lt;span class=&quot;
  <entry>
    <title>Jekyll</title>
    <link href="http://css.studiomohawk.com/tool/2011/06/11/jekyll-101.tool/"/>
-   <updated>2011-06-11T13:39:28+09:00</updated>
+   <updated>Liquid error: undefined method `xmlschema' for nil:NilClass</updated>
    <id>http://css.studiomohawk.com/tool/2011/06/11/jekyll-101.tool</id>
    <content type="html">&lt;h2 id=&quot;whatis&quot;&gt;Jekyllとは&lt;/h2&gt;
 
@@ -531,7 +531,7 @@ rsync:dryrun&lt;/code&gt;はテスト用で実際には何もサーバには同�
  <entry>
    <title>ウェブデザイナのためのRuby</title>
    <link href="http://css.studiomohawk.com/tool/2011/05/14/ruby_for_designer_frontend_dev/"/>
-   <updated>2011-05-14T00:03:59+09:00</updated>
+   <updated>Liquid error: undefined method `xmlschema' for nil:NilClass</updated>
    <id>http://css.studiomohawk.com/tool/2011/05/14/ruby_for_designer_frontend_dev</id>
    <content type="html">&lt;h2 id=&quot;rubyis&quot;&gt;Rubyはウェブデザイナに優しい&lt;/h2&gt;
 
@@ -896,7 +896,7 @@ Suitesを使いこなし、HTML/CSS/JSを駆使し、ユーザビリティ/ア�
  <entry>
    <title>インブラウザ デザイン</title>
    <link href="http://css.studiomohawk.com/webdesign/2011/04/16/designing_in_browser/"/>
-   <updated>2011-04-16T10:53:05+09:00</updated>
+   <updated>Liquid error: undefined method `xmlschema' for "2011-10-29 22:37:19":String</updated>
    <id>http://css.studiomohawk.com/webdesign/2011/04/16/designing_in_browser</id>
    <content type="html">&lt;h2 id=&quot;whatis&quot;&gt;インブラウザ デザインとは&lt;/h2&gt;
 
@@ -1137,7 +1137,7 @@ Photoshopと比べればまだまだ始まったばかり。&lt;br /&gt;
  <entry>
    <title>パフォーマンス最適化</title>
    <link href="http://css.studiomohawk.com/frontend/2011/04/09/why_speed_matters/"/>
-   <updated>2011-04-09T11:46:40+09:00</updated>
+   <updated>Liquid error: undefined method `xmlschema' for nil:NilClass</updated>
    <id>http://css.studiomohawk.com/frontend/2011/04/09/why_speed_matters</id>
    <content type="html">&lt;h2 id=&quot;whatis&quot;&gt;パフォーマンス最適化の意味&lt;/h2&gt;
 
@@ -1268,7 +1268,7 @@ Amazonのクラウドサービスを使ってみるというのもいい経験�
  <entry>
    <title>LESS - CSSプリプロフェッサ</title>
    <link href="http://css.studiomohawk.com/css/2011/04/03/use_less_to_clean_up_your_css/"/>
-   <updated>2011-04-03T12:51:36+09:00</updated>
+   <updated>Liquid error: undefined method `xmlschema' for nil:NilClass</updated>
    <id>http://css.studiomohawk.com/css/2011/04/03/use_less_to_clean_up_your_css</id>
    <content type="html">&lt;h2 id=&quot;whatis&quot;&gt;LESSとは&lt;/h2&gt;
 
@@ -1559,7 +1559,7 @@ node.jsは恐ろしいほどのスピードで開発が進んでいるので、�
  <entry>
    <title>ワイヤフレーム</title>
    <link href="http://css.studiomohawk.com/webdesign/2011/04/01/wireframe/"/>
-   <updated>2011-04-01T00:00:00+09:00</updated>
+   <updated>Liquid error: undefined method `xmlschema' for nil:NilClass</updated>
    <id>http://css.studiomohawk.com/webdesign/2011/04/01/wireframe</id>
    <content type="html">&lt;p&gt;&lt;img src=&quot;/webdesign/2011/04/01/wireframe/protoplate.png&quot; alt=&quot;Image&quot; class=&quot;huge&quot; /&gt;&lt;/p&gt;
 
@@ -1660,7 +1660,7 @@ If the wireframe starts as a wireframe and then morphs into the actual design, g
  <entry>
    <title>HTML5 Boilerplate</title>
    <link href="http://css.studiomohawk.com/tool/2011/03/15/html5boilerplate/"/>
-   <updated>2011-03-15T00:00:00+09:00</updated>
+   <updated>Liquid error: undefined method `xmlschema' for nil:NilClass</updated>
    <id>http://css.studiomohawk.com/tool/2011/03/15/html5boilerplate</id>
    <content type="html">&lt;h2 id=&quot;whatis&quot;&gt;HTML5 Boilderplateとは&lt;/h2&gt;
 
@@ -1743,7 +1743,7 @@ BoilerplateにPull Requestを送ってくださいませ。&lt;/p&gt;
  <entry>
    <title>コマンドライン</title>
    <link href="http://css.studiomohawk.com/tool/2011/02/13/terminal-101/"/>
-   <updated>2011-02-13T00:00:00+09:00</updated>
+   <updated>Liquid error: undefined method `xmlschema' for nil:NilClass</updated>
    <id>http://css.studiomohawk.com/tool/2011/02/13/terminal-101</id>
    <content type="html">&lt;h2 id=&quot;whatis&quot;&gt;コマンドラインについて&lt;/h2&gt;
 
@@ -1940,7 +1940,7 @@ Spriteを自動化&lt;/a&gt;したりすることもできるようなので、�
  <entry>
    <title>Git バージョンコントロール</title>
    <link href="http://css.studiomohawk.com/tool/2011/01/29/git-version-control/"/>
-   <updated>2011-01-29T00:00:00+09:00</updated>
+   <updated>Liquid error: undefined method `xmlschema' for "2011-11-03 17:45:45":String</updated>
    <id>http://css.studiomohawk.com/tool/2011/01/29/git-version-control</id>
    <content type="html">&lt;h2 id=&quot;whatis&quot;&gt;バージョンコントロールについて&lt;/h2&gt;
 
@@ -2337,7 +2337,7 @@ git merge upstream/master &lt;span class=&quot;c&quot;&gt;# 変更を自分の�
  <entry>
    <title>レスポンシブウェブデザイン</title>
    <link href="http://css.studiomohawk.com/css/2011/01/24/about-responsive-web-design/"/>
-   <updated>2011-01-24T00:00:00+09:00</updated>
+   <updated>Liquid error: undefined method `xmlschema' for nil:NilClass</updated>
    <id>http://css.studiomohawk.com/css/2011/01/24/about-responsive-web-design</id>
    <content type="html">&lt;h2 id=&quot;whatis&quot;&gt;レスポンシブウェブデザインとは&lt;/h2&gt;
 
@@ -2481,7 +2481,7 @@ Media Queriesについては、&lt;a href=&quot;http://hardboiledwebdesign.com/&
  <entry>
    <title>About CSS Radar</title>
    <link href="http://css.studiomohawk.com/cssradar/2011/01/23/about-cssrader/"/>
-   <updated>2011-01-23T00:00:00+09:00</updated>
+   <updated>Liquid error: undefined method `xmlschema' for "2011-11-03 16:37:57":String</updated>
    <id>http://css.studiomohawk.com/cssradar/2011/01/23/about-cssrader</id>
    <content type="html">&lt;h2 id=&quot;about-site&quot;&gt;CSS Radarについて&lt;/h2&gt;
 
