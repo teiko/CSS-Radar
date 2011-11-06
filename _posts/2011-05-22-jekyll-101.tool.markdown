@@ -14,7 +14,7 @@ toc:
 - {text: 基本以外のフォルダについて, hash: otherdir}
 - {text: ローカル環境でプレビュー, hash: preview}
 - {text: サーバへのアップロード, hash: upload}
-- {text: 最後に, hash: conclusion}
+- {text: rakeを使って自動化する, hash: automation}
 ---
 
 ## Jekyllとは {#whatis}
@@ -210,19 +210,85 @@ Jekyllは非常に強力なのに、シンプルで、インクルードなど�
 サーバへのアップロードはとても簡単。  
 FTPを使って、``\_site``内に生成されたファイル群をアップロードすればOK。  
 
-私は面倒くさがりなので、rakeを使ってrsyncでサーバとローカルファイルの同期をとっている。
+私は面倒くさがりなのでrakeを使ってrsyncでサーバとローカルファイルの同期をとっている。
 ``rake rsync:live``
 とするだけで、指定のローカルフォルダとサーバの同期がとれるようにしてある。
 
-美しさの保証はまったくしないが、[Rakefileも公開してある](https://github.com/studiomohawk/CSS-Radar/blob/master/Rakefile)ので参考になれば。
+## rakeを使って自動化する {#automation}
 
-## 最後に {#conclusion}
+コマンドラインに苦手意識を持っている人も多いだろうが、rakeやant、makeのようなビルドツールは様々なタスクを自動化してくれる便利ツール。  
+Jekyllはrubyによって書かれているので、rakeを使っていつも行うタスクを幾つか自動化しているので紹介しよう。
 
-Jekyllを使ってみようと思ったきっかけは、Rubyの勉強になるだろうという単純な動機からだったが、今となってはwordpressより手軽で、ページロードのスピードも格段に早く、セキュリティの心配もまったくせずに済む、この環境が気に入っている。  
-もちろん、覚えなければならないことも多いし、バージョンが0.10という若い番号なだけに、きちんとしたドキュメントすら整備されていない。  
-万人にお勧めできるとは言いがたいが、新しいことにチャレンジすることはいい刺激になることは保証する。
+- *新しい記事を書く / ``rake post:new["title","category"]``*
 
-CSS Radarの直近の目標はAmazon S3でホストするように変更すること。  
-どなたか、東京リージョンを利用できるコマンドラインのツールをご存知でしたら、教えてください。
+Jekyllではファイル名もルールに従って記述する必要があったり、YAML front
+matterの設定を毎回しなければならなかったりする。
 
-Jekyllについて何か質問があれば、わかる範囲であればサポートしますので、いつでもどうぞ。
+``rake post:new["title","category"]``
+
+とするだけで、``title``からファイル名と記事のタイトルを生成し、ついでにカテゴリ名を``category``から生成してくれる。  
+``title``の方はURLの一部になるだけあって日本語は利用できない。結果、記事のタイトルは生成後に日本語に差し替える必要はある。  
+
+{% highlight ruby %}
+namespace :post do
+  desc "Given a title as an argument, create a new post file"
+  task :new, [:title, :category] do |t, args|
+    filename = "#{Time.now.strftime('%Y-%m-%d')}-#{args.title.gsub(/\s/, '-').downcase}.markdown"
+    path = File.join("_posts", filename)
+    if File.exist? path; raise RuntimeError.new("Won't clobber #{path}"); end
+    File.open(path, 'w') do |file|
+      file.write <<-EOS
+---
+layout: post
+category: #{args.category}
+title: #{args.title}
+date: #{Time.now.strftime('%Y-%m-%d %k:%M:%S')}
+---
+EOS
+    end
+    puts "Now open #{path} in an editor."
+  end
+end
+{% endhighlight %}
+
+- *Jekyllをローカル環境でプレビュー / ``rake preview``
+
+``jekyll --auto
+--server``と毎回必ずタイプするのは面倒なので。
+
+``rake preview``
+
+{% highlight ruby %}
+desc "Launch preview environment"
+task :preview do
+  system "jekyll --auto --server"
+end
+{% endhighlight %}
+
+- *rsyncを使ってサーバと同期を取る / ``rake rsync:live``
+
+Jekyllは静的なファイルを``\_site``ディレクトリに生成してくれる。  
+このディレクトリを丸ごとFTPでアップロードすればサイトの更新ができるというシンプルな設計。  
+でもどう考えても毎回FTPを使うのは面倒なので、``rsync``を使ってサーバとローカルの同期を取ってしまおう。
+
+``rake
+rsync:dryrun``はテスト用で実際には何もサーバには同期されないが、どのファイルが同期されるかをチェックするためにある。  
+初めてrsyncする場合、正しく設定ができているのかを含めて実際のサーバ側のファイル達には影響なく実行できるのでまずはこちらでテストを。
+
+``rake rsync:live``
+
+テストが終わって無事が確認できたらこのコマンドでサーバへのアップロードが完了する。  
+設定の際は利用しているサーバにsshしたりするので、自分が管理者ではない場合はレンタルサーバ側に設定などを確認してほしい。
+
+{% highlight ruby %}
+namespace :rsync do
+  desc "--dry-run rsync"
+    task :dryrun do
+      system('rsync _site/ -ave ssh --dry-run --delete ユーザ名@ドメイン名:ディレクトリ/')
+    end
+  desc "rsync"
+    task :live do
+      system('rsync _site/ -ave ssh --delete ユーザ名@ドメイン名:ディレクトリ/')
+    end
+end
+{% endhighlight %}
