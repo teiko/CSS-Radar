@@ -4,7 +4,7 @@
  <title>CSS Radar | For Frond End Developers</title>
  <link href="http://css.studiomohawk.com/atom.xml" rel="self"/>
  <link href="http://css.studiomohawk.com"/>
- <updated>2011-11-03T21:27:27+09:00</updated>
+ <updated>2011-11-06T11:34:08+09:00</updated>
  <id>http://layouts.studiomohawk.com/</id>
 
  
@@ -436,22 +436,95 @@ Jekyllでも単一ページを作成することが可能。&lt;/p&gt;
 &lt;p&gt;サーバへのアップロードはとても簡単。&lt;br /&gt;
 FTPを使って、&lt;code&gt;\_site&lt;/code&gt;内に生成されたファイル群をアップロードすればOK。  &lt;/p&gt;
 
-&lt;p&gt;私は面倒くさがりなので、rakeを使ってrsyncでサーバとローカルファイルの同期をとっている。
+&lt;p&gt;私は面倒くさがりなのでrakeを使ってrsyncでサーバとローカルファイルの同期をとっている。
 &lt;code&gt;rake rsync:live&lt;/code&gt;
 とするだけで、指定のローカルフォルダとサーバの同期がとれるようにしてある。&lt;/p&gt;
 
-&lt;p&gt;美しさの保証はまったくしないが、&lt;a href=&quot;https://github.com/studiomohawk/CSS-Radar/blob/master/Rakefile&quot;&gt;Rakefileも公開してある&lt;/a&gt;ので参考になれば。&lt;/p&gt;
+&lt;h2 id=&quot;automation&quot;&gt;rakeを使って自動化する&lt;/h2&gt;
 
-&lt;h2 id=&quot;conclusion&quot;&gt;最後に&lt;/h2&gt;
+&lt;p&gt;コマンドラインに苦手意識を持っている人も多いだろうが、rakeやant、makeのようなビルドツールは様々なタスクを自動化してくれる便利ツール。&lt;br /&gt;
+Jekyllはrubyによって書かれているので、rakeを使っていつも行うタスクを幾つか自動化しているので紹介しよう。&lt;/p&gt;
 
-&lt;p&gt;Jekyllを使ってみようと思ったきっかけは、Rubyの勉強になるだろうという単純な動機からだったが、今となってはwordpressより手軽で、ページロードのスピードも格段に早く、セキュリティの心配もまったくせずに済む、この環境が気に入っている。&lt;br /&gt;
-もちろん、覚えなければならないことも多いし、バージョンが0.10という若い番号なだけに、きちんとしたドキュメントすら整備されていない。&lt;br /&gt;
-万人にお勧めできるとは言いがたいが、新しいことにチャレンジすることはいい刺激になることは保証する。&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;em&gt;新しい記事を書く / &lt;code&gt;rake post:new[&quot;title&quot;,&quot;category&quot;]&lt;/code&gt;&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;CSS Radarの直近の目標はAmazon S3でホストするように変更すること。&lt;br /&gt;
-どなたか、東京リージョンを利用できるコマンドラインのツールをご存知でしたら、教えてください。&lt;/p&gt;
+&lt;p&gt;Jekyllではファイル名もルールに従って記述する必要があったり、YAML front
+matterの設定を毎回しなければならなかったりする。&lt;/p&gt;
 
-&lt;p&gt;Jekyllについて何か質問があれば、わかる範囲であればサポートしますので、いつでもどうぞ。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;rake post:new[&quot;title&quot;,&quot;category&quot;]&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;とするだけで、&lt;code&gt;title&lt;/code&gt;からファイル名と記事のタイトルを生成し、ついでにカテゴリ名を&lt;code&gt;category&lt;/code&gt;から生成してくれる。&lt;br /&gt;
+&lt;code&gt;title&lt;/code&gt;の方はURLの一部になるだけあって日本語は利用できない。結果、記事のタイトルは生成後に日本語に差し替える必要はある。  &lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:post&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;desc&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Given a title as an argument, create a new post file&amp;quot;&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;task&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:title&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:category&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;filename&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Time&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;now&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;strftime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;%Y-%m-%d&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gsub&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/\s/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;-&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;downcase&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;.markdown&amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;path&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;File&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;_posts&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;filename&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;File&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;exist?&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;raise&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;RuntimeError&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;Won&amp;#39;t clobber &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+    &lt;span class=&quot;no&quot;&gt;File&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;w&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;write&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;EOS&lt;/span&gt;
+&lt;span class=&quot;sh&quot;&gt;---&lt;/span&gt;
+&lt;span class=&quot;sh&quot;&gt;layout: post&lt;/span&gt;
+&lt;span class=&quot;sh&quot;&gt;category: #{args.category}&lt;/span&gt;
+&lt;span class=&quot;sh&quot;&gt;title: #{args.title}&lt;/span&gt;
+&lt;span class=&quot;sh&quot;&gt;date: #{Time.now.strftime(&amp;#39;%Y-%m-%d %k:%M:%S&amp;#39;)}&lt;/span&gt;
+&lt;span class=&quot;sh&quot;&gt;---&lt;/span&gt;
+&lt;span class=&quot;no&quot;&gt;EOS&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Now open &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; in an editor.&amp;quot;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;*Jekyllをローカル環境でプレビュー / &lt;code&gt;rake preview&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code&gt;jekyll --auto
+--server&lt;/code&gt;と毎回必ずタイプするのは面倒なので。&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;rake preview&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;desc&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Launch preview environment&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;task&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:preview&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;system&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;jekyll --auto --server&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;*rsyncを使ってサーバと同期を取る / &lt;code&gt;rake rsync:live&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Jekyllは静的なファイルを&lt;code&gt;\_site&lt;/code&gt;ディレクトリに生成してくれる。&lt;br /&gt;
+このディレクトリを丸ごとFTPでアップロードすればサイトの更新ができるというシンプルな設計。&lt;br /&gt;
+でもどう考えても毎回FTPを使うのは面倒なので、&lt;code&gt;rsync&lt;/code&gt;を使ってサーバとローカルの同期を取ってしまおう。&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;rake
+rsync:dryrun&lt;/code&gt;はテスト用で実際には何もサーバには同期されないが、どのファイルが同期されるかをチェックするためにある。&lt;br /&gt;
+初めてrsyncする場合、正しく設定ができているのかを含めて実際のサーバ側のファイル達には影響なく実行できるのでまずはこちらでテストを。&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;rake rsync:live&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;テストが終わって無事が確認できたらこのコマンドでサーバへのアップロードが完了する。&lt;br /&gt;
+設定の際は利用しているサーバにsshしたりするので、自分が管理者ではない場合はレンタルサーバ側に設定などを確認してほしい。&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:rsync&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;desc&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;--dry-run rsync&amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;task&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:dryrun&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
+      &lt;span class=&quot;nb&quot;&gt;system&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;rsync _site/ -ave ssh --dry-run --delete ユーザ名@ドメイン名:ディレクトリ/&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;desc&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;rsync&amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;task&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:live&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
+      &lt;span class=&quot;nb&quot;&gt;system&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;rsync _site/ -ave ssh --delete ユーザ名@ドメイン名:ディレクトリ/&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
 </content>
  </entry>
  
