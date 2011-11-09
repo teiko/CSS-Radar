@@ -3,31 +3,36 @@
 	<div id="page">
 		{% include header.html %}
 		<div id="main" role="main">
-			<article class="the-article">
+			<article class="the-article hentry">
 			<div class="article-inner">
 				<div class="content">
 					<header>
 					<div class="head-inner">
-						<h1>{{ page.title }}</h1>
+						<h1 class="entry-title">{{ page.title }}</h1>
 						<div class="meta">
 							{% if page.update %}
-							<date class="update-pub" title="{{ page.update }}">
+							<date class="update-pub" title="{{ page.update | date_to_xmlschema }}" datetime="{{ page.update | date_to_xmlschema }}" pubdate>
 								<span class="day">{{ page.update | date: '%d' }}</span>
 								<span class="month"><abbr>{{ page.update | date: '%b' }}</abbr></span>
 								<span class="year">{{ page.update | date: '%Y' }}</span>
 							</date>
 							{% endif %}
-							<date class="date-pub" title="{{ page.date | date_to_xmlschema }}">
+							<date class="date-pub" title="{{ page.date | date_to_xmlschema }}" datetime="{{ page.update | date_to_xmlschema }}" pubdate>
 								<span class="day">{{ page.date | date: '%d' }}</span>
 								<span class="month"><abbr>{{ page.date | date: '%b' }}</abbr></span>
 								<span class="year">{{ page.date | date: '%Y' }}</span>
 							</date>
 							<span class="category">{{ page.categories | category_links }}</span>
 						</div>
+						<div class="readability">
+							<div class="rdbWrapper" data-show-read="1" data-show-send-to-kindle="1" data-show-print="1" data-show-email="1" data-orientation="0" data-version="1" data-bg-color="#444E51" data-text-color="#FAFAFA"></div>
+						</div>
 					</div>
 					</header>
 					<div class="bd">
-						{{ content }}
+						<div class="entry-content">
+							{{ content }}
+						</div>
 						{% include social.html %}
 						{% include ask.html %}
 					</div>

@@ -223,6 +223,7 @@ a:hover {
 .the-article .content .meta .update-pub:after { content: " / "; }
 .the-article .content .meta .category:before { content: "on "; }
 .the-article .content .meta .date-pub:before { content: "published at"; }
+.the-article .content .readability { margin-top: 7px; }
 .the-article .content .highlight { margin-bottom: 1.5em; }
 .the-article .content .highlight:before {
   content: "Source code:";
