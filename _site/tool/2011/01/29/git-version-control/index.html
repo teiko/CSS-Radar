@@ -152,7 +152,7 @@ git config --global user.email メールアドレス@example.com
   <li>ホワイトスペースを無視する</li>
 </ul>
 
-<p>Gitではホワイトスペース1つを追加しても、ファイルを変更したと認識される(Rubyではホワイトスペースは大事)が、大抵の場合、ホワイトスペース1つでコミットする、ということもないだろう。</p>
+<p>Gitではホワイトスペース1つを追加してもファイルを変更したと認識される(Rubyではホワイトスペースは大事)が、大抵の場合、ホワイトスペース1つでコミットする、ということもないだろう。</p>
 
 <div class="highlight"><pre><code class="bash">git config --global apply.whitespace nowarn
 </code></pre>
@@ -162,16 +162,16 @@ git config --global user.email メールアドレス@example.com
   <li>すべてのGitレポジトリに無視ファイルを適応</li>
 </ul>
 
-<p>Macなら.DS_Store(普段は見えないけれど、Gitは認識する)など、OSが自動で生成するファイルとか、毎回.gitignore(無視リストファイル)を、レポジトリに追加したり、その.gitignoreをコミットしたりするのは面倒。</p>
+<p>Macなら.DS_Store(普段は見えないけれどGitは認識する)など、OSが自動で生成するファイルとか、毎回.gitignore(無視リストファイル)をレポジトリに追加したり、その.gitignoreをコミットしたりするのは面倒。</p>
 
 <div class="highlight"><pre><code class="bash">git config --global core.excludesfile ~/.gitignore
 </code></pre>
 </div>
 
-<p>このコマンドのままだと、ホームディレクトリに.gitignoreがあるから–globalで読んでねという意味になる。<br />
-私はこのファイルを<a href="http://db.tt/jxIW2Rp">Dropbox</a>を使って、すべての環境で同じファイルを見るようにしている。</p>
+<p>このコマンドのままだとホームディレクトリに.gitignoreがあるから–globalで読んでねという意味になる。<br />
+私はこのファイルを<a href="http://db.tt/jxIW2Rp">Dropbox</a>を使ってすべての環境で同じファイルを見るようにしている。</p>
 
-<p>Dropboxにdotというディレクトリを作成し、その下に.gitignoreファイルを作成してる</p>
+<p>Dropboxにdotというディレクトリを作成しその下に.gitignoreファイルを作成してる</p>
 
 <div class="highlight"><pre><code class="bash">git config --global core.excludesfile /Users/<span class="o">[</span>ユーザディレクトリ<span class="o">]</span>/Dropbox/dot/.gitignore
 </code></pre>
@@ -225,7 +225,7 @@ Icon?
 <p>既存のレポジトリをクローンしない場合、<code>git init</code>はgitのスタートを告げるコマンド。<br />
 作業ディレクトリに対して.gitディレクトリを作成する。  </p>
 
-<p>Macユーザ、恐れるなかれ、.gitディレクトリ、だけではないが.(ドット)から始まるファイル、ディレクトリは普通はFinderには見えない隠し要素になる。<br />
+<p>Macユーザ恐れるなかれ、.gitディレクトリ、だけではないが.(ドット)から始まるファイル、ディレクトリは普通はFinderには見えない隠し要素になる。<br />
 Terminalで<code>ls</code>とすれば、きちんと存在が確認できる。</p>
 
 <div class="highlight"><pre><code class="bash">defaults write com.apple.finder AppleShowAllFiles TRUE
@@ -251,7 +251,7 @@ killall Finder
 私は大概<code>git add .</code>としてしまう。最後の.(ドット)は、まだレポジトリに追加されていないファイル全部、という意味だ。<br />
 もちろん、<code>git add ファイル名</code>としてファイルを1つづつ追加することも可能。</p>
 
-<p>※readme.mdというテキストファイルを追加して、そこにプロジェクトの概要などを書き留めておくと、便利だ。.mdはMarkdownというライトウェイトマークアップ言語の拡張子。こちらについては、別記事で紹介する予定。</p>
+<p>※readme.mdというテキストファイルを追加して、そこにプロジェクトの概要などを書き留めておくと、便利だ。.mdはMarkdownというライトウェイトマークアップ言語の拡張子。</p>
 
 <ul>
   <li><code>git commit</code></li>

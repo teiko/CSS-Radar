@@ -84,7 +84,7 @@ git config --global core.editor emacs
 
 - ホワイトスペースを無視する
 
-Gitではホワイトスペース1つを追加しても、ファイルを変更したと認識される(Rubyではホワイトスペースは大事)が、大抵の場合、ホワイトスペース1つでコミットする、ということもないだろう。
+Gitではホワイトスペース1つを追加してもファイルを変更したと認識される(Rubyではホワイトスペースは大事)が、大抵の場合、ホワイトスペース1つでコミットする、ということもないだろう。
 
 {% highlight bash %}
 git config --global apply.whitespace nowarn
@@ -92,16 +92,16 @@ git config --global apply.whitespace nowarn
 
 - すべてのGitレポジトリに無視ファイルを適応
 
-Macなら.DS_Store(普段は見えないけれど、Gitは認識する)など、OSが自動で生成するファイルとか、毎回.gitignore(無視リストファイル)を、レポジトリに追加したり、その.gitignoreをコミットしたりするのは面倒。
+Macなら.DS_Store(普段は見えないけれどGitは認識する)など、OSが自動で生成するファイルとか、毎回.gitignore(無視リストファイル)をレポジトリに追加したり、その.gitignoreをコミットしたりするのは面倒。
 
 {% highlight bash %}
 git config --global core.excludesfile ~/.gitignore
 {% endhighlight %}
 
-このコマンドのままだと、ホームディレクトリに.gitignoreがあるから--globalで読んでねという意味になる。  
-私はこのファイルを[Dropbox](http://db.tt/jxIW2Rp)を使って、すべての環境で同じファイルを見るようにしている。
+このコマンドのままだとホームディレクトリに.gitignoreがあるから--globalで読んでねという意味になる。  
+私はこのファイルを[Dropbox](http://db.tt/jxIW2Rp)を使ってすべての環境で同じファイルを見るようにしている。
 
-Dropboxにdotというディレクトリを作成し、その下に.gitignoreファイルを作成してる
+Dropboxにdotというディレクトリを作成しその下に.gitignoreファイルを作成してる
 
 {% highlight bash %}
 git config --global core.excludesfile /Users/[ユーザディレクトリ]/Dropbox/dot/.gitignore
@@ -151,7 +151,7 @@ Icon?
 既存のレポジトリをクローンしない場合、<code>git init</code>はgitのスタートを告げるコマンド。  
 作業ディレクトリに対して.gitディレクトリを作成する。  
 
-Macユーザ、恐れるなかれ、.gitディレクトリ、だけではないが.(ドット)から始まるファイル、ディレクトリは普通はFinderには見えない隠し要素になる。  
+Macユーザ恐れるなかれ、.gitディレクトリ、だけではないが.(ドット)から始まるファイル、ディレクトリは普通はFinderには見えない隠し要素になる。  
 Terminalで<code>ls</code>とすれば、きちんと存在が確認できる。
 
 {% highlight bash %}
@@ -175,7 +175,7 @@ killall Finder
 私は大概<code>git add .</code>としてしまう。最後の.(ドット)は、まだレポジトリに追加されていないファイル全部、という意味だ。  
 もちろん、<code>git add ファイル名</code>としてファイルを1つづつ追加することも可能。
 
-※readme.mdというテキストファイルを追加して、そこにプロジェクトの概要などを書き留めておくと、便利だ。.mdはMarkdownというライトウェイトマークアップ言語の拡張子。こちらについては、別記事で紹介する予定。
+※readme.mdというテキストファイルを追加して、そこにプロジェクトの概要などを書き留めておくと、便利だ。.mdはMarkdownというライトウェイトマークアップ言語の拡張子。
 
 - <code>git commit</code>
 

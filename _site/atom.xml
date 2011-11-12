@@ -4,7 +4,7 @@
 	<title>CSS Radar | For Front End Developers</title>
 	<link href="http://css.studiomohawk.com/atom.xml" rel="self"/>
 	<link href="http://css.studiomohawk.com"/>
-	<updated>2011-11-12T10:02:12+09:00</updated>
+	<updated>2011-11-12T22:03:27+09:00</updated>
 	<id>http://css.studiomohawk.com/</id>
 	<author>
 		<name>Yuya Saito</name>
@@ -29,13 +29,13 @@
 &lt;p&gt;Vimで覚えるべきポイントは大きく分けて3つ。
 コマンド、プラグイン、そして設定。&lt;br /&gt;
 この記事ではその3つにVimについての情報源を追加した4つを軸にしつつ、時系列でエントリを追記する形をとることにする。&lt;br /&gt;
-なお、プラグインを追加する際、設定も同時に行う場合が多いが、その場合はプラグインのエントリに記述する。
-また、同様に覚えたコマンドをより簡単に呼び出すための設定もコマンドのエントリに記述する。&lt;/p&gt;
+なお、プラグインを追加する際、設定も同時に行う場合が多いがその場合はプラグインのエントリに記述する。
+また同様に覚えたコマンドをより簡単に呼び出すための設定もコマンドのエントリに記述する。&lt;/p&gt;
 
-&lt;p&gt;私のVimに対するアプローチは、Ruby on RailsとjQueryのコアメンバであるYehuda Katz氏の記事、&lt;a href=&quot;http://yehudakatz.com/2010/07/29/everyone-who-tried-to-convince-me-to-use-vim-was-wrong/&quot;&gt;Everyone Who Tried to Convince Me to use Vim was Wrong&lt;/a&gt;と同じで、始めからVimのやり方に合わせるのではなく、マウスを使ったって、Control + Sで保存したって、別にかまわないと思っている。&lt;/p&gt;
+&lt;p&gt;私のVimに対するアプローチは、Ruby on RailsとjQueryのコアメンバであるYehuda Katz氏の記事、&lt;a href=&quot;http://yehudakatz.com/2010/07/29/everyone-who-tried-to-convince-me-to-use-vim-was-wrong/&quot;&gt;Everyone Who Tried to Convince Me to use Vim was Wrong&lt;/a&gt;と同じで、始めからVimのやり方に合わせるのではなくマウスを使ったって、Control + Sで保存したって、別にかまわないと思っている。&lt;/p&gt;
 
 &lt;p&gt;私にとってVimはフィロソフィーではなく、あくまでもツールである。&lt;br /&gt;
-便利に使えるからこそのツールで、エンドユーザはその壮大な設計思想など気にする必要はない。自分のペースで自分らしく使いこなす事が真の効率化なのだから。&lt;/p&gt;
+便利に使えるからこそのツールでエンドユーザはその壮大な設計思想など気にする必要はない。自分のペースで自分らしく使いこなす事が真の効率化なのだから。&lt;/p&gt;
 
 &lt;h2 id=&quot;command&quot;&gt;コマンド&lt;/h2&gt;
 
@@ -50,8 +50,7 @@
   &lt;li&gt;&lt;code&gt;ctrl-w v&lt;/code&gt; こちらは現在のファイルを上下に分割&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;HTML
-+ CSSの組み合わせは大体の場合セットで開いていた方が何かと便利。そんな際は&lt;/p&gt;
+&lt;p&gt;HTML + CSSの組み合わせは大体の場合セットで開いていた方が何かと便利。そんな際は&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;code&gt;:sp FILENAME&lt;/code&gt; FILENAMEを新しく左右に分割されたウィンドウにロード&lt;/li&gt;
@@ -139,13 +138,13 @@ splitの略、onはonlyの略で、qはquitなので、覚えやすいはずだ�
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;このようになる。(環境によっては、再現されない可能性がある、そんな際は&lt;a href=&quot;http://ftp.gnome.org/pub/GNOME/sources/ttf-bitstream-vera/1.10/&quot;&gt;Bitstream Vera Sans Mono&lt;/a&gt;をインストールすれば見られるようになる。日本語Fontではないが、プログラマ向Fontとして有名なので、持っていて損はしないだろう)&lt;/p&gt;
+&lt;p&gt;このようになる。(環境によっては再現されない可能性がある、そんな際は&lt;a href=&quot;http://ftp.gnome.org/pub/GNOME/sources/ttf-bitstream-vera/1.10/&quot;&gt;Bitstream Vera Sans Mono&lt;/a&gt;をインストールすれば見られるようになる。日本語Fontではないがプログラマ向Fontとして有名なので持っていて損はしないだろう)&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;code&gt;nnoremap &amp;lt;leader&amp;gt;tab :Tab /:\zs&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;.vimrcには、上記のマッピングを追記した。例とは異なるツラの揃え方だが、私はこちらのほうが好み。&lt;/p&gt;
+&lt;p&gt;.vimrcには、上記のマッピングを追記した。例とは異なるツラの揃え方だが私はこちらのほうが好み。&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/godlygeek/tabular&quot;&gt;godlygeek/tabular - GitHub&lt;/a&gt;&lt;/li&gt;
@@ -231,8 +230,7 @@ imap &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;C&lt;span class=&quot;
 &lt;h2 id=&quot;link&quot;&gt;参考リンク&lt;/h2&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://vim.runpaint.org/toc/&quot;&gt;Vim Recipes&lt;/a&gt;
-/ 基本から応用まで非常にシンプルでミニマムなフォーマットで丁寧に解説してくれる (英語)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://vim.runpaint.org/toc/&quot;&gt;Vim Recipes&lt;/a&gt; / 基本から応用まで非常にシンプルでミニマムなフォーマットで丁寧に解説してくれる (英語)&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://vimcasts.org/&quot;&gt;Vimcasts - free screencasts about the text editor Vim&lt;/a&gt; / Vimのチュートリアルビデオキャスト。基本のコマンドからプラグインまで詳しく解説している(英語)&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://peepcode.com/products/smash-into-vim-i&quot;&gt;Smash Into Vim by PeepCode&lt;/a&gt; / Vimのチュートリアルビデオ。基本をわかりやすく解説 パート1 $12 (英語)&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://peepcode.com/products/smash-into-vim-ii&quot;&gt;Smash Into Vim II by PeepCode&lt;/a&gt; / Vimのチュートリアルビデオ。基本をわかりやすく解説 パート2 $12 (英語)&lt;/li&gt;
@@ -256,19 +254,17 @@ imap &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;C&lt;span class=&quot;
 			<content type="html">
 				&lt;h2 id=&quot;whatis&quot;&gt;Jekyllとは&lt;/h2&gt;
 
-&lt;p&gt;Amazon S3にて静的ファイルによるウェブサイトを構築できるようになり、Amazon Web
-Serviceが日本リージョンを追加したことで、これからJekyllのような静的ファイルジェネレータを使ったブログが日本でも増えるのではないか。  &lt;/p&gt;
+&lt;p&gt;Amazon S3にて静的ファイルによるウェブサイトを構築できるようになり、Amazon Web Serviceが日本リージョンを追加したことで、これからJekyllのような静的ファイルジェネレータを使ったブログが日本でも増えるのではないか。  &lt;/p&gt;
 
-&lt;p&gt;Jekyllといえば、このCSS
-Radarも今年1月からwordpressを離れ、Jekyllを使ってブログを構築している。&lt;br /&gt;
+&lt;p&gt;Jekyllといえば、このCSS Radarも今年1月からwordpressを離れ、Jekyllを使ってブログを構築している。&lt;br /&gt;
 (残念ながらまだAmazon S3でのホストはしていない)  &lt;/p&gt;
 
-&lt;p&gt;Amazon Web Service勉強会でも、JekyllとAmazon S3についての発表があった。(&lt;a href=&quot;http://www.ustream.tv/recorded/14269210&quot;&gt;usteam&lt;/a&gt;)&lt;br /&gt;
-そこで、今回はRubyでも、コマンドラインでも初心者である私でもつくれるようになったJekyllについて紹介しよう。&lt;/p&gt;
+&lt;p&gt;Amazon Web Service勉強会でもJekyllとAmazon S3についての発表があった。(&lt;a href=&quot;http://www.ustream.tv/recorded/14269210&quot;&gt;usteam&lt;/a&gt;)&lt;br /&gt;
+そこで、今回はRubyでもコマンドラインでも初心者である私でもつくれるようになったJekyllについて紹介しよう。&lt;/p&gt;
 
 &lt;h2 id=&quot;prepare&quot;&gt;開発環境の準備&lt;/h2&gt;
 
-&lt;p&gt;JekyllはRubyで作成されているので、当然ながらRubyが必要。&lt;br /&gt;
+&lt;p&gt;JekyllはRubyで作成されているので当然ながらRubyが必要。&lt;br /&gt;
 Rubyの導入については、&lt;a href=&quot;http://css.studiomohawk.com/tool/2011/05/14/ruby_for_designer_frontend_dev/&quot;&gt;ウェブデザイナのためのRuby&lt;/a&gt;を参考にしてほしい。&lt;/p&gt;
 
 &lt;p&gt;Rubyの準備ができたら、&lt;/p&gt;
@@ -277,18 +273,16 @@ Rubyの導入については、&lt;a href=&quot;http://css.studiomohawk.com/tool
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;*パーミッションがどうの、というエラーがでたら、&lt;code&gt;sudo gem instal
-jekyll&lt;/code&gt;とすればインストールできるはず。&lt;/p&gt;
+&lt;p&gt;*パーミッションがどうのというエラーがでたら、&lt;code&gt;sudo gem instal jekyll&lt;/code&gt;とすればインストールできるはず。&lt;/p&gt;
 
-&lt;p&gt;CSS
-RadarではHTMLやら、CSSなどのソースコードの表示もあるので、Pygmentsを使ってシンタックスハイライトを行っている。&lt;br /&gt;
-Homebrewを使っているなら、インストールは簡単。&lt;/p&gt;
+&lt;p&gt;CSS RadarではHTMLやら、CSSなどのソースコードの表示もあるので、Pygmentsを使ってシンタックスハイライトを行っている。&lt;br /&gt;
+Homebrewを使っているならインストールは簡単。&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;sh&quot;&gt;brew install pip &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; pip install pygments
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;としてから、Homebrewでは実行ファイルにsymlinkがつかないそうで、下記を実行してsymlinkをつくる&lt;/p&gt;
+&lt;p&gt;としてから、Homebrewでは実行ファイルにsymlinkがつかないそうで下記を実行してsymlinkをつくる&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;sh&quot;&gt;ln -s /usr/local/Cellar/python/2.7/bin/pygmentize /usr/local/bin/pygmentize
 &lt;/code&gt;&lt;/pre&gt;
@@ -319,7 +313,7 @@ Homebrewを使っているなら、インストールは簡単。&lt;/p&gt;
 
 &lt;h3&gt;記事の作成&lt;/h3&gt;
 
-&lt;p&gt;Jekyllでは、記事の作成は.markdown、または.textileという軽量マークアップ言語の文法で記述されたプレーンテキストファイルで行う。&lt;br /&gt;
+&lt;p&gt;Jekyllでは、記事の作成は.markdownまたは.textileという軽量マークアップ言語の文法で記述されたプレーンテキストファイルで行う。&lt;br /&gt;
 &lt;code&gt;$YEAR-$MONTH-$DATE-$TITLE.$FORMAT&lt;/code&gt;という形式で、_postsフォルダに格納されたファイルをJekyllがプロセスしてくれる。  &lt;/p&gt;
 
 &lt;p&gt;例えば、2011年5月14日に作成したウェブデザイナのためのRuby入門という記事なら、&lt;code&gt;2011-05-22-ruby-for-designer.markdown&lt;/code&gt;というファイル名になる。&lt;br /&gt;
@@ -338,14 +332,13 @@ date: 2011-06-11 13:39:28
 今回の記事のYAML front matterが上記。&lt;br /&gt;
 layoutでは、_layoutsに作成したテンプレート定義ファイルを設定し、&lt;br /&gt;
 categoryにはカテゴリ、titleにはもちろんタイトル、そしてdateには更新日を記述することができる。&lt;br /&gt;
-ここで必須になるのは、layoutとtitleの2ヶ所のみとなり、YAML front
-matterで設定した項目は、記事であればその記事内のテンプレート定義ファイル内の変数として利用することが可能。&lt;/p&gt;
+ここで必須になるのは、layoutとtitleの2ヶ所のみとなり、YAML front matterで設定した項目は、記事であればその記事内のテンプレート定義ファイル内の変数として利用することが可能。&lt;/p&gt;
 
 &lt;h2 id=&quot;template&quot;&gt;テンプレートの作成&lt;/h2&gt;
 
 &lt;p&gt;それではテンプレートの作成について見てみよう。&lt;/p&gt;
 
-&lt;p&gt;テンプレート定義ファイルは何の変哲もないHTMLで記述される。例外は記事ファイル内のYAML front matterに記述するlayoutの部分で利用する、テンプレート名をこちらも同じく、&lt;/p&gt;
+&lt;p&gt;テンプレート定義ファイルは何の変哲もないHTMLで記述される。例外は記事ファイル内のYAML front matterに記述するlayoutの部分で利用するテンプレート名をこちらも同じく、&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;sh&quot;&gt;---
 layout: post
@@ -353,8 +346,7 @@ layout: post
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;というようにYAML front
-matterとして記述するという点と、後述するLiquidというテンプレートエンジンを利用して記事部分のレンダリングなどを行ったりするという点が異なる。　　&lt;/p&gt;
+&lt;p&gt;というようにYAML front matterとして記述するという点と、後述するLiquidというテンプレートエンジンを利用して記事部分のレンダリングなどを行ったりするという点が異なる。　　&lt;/p&gt;
 
 &lt;p&gt;wordpressでもそうだが、この手のテンプレファイル系は実際にファイル自体を見た方が早い。&lt;br /&gt;
 私が公開しているJekyll用テーマファイル、&lt;a href=&quot;https://github.com/studiomohawk/jekyll-theme-the_minimum/blob/master/_layouts/post.html&quot;&gt;the_minimumの記事用レイアウトファイル&lt;/a&gt;を見ながら、
@@ -362,9 +354,9 @@ matterとして記述するという点と、後述するLiquidというテン�
 
 &lt;h2 id=&quot;liquid&quot;&gt;Liquidについて&lt;/h2&gt;
 
-&lt;p&gt;Liquidは非常にシンプルなテンプレートエンジンで、これまでwordpressに慣れてきた場合は少し物足りなく感じるかもしれないが、その代わり覚えるのは簡単。
-Liquidで利用できるタグについては、&lt;a href=&quot;https://github.com/tobi/liquid/wiki/liquid-for-designers&quot;&gt;こちら&lt;/a&gt;を参考に、&lt;br /&gt;
-また、Jekyllで利用できるLiquidの拡張タグについては、&lt;a href=&quot;https://github.com/mojombo/jekyll/wiki/Liquid-Extensions&quot;&gt;こちら&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;Liquidは非常にシンプルなテンプレートエンジンで、これまでwordpressに慣れてきた場合は少し物足りなく感じるかもしれないがその代わり覚えるのは簡単。
+Liquidで利用できるタグについては&lt;a href=&quot;https://github.com/tobi/liquid/wiki/liquid-for-designers&quot;&gt;こちら&lt;/a&gt;を参考に、&lt;br /&gt;
+またJekyllで利用できるLiquidの拡張タグについては&lt;a href=&quot;https://github.com/mojombo/jekyll/wiki/Liquid-Extensions&quot;&gt;こちら&lt;/a&gt;。&lt;/p&gt;
 
 &lt;p&gt;先ほどのthe_minimumのpost.htmlを見ながらLiquidテンプレートタグで必須になるもタグと、便利なタグについて紹介しよう。&lt;/p&gt;
 
@@ -375,22 +367,21 @@ Liquidで利用できるタグについては、&lt;a href=&quot;https://github.
 &lt;script src=&quot;https://gist.github.com/1021118.js?file=liquid.html&quot;&gt;&lt;/script&gt;
 
 &lt;p&gt;インクルードはメンテナンスのために覚えておきたいタグで、&lt;br /&gt;
-オフィシャルページにもあまり説明のないページネーションについてはもっともシンプルな例ながら、利用できるタグについてはほぼ網羅しているので、カスタマイズする際の参考になれば。&lt;/p&gt;
+オフィシャルページにもあまり説明のないページネーションについてはもっともシンプルな例ながら利用できるタグについてはほぼ網羅しているので、カスタマイズする際の参考になれば。&lt;/p&gt;
 
 &lt;h2 id=&quot;config&quot;&gt;_config.ymlの設定&lt;/h2&gt;
 
-&lt;p&gt;ここで利用できる値はほぼ無限にあるものの、まずはオフィシャルを参考にしてほしい。
+&lt;p&gt;ここで利用できる値はほぼ無限にあるもののまずはオフィシャルを参考にしてほしい。
 &lt;a href=&quot;https://github.com/mojombo/jekyll/wiki/Configuration&quot;&gt;https://github.com/mojombo/jekyll/wiki/Configuration&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;_config.ymlは非常に強力で、オフィシャルで使えるとしている設定以外にも自由に設定を拡張できる。&lt;br /&gt;
+&lt;p&gt;_config.ymlは非常に強力でオフィシャルで使えるとしている設定以外にも自由に設定を拡張できる。&lt;br /&gt;
 こちらについても、&lt;a href=&quot;https://github.com/studiomohawk/jekyll-theme-the_minimum/blob/master/_config.yml&quot;&gt;the_minimumのファイルを参考にしてほしい&lt;/a&gt;。&lt;/p&gt;
 
 &lt;p&gt;_config.ymlで設定した値はテンプレートファイル内で、&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;site.項目&lt;/code&gt;  &lt;/p&gt;
 
-&lt;p&gt;のように呼び出す事ができる。例えば、the_minimumで設定したGoogle
-Analytics用IDを格納する&lt;code&gt;ga&lt;/code&gt;を呼び出す場合は、&lt;/p&gt;
+&lt;p&gt;のように呼び出す事ができる。例えば、the_minimumで設定したGoogle Analytics用IDを格納する&lt;code&gt;ga&lt;/code&gt;を呼び出す場合は、&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;site.ga&lt;/code&gt;&lt;/p&gt;
 
@@ -399,10 +390,10 @@ Analytics用IDを格納する&lt;code&gt;ga&lt;/code&gt;を呼び出す場合は
 
 &lt;h2 id=&quot;page&quot;&gt;ページの作り方&lt;/h2&gt;
 
-&lt;p&gt;wordpressでは単一ページを作成し、aboutページなどを作成してきたという人もいることだろう。&lt;br /&gt;
+&lt;p&gt;wordpressでは単一ページを作成しaboutページなどを作成してきたという人もいることだろう。&lt;br /&gt;
 Jekyllでも単一ページを作成することが可能。&lt;/p&gt;
 
-&lt;p&gt;ページの作成方法についてもやはりシンプル設計で、トップページにあたる部分&lt;code&gt;index.html&lt;/code&gt;(トップページも単一ページ)と同じ階層にhtmlファイルを設置すればOK。&lt;br /&gt;
+&lt;p&gt;ページの作成方法についてもやはりシンプル設計でトップページにあたる部分&lt;code&gt;index.html&lt;/code&gt;(トップページも単一ページ)と同じ階層にhtmlファイルを設置すればOK。&lt;br /&gt;
 こちらはCSS Radarのファイルを覗いてみてほしい。&lt;/p&gt;
 
 &lt;ul&gt;
@@ -416,24 +407,24 @@ Jekyllでも単一ページを作成することが可能。&lt;/p&gt;
 &lt;p&gt;Jekyllでは&lt;code&gt;\_layouts&lt;/code&gt;、&lt;code&gt;\_posts&lt;/code&gt;、&lt;code&gt;_site&lt;/code&gt;のみが必須のフォルダと先ほど書いたが、Liquidの説明部分で書いたようにインクルードファイルを格納する、&lt;code&gt;_include&lt;/code&gt;フォルダや、Jekyllに拡張機能を追加するための、&lt;code&gt;_plugins&lt;/code&gt;フォルダを作成することができる。アンダーバーがフォルダ名の頭にある場合、Jekyllはそれらをシステムファイルとして扱い、プロセスの際にそれらフォルダも見に行くようになっている。  &lt;/p&gt;
 
 &lt;p&gt;アンダーバーがついていないフォルダはJekyllとしては何の処理もしないが、きちんと&lt;code&gt;\_site&lt;/code&gt;フォルダへ移動してくれる。&lt;br /&gt;
-なので、CSSやJavascript、そして画像などを格納するフォルダを、それぞれ、&lt;code&gt;style&lt;/code&gt;、&lt;code&gt;script&lt;/code&gt;、&lt;code&gt;image&lt;/code&gt;というようにして、ファイルを格納しておこう。&lt;/p&gt;
+なので、CSSやJavascript、そして画像などを格納するフォルダをそれぞれ、&lt;code&gt;style&lt;/code&gt;、&lt;code&gt;script&lt;/code&gt;、&lt;code&gt;image&lt;/code&gt;というようにしてファイルを格納しておこう。&lt;/p&gt;
 
 &lt;h2 id=&quot;preview&quot;&gt;ローカル環境でプレビュー&lt;/h2&gt;
 
-&lt;p&gt;このチュートリアル中に新たにデザインを作成し、Jekyll用にコーディングを完成するのは難しいと思うので、ここから先はすでに作成した私のthe_minimumをダウンロードしてから実践して見てほしい。&lt;/p&gt;
+&lt;p&gt;このチュートリアル中に新たにデザインを作成しJekyll用にコーディングを完成するのは難しいと思うので、ここから先はすでに作成した私のthe_minimumをダウンロードしてから実践して見てほしい。&lt;/p&gt;
 
 &lt;p&gt;Jekyllではコマンドラインを利用してファイルの生成を行う。そう、デザイナには不可解な黒い画面。&lt;br /&gt;
-黒い画面とはいえ、使うコマンドは片手で数えられる程度なので、問題ないし、コピペできるように記述するので、是非試してみてほしい。&lt;/p&gt;
+黒い画面とはいえ使うコマンドは片手で数えられる程度なので問題ないし、コピペできるように記述するので是非試してみてほしい。&lt;/p&gt;
 
-&lt;p&gt;それでは、&lt;a href=&quot;https://github.com/studiomohawk/jekyll-theme-the_minimum&quot;&gt;the_minimumのダウンロードは終わっただろうか&lt;/a&gt;？&lt;br /&gt;
-ターミナルを開いて、the_minimumをダウンロードしたフォルダに移動してほしい。移動は&lt;code&gt;cd&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;それでは&lt;a href=&quot;https://github.com/studiomohawk/jekyll-theme-the_minimum&quot;&gt;the_minimumのダウンロードは終わっただろうか&lt;/a&gt;？&lt;br /&gt;
+ターミナルを開いてthe_minimumをダウンロードしたフォルダに移動してほしい。移動は&lt;code&gt;cd&lt;/code&gt;。&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;sh&quot;&gt;jekyll --server --auto
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;p&gt;&lt;code&gt;--server&lt;/code&gt;オプションはプレビュー環境用のサーバを立ち上げ、&lt;br /&gt;
-&lt;code&gt;--auto&lt;/code&gt;オプションは、ローカルファイルが保存されるたびに、ファイル生成を行うオプション。&lt;/p&gt;
+&lt;code&gt;--auto&lt;/code&gt;オプションはローカルファイルが保存されるたびにファイル生成を行うオプション。&lt;/p&gt;
 
 &lt;p&gt;このコマンドをターミナルにて実行したら、&lt;/p&gt;
 
@@ -441,8 +432,8 @@ Jekyllでも単一ページを作成することが可能。&lt;/p&gt;
 
 &lt;p&gt;をブラウザで見るとJekyllをローカル環境で動作させた結果を見る事ができる。  &lt;/p&gt;
 
-&lt;p&gt;Jekyllは非常に強力なのに、シンプルで、インクルードなど便利な機能もついてくるので使い方を工夫すればすばらしいプロトタイプ作成ツールにもなるのではないかと思って、ベースとなるテンプレートを鋭意作成中。
-話は少しそれたが、思っていた以上に簡単だったのではないだろうか？&lt;/p&gt;
+&lt;p&gt;Jekyllは非常に強力なのにシンプルでインクルードなど便利な機能もついてくるので使い方を工夫すればすばらしいプロトタイプ作成ツールにもなるのではないかと思って、ベースとなるテンプレートを鋭意作成中。
+話は少しそれたが思っていた以上に簡単だったのではないだろうか？&lt;/p&gt;
 
 &lt;h2 id=&quot;upload&quot;&gt;サーバへのアップロード&lt;/h2&gt;
 
@@ -451,7 +442,7 @@ FTPを使って、&lt;code&gt;\_site&lt;/code&gt;内に生成されたファイ�
 
 &lt;p&gt;私は面倒くさがりなのでrakeを使ってrsyncでサーバとローカルファイルの同期をとっている。
 &lt;code&gt;rake rsync:live&lt;/code&gt;
-とするだけで、指定のローカルフォルダとサーバの同期がとれるようにしてある。&lt;/p&gt;
+とするだけで指定のローカルフォルダとサーバの同期がとれるようにしてある。&lt;/p&gt;
 
 &lt;h2 id=&quot;automation&quot;&gt;rakeを使って自動化する&lt;/h2&gt;
 
@@ -462,12 +453,11 @@ Jekyllはrubyによって書かれているので、rakeを使っていつも行
   &lt;li&gt;&lt;em&gt;新しい記事を書く / &lt;code&gt;rake post:new[&quot;title&quot;,&quot;category&quot;]&lt;/code&gt;&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Jekyllではファイル名もルールに従って記述する必要があったり、YAML front
-matterの設定を毎回しなければならなかったりする。&lt;/p&gt;
+&lt;p&gt;Jekyllではファイル名もルールに従って記述する必要があったり、YAML front matterの設定を毎回しなければならなかったりする。&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;rake post:new[&quot;title&quot;,&quot;category&quot;]&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;とするだけで、&lt;code&gt;title&lt;/code&gt;からファイル名と記事のタイトルを生成し、ついでにカテゴリ名を&lt;code&gt;category&lt;/code&gt;から生成してくれる。&lt;br /&gt;
+&lt;p&gt;とするだけで、&lt;code&gt;title&lt;/code&gt;からファイル名と記事のタイトルを生成しついでにカテゴリ名を&lt;code&gt;category&lt;/code&gt;から生成してくれる。&lt;br /&gt;
 &lt;code&gt;title&lt;/code&gt;の方はURLの一部になるだけあって日本語は利用できない。結果、記事のタイトルは生成後に日本語に差し替える必要はある。  &lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:post&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
@@ -517,7 +507,7 @@ matterの設定を毎回しなければならなかったりする。&lt;/p&gt;
 でもどう考えても毎回FTPを使うのは面倒なので、&lt;code&gt;rsync&lt;/code&gt;を使ってサーバとローカルの同期を取ってしまおう。&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;rake
-rsync:dryrun&lt;/code&gt;はテスト用で実際には何もサーバには同期されないが、どのファイルが同期されるかをチェックするためにある。&lt;br /&gt;
+rsync:dryrun&lt;/code&gt;はテスト用で実際には何もサーバには同期されないがどのファイルが同期されるかをチェックするためにある。&lt;br /&gt;
 初めてrsyncする場合、正しく設定ができているのかを含めて実際のサーバ側のファイル達には影響なく実行できるのでまずはこちらでテストを。&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;rake rsync:live&lt;/code&gt;&lt;/p&gt;
@@ -557,26 +547,23 @@ rsync:dryrun&lt;/code&gt;はテスト用で実際には何もサーバには同�
 			<content type="html">
 				&lt;h2 id=&quot;rubyis&quot;&gt;Rubyはウェブデザイナに優しい&lt;/h2&gt;
 
-&lt;p&gt;CSS
-Radarと名がついている割には、CSSの話があまりないなと最近になって気がついたけれど、誰も気にしちゃいないだろう。&lt;br /&gt;
+&lt;p&gt;CSS Radarと名がついている割にはCSSの話があまりないなと最近になって気がついたけれど、誰も気にしちゃいないだろう。&lt;br /&gt;
 今回はCSSやデザインからはほど遠いように思えるRubyについて。&lt;br /&gt;
-前にも書いた気がするが、私は極度の面倒くさがり。とにかく楽をするためなら、どんな苦労もいとわない。
-Rubyにチャレンジしている真っ最中ながら、色々な新しい概念に触れ、色々な新しいワザを覚え、少しずつながら、面倒なことを楽にすることもでき始めてきた。
-そこで、Rubyを少しだけ使い倒す方法を紹介しようと思い立った。&lt;/p&gt;
+前にも書いた気がするが私は極度の面倒くさがり。とにかく楽をするためなら、どんな苦労もいとわない。
+Rubyにチャレンジしている真っ最中ながら、色々な新しい概念に触れ、色々な新しいワザを覚え、少しずつながら面倒なことを楽にすることもでき始めてきた。
+そこでRubyを少しだけ使い倒す方法を紹介しようと思い立った。&lt;/p&gt;
 
 &lt;p&gt;たまにはPhotoshopを離れて(&lt;a href=&quot;http://css.studiomohawk.com/webdesign/2011/04/16/designing_in_browser/&quot;&gt;私はあまり使いませんが&lt;/a&gt;)、新しいことに挑戦してみませんか？&lt;/p&gt;
 
-&lt;p class=&quot;small&quot;&gt;*私はRuby初心者ですので、間違っている記述や、もっと簡単にできるのに、という部分が多々あるでしょう。そんな際は是非メールをください。&lt;br /&gt;
-なお、今回の記事はMac OSXでの話で、Windowsについてはまったく触れませんが、基本的な概念は同じです。&lt;/p&gt;
+&lt;p&gt;*私はRuby初心者ですので間違っている記述や、もっと簡単にできるのに、という部分が多々あるでしょう。そんな際は是非メールをください。&lt;br /&gt;
+なお今回の記事はMac OSXでの話で、Windowsについてはまったく触れませんが、基本的な概念は同じです。{: .small}&lt;/p&gt;
 
 &lt;h2 id=&quot;install&quot;&gt;Rubyのインストール&lt;/h2&gt;
 
-&lt;p&gt;Mac OS
-XにはRubyが標準でインストールされている。でも、最新版ではなく、まれに最新版でないと動作しないプログラムもあるので、最新版をインストールしておく必要がある。&lt;/p&gt;
+&lt;p&gt;Mac OS XにはRubyが標準でインストールされている。でも最新版ではなく、まれに最新版でないと動作しないプログラムもあるので最新版をインストールしておく必要がある。&lt;/p&gt;
 
-&lt;p&gt;MacにおけるRubyの管理は、&lt;a href=&quot;https://rvm.beginrescueend.com/&quot;&gt;RVM - Ruby Version
-Manager&lt;/a&gt;がおすすめ。&lt;br /&gt;
-RVMを利用するためには、gitが必須になる。gitのインストールについては、&lt;a href=&quot;http://css.studiomohawk.com/tool/2011/01/29/git-version-control/&quot;&gt;こちらを参照してほしい&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;MacにおけるRubyの管理は、&lt;a href=&quot;https://rvm.beginrescueend.com/&quot;&gt;RVM - Ruby Version Manager&lt;/a&gt;がおすすめ。&lt;br /&gt;
+RVMを利用するためにはgitが必須になる。gitのインストールについては&lt;a href=&quot;http://css.studiomohawk.com/tool/2011/01/29/git-version-control/&quot;&gt;こちらを参照してほしい&lt;/a&gt;。&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;RVMのインストール方法&lt;/strong&gt;&lt;/p&gt;
 
@@ -599,14 +586,14 @@ RVMを利用するためには、gitが必須になる。gitのインストー�
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;とターミナルで実行してみる&lt;/p&gt;
+&lt;p&gt;とターミナルで実行してみる。&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;sh&quot;&gt;rvm is a &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;p&gt;と返事が返ってきたら成功。
-成功したら、またターミナルにて&lt;/p&gt;
+成功したらまたターミナルにて&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;sh&quot;&gt;&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; ~/.rvm/scripts/rvm
 &lt;/code&gt;&lt;/pre&gt;
@@ -618,17 +605,16 @@ RVMを利用するためには、gitが必須になる。gitのインストー�
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;とすれば、ruby 1.9.2-headのバージョンをインストールできる。&lt;br /&gt;
-ちなみに、RVMでインストールできるバージョンは&lt;/p&gt;
+&lt;p&gt;とすればruby 1.9.2-headのバージョンをインストールできる。&lt;br /&gt;
+ちなみにRVMでインストールできるバージョンは&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;sh&quot;&gt;rvm list known
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;とすればリストが表示されるので、表示されたパッケージを&lt;code&gt;rvm
-install&lt;/code&gt;の後に記述すればそのパッケージをインストールできる。&lt;/p&gt;
+&lt;p&gt;とすればリストが表示されるので表示されたパッケージを&lt;code&gt;rvm install&lt;/code&gt;の後に記述すればそのパッケージをインストールできる。&lt;/p&gt;
 
-&lt;p&gt;なお、RVMではバージョンごとにgemのパッケージを管理するため、さっきまで使えたはずのgemがないとエラーが出る、なんて事態に遭遇したら、&lt;/p&gt;
+&lt;p&gt;なおRVMではバージョンごとにgemのパッケージを管理するためさっきまで使えたはずのgemがないとエラーが出る、なんて事態に遭遇したら、&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;sh&quot;&gt;ruby -v
 &lt;/code&gt;&lt;/pre&gt;
@@ -637,7 +623,6 @@ install&lt;/code&gt;の後に記述すればそのパッケージをインスト
 &lt;p&gt;として現在利用しているrubyのバージョンを確認してみよう。&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;sh&quot;&gt;rvm --default use 1.9.2 &lt;span class=&quot;c&quot;&gt;# とすると、1.9.2をデフォルトで利用しはじめ&lt;/span&gt;
-
 rvm use system &lt;span class=&quot;c&quot;&gt;# システムにインストールされているRubyと&lt;/span&gt;
 rvm default &lt;span class=&quot;c&quot;&gt;# デフォルト設定したRubyを切り替えることも可能 &lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
@@ -648,22 +633,22 @@ rvm default &lt;span class=&quot;c&quot;&gt;# デフォルト設定したRubyを
 &lt;h2 id=&quot;gem&quot;&gt;Ruby Gem&lt;/h2&gt;
 
 &lt;p&gt;RubyにはGemと呼ばれるパッケージマネージャがある。1.9系以降からはRubyの標準機能となったそうだ。&lt;br /&gt;
-MacではGemも標準でインストールされていたと思うが、記憶が確かではないので確認してほしい。&lt;/p&gt;
+MacではGemも標準でインストールされていたと思うが記憶が確かではないので確認してほしい。&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;sh&quot;&gt;sudo gem update --system
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;とすると、アップデートできるので試してみてほしい。&lt;/p&gt;
+&lt;p&gt;とするとアップデートできるので試してみてほしい。&lt;/p&gt;
 
-&lt;p&gt;パッケージマネージャってなんだ、という点については、Ubuntuを使っていた私にはすんなり理解できたが、そうでもない人が多いのでMacでいうところの、macportやfink、homebrewみたいなライブラリ集積地みたいなものだと覚えておけばいいはず。
-*Homebrewについては、&lt;a href=&quot;http://css.studiomohawk.com/tool/2011/02/13/terminal-101/&quot;&gt;こちらの記事&lt;/a&gt;で紹介したので、参考にしてほしい。&lt;/p&gt;
+&lt;p&gt;パッケージマネージャってなんだ、という点についてはUbuntuを使っていた私にはすんなり理解できたが、そうでもない人が多いのでMacでいうところの、macportやfink、homebrewみたいなライブラリ集積地みたいなものだと覚えておけばいいはず。
+*Homebrewについては、&lt;a href=&quot;http://css.studiomohawk.com/tool/2011/02/13/terminal-101/&quot;&gt;こちらの記事&lt;/a&gt;で紹介したので参考にしてほしい。&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;sh&quot;&gt;gem install PACKAGENAME
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;として、パッケージをインストールできる。&lt;br /&gt;
+&lt;p&gt;としてパッケージをインストールできる。&lt;br /&gt;
 例えば、&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;sh&quot;&gt;gem install rake
@@ -677,7 +662,7 @@ MacではGemも標準でインストールされていたと思うが、記憶�
 &lt;h3&gt;CSS Sprite&lt;/h3&gt;
 
 &lt;p&gt;CSSスプライトはパフォーマンス向上のためには必須になるテクニックだが、作成するのも、管理するのも、メンテナンスするのもとても面倒。
-ある特定のディレクトリに画像を入れて、自動でスプライト画像を作成し、CSSもあわせて作ってくれたら。を叶えるプログラムがRubyにある。&lt;/p&gt;
+ある特定のディレクトリに画像を入れて自動でスプライト画像を作成しCSSもあわせて作ってくれたら。を叶えるプログラムがRubyにある。&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/merbjedi/sprite&quot;&gt;merbjedi / sprite&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
@@ -685,9 +670,9 @@ MacではGemも標準でインストールされていたと思うが、記憶�
 
 &lt;p&gt;&lt;strong&gt;インストール&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;rmagick&lt;/code&gt;gemが必要になるので、まずはこのgemをインストール。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;rmagick&lt;/code&gt;gemが必要になるのでまずはこのgemをインストール。&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;sh&quot;&gt;gem install rmagick &lt;span class=&quot;c&quot;&gt;#私はこのコマンドではエラーになったので、下記を実行してから、再度チャレンジした&lt;/span&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;sh&quot;&gt;gem install rmagick &lt;span class=&quot;c&quot;&gt;#私はこのコマンドではエラーになったので、下記を実行してから再度チャレンジした&lt;/span&gt;
 
 &lt;span class=&quot;c&quot;&gt;# エラーになった場合は&lt;/span&gt;
 sudo brew install libxml2
@@ -766,18 +751,18 @@ gem install sprite
 &lt;/div&gt;
 
 &lt;p&gt;というようなスタイルを書き出してくれる。&lt;br /&gt;
-sassのmixinも利用できるようで、設定も変更できる。&lt;/p&gt;
+sassのmixinも利用できるようで設定も変更できる。&lt;/p&gt;
 
 &lt;p&gt;詳しくは&lt;a href=&quot;https://github.com/merbjedi/sprite&quot;&gt;こちら&lt;/a&gt;(英語)。&lt;/p&gt;
 
 &lt;h3&gt;SASS/LESS&lt;/h3&gt;
 
-&lt;p&gt;LESSは今ではnode.jsプロジェクトとして生まれ変わったが、最新版ではないものの、gemからインストールはできる。
-SASSについては、先日1年ぶりほどのアップデートがありアクティブにRubyプロジェクトとして成長している。&lt;/p&gt;
+&lt;p&gt;LESSは今ではnode.jsプロジェクトとして生まれ変わったが最新版ではないものの、gemからインストールはできる。
+SASSについては先日1年ぶりほどのアップデートがありアクティブにRubyプロジェクトとして成長している。&lt;/p&gt;
 
-&lt;p&gt;ちなみに、SASSでは&lt;a href=&quot;http://www.hagenburger.net/BLOG/Lemonade-CSS-Sprites-for-Sass-Compass.html&quot;&gt;Lemonade&lt;/a&gt;というパッケージを利用してCSS Spriteの自動化を行うこともできる。&lt;/p&gt;
+&lt;p&gt;ちなみにSASSでは&lt;a href=&quot;http://www.hagenburger.net/BLOG/Lemonade-CSS-Sprites-for-Sass-Compass.html&quot;&gt;Lemonade&lt;/a&gt;というパッケージを利用してCSS Spriteの自動化を行うこともできる。&lt;/p&gt;
 
-&lt;p&gt;LESSについての説明は、&lt;a href=&quot;http://css.studiomohawk.com/css/2011/04/03/use_less_to_clean_up_your_css/&quot;&gt;LESS: CSSをよりシンプルに、パワフルに&lt;/a&gt;を参考にしてほしい。&lt;/p&gt;
+&lt;p&gt;LESSについての説明は&lt;a href=&quot;http://css.studiomohawk.com/css/2011/04/03/use_less_to_clean_up_your_css/&quot;&gt;LESS: CSSをよりシンプルに、パワフルに&lt;/a&gt;を参考にしてほしい。&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;インストール&lt;/strong&gt;&lt;/p&gt;
 
@@ -789,11 +774,10 @@ gem install sass &lt;span class=&quot;c&quot;&gt;#SASS&lt;/span&gt;
 &lt;h3&gt;Juicer&lt;/h3&gt;
 
 &lt;p&gt;リクエスト回数を減らすためには、CSS/JSの呼び出しは最小にしておく必要がある。&lt;br /&gt;
-が、CSSもJSもメンテナンス性を考えれば、たくさんのファイルになってしまうのが常。&lt;br /&gt;
+が、CSSもJSもメンテナンス性を考えればたくさんのファイルになってしまうのが常。&lt;br /&gt;
 この矛盾を解決するためのプログラムが&lt;a href=&quot;http://cjohansen.no/en/ruby/juicer_a_css_and_javascript_packaging_tool&quot;&gt;Juicer&lt;/a&gt;。&lt;/p&gt;
 
-&lt;p&gt;Juicerは、YUI
-Compressorを利用してCSS/JSを圧縮した上で、CSSであれば@importを使ってファイルを結合してくれ、JSであれば、&lt;/p&gt;
+&lt;p&gt;Juicerは、YUI Compressorを利用してCSS/JSを圧縮した上で、CSSであれば@importを使ってファイルを結合してくれ、JSであれば、&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;sh&quot;&gt;/**
  * @depends prototype.js
@@ -802,8 +786,8 @@ Compressorを利用してCSS/JSを圧縮した上で、CSSであれば@importを
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;というコメントを使って、ファイルの結合を行うことが可能。&lt;br /&gt;
-CSSはmaster.cssというファイルに@importのみを記述して、JSもmaster.jsというファイルにコメント文だけ記述している。&lt;/p&gt;
+&lt;p&gt;というコメントを使ってファイルの結合を行うことが可能。&lt;br /&gt;
+CSSはmaster.cssというファイルに@importのみを記述してJSもmaster.jsというファイルにコメント文だけ記述している。&lt;/p&gt;
 
 &lt;p&gt;実行すると、それぞれmaster.min.css、master.min.jsというファイルを書き出してくれる。&lt;/p&gt;
 
@@ -844,7 +828,7 @@ juicer install jslint &lt;span class=&quot;c&quot;&gt;# JsLintをインストー
 &lt;a href=&quot;http://code.google.com/p/css-redundancy-checker/&quot;&gt;CSS Redundancy
 Checker&lt;/a&gt;は、あるHTML郡で使われていないスタイルルールをリストアップしてくれるという強力なツール。&lt;br /&gt;
 フロントエンドデベロッパのタスクのほとんどはIteration、日本語にすると反復することが多く、その反復がよりよいモノを生み出すための最も大事な原動力となる。&lt;br /&gt;
-しかしその副産物として、使っていないスタイルルールであふれかえって、何を消したらまずいのかもはやわからない状態になってしまう。&lt;br /&gt;
+しかしその副産物として使っていないスタイルルールであふれかえって、何を消したらまずいのかもはやわからない状態になってしまう。&lt;br /&gt;
 その問題を解決するのがこのツールというわけだ。&lt;/p&gt;
 
 &lt;p&gt;使い方&lt;/p&gt;
@@ -853,8 +837,8 @@ Checker&lt;/a&gt;は、あるHTML郡で使われていないスタイルルー�
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;とするだけ。CSSを分割して管理している場合は、Juicerで結合してから実行するといいだろう。
-もちろんある特定のCSSファイルをチェックしたい場合は、個別に指定すればOK。&lt;/p&gt;
+&lt;p&gt;とするだけ。CSSを分割して管理している場合はJuicerで結合してから実行するといいだろう。
+もちろんある特定のCSSファイルをチェックしたい場合は個別に指定すればOK。&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;インストール&lt;/strong&gt;&lt;/p&gt;
 
@@ -864,12 +848,12 @@ svn checkout http://css-redundancy-checker.googlecode.com/svn/trunk/ css-redunda
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;css-redundancy-checker.rbという名前の通り、このスクリプトは単純な1ファイル。&lt;br /&gt;
-なので、実行する際はインストールしたディレクトリに移動してから実行する必要がある。&lt;/p&gt;
+&lt;p&gt;css-redundancy-checker.rbという名前の通りこのスクリプトは単純な1ファイル。&lt;br /&gt;
+なので実行する際はインストールしたディレクトリに移動してから実行する必要がある。&lt;/p&gt;
 
 &lt;h3&gt;Rake&lt;/h3&gt;
 
-&lt;p&gt;Rakeはそれ自体ではなにもしないが、非常に強力なツール。&lt;br /&gt;
+&lt;p&gt;Rakeはそれ自体ではなにもしないが非常に強力なツール。&lt;br /&gt;
 ビルドツールとして誕生したRakeのはずだが、私はビルドツールがなんのことかも完璧には理解できない。&lt;br /&gt;
 要するに、A)の次はB)を実行し、C)を実行するのは、A)を実行する必要がある。&lt;br /&gt;
 というなプロセスをrubyを使って行うことができる。いわばエディタなどにあるマクロみたいな存在。&lt;/p&gt;
@@ -885,8 +869,7 @@ svn checkout http://css-redundancy-checker.googlecode.com/svn/trunk/ css-redunda
   &lt;li&gt;&lt;a href=&quot;http://code.google.com/p/htmlcompressor/&quot;&gt;htmlcompressor&lt;/a&gt;を使ってHTMLの最適化&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;このプロセスをrake taskとして作成すれば、&lt;code&gt;rake
-タスク名&lt;/code&gt;とするだけで一気に終了できる。  &lt;/p&gt;
+&lt;p&gt;このプロセスをrake taskとして作成すれば、&lt;code&gt;rake タスク名&lt;/code&gt;とするだけで一気に終了できる。  &lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;rsync&lt;/code&gt;や&lt;code&gt;ftp&lt;/code&gt;なども合わせるとファイルアップロードまで自動化できる。&lt;/p&gt;
 
@@ -898,15 +881,13 @@ svn checkout http://css-redundancy-checker.googlecode.com/svn/trunk/ css-redunda
   &lt;li&gt;&lt;a href=&quot;http://pastie.org/242691&quot;&gt;Rake Quick Reference by Greg Houston&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;などが参考になるだろう。もちろん全部英語の文書なので、CSS
-Radarの癖にRakeの詳しい説明を知りたい方は、&lt;a href=&quot;http://twitter.com/#!/cssradar&quot;&gt;Twitter@cssradar&lt;/a&gt;にてリクエストしてほしい。&lt;br /&gt;
-私も覚えたてなので、全部の質問には答えることができるかわからないが。&lt;/p&gt;
+&lt;p&gt;などが参考になるだろう。もちろん全部英語の文書なので、CSS Radarの癖にRakeの詳しい説明を知りたい方は、&lt;a href=&quot;http://twitter.com/#!/cssradar&quot;&gt;Twitter@cssradar&lt;/a&gt;にてリクエストしてほしい。&lt;br /&gt;
+私も覚えたてなので全部の質問には答えることができるかわからないが。&lt;/p&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;まとめ&lt;/h2&gt;
 
 &lt;p&gt;ウェブデザイナ/フロントエンドデベロッパのタスクは多岐に渡る。&lt;br /&gt;
-Adobe
-Suitesを使いこなし、HTML/CSS/JSを駆使し、ユーザビリティ/アクセシビリティに考慮し、行動心理学を応用しつつ、ウェブサイトをユーザに届ける。&lt;br /&gt;
+Adobe Suitesを使いこなし、HTML/CSS/JSを駆使し、ユーザビリティ/アクセシビリティに考慮し、行動心理学を応用しつつ、ウェブサイトをユーザに届ける。&lt;br /&gt;
 その上、プログラマの領分であるはずのRubyにまで手を出す。&lt;br /&gt;
 それもすべて時間を生み出すための技術。&lt;br /&gt;
 その時間がよりよいサイトを生み出すための原動力だから。&lt;br /&gt;
@@ -932,12 +913,11 @@ Suitesを使いこなし、HTML/CSS/JSを駆使し、ユーザビリティ/ア�
 				&lt;h2 id=&quot;whatis&quot;&gt;インブラウザ デザインとは&lt;/h2&gt;
 
 &lt;p&gt;長い間、Adobe
-Photoshopはウェブデザインのデファクトアプリとして君臨してきた。もちろん、今も私のMac
-MiniにCS4がインストールされている。&lt;/p&gt;
+Photoshopはウェブデザインのデファクトアプリとして君臨してきた。もちろん今も私のMac MiniにCS4がインストールされている。&lt;/p&gt;
 
-&lt;p&gt;しかし、個人プロジェクトはもちろん、すでに会社のプロジェクトでも私はPhotoshopを卒業しつつある。&lt;br /&gt;
+&lt;p&gt;しかし、個人プロジェクトはもちろんすでに会社のプロジェクトでも私はPhotoshopを卒業しつつある。&lt;br /&gt;
 Firefox
-+ Firebugとお気に入りのエディタ(Vim)。そしてCSS3があれば、Photoshopを使わなくてもデザインができる。&lt;/p&gt;
++ Firebugとお気に入りのエディタ(Vim)。そしてCSS3があればPhotoshopを使わなくてもデザインができる。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://www.amazon.com/gp/product/1907828001/ref=as_li_ss_tl?ie=UTF8&amp;amp;tag=studiomohawk-20&amp;amp;linkCode=as2&amp;amp;camp=1789&amp;amp;creative=390957&amp;amp;creativeASIN=1907828001&quot;&gt;Hardboiled Web Design&lt;/a&gt;の作者であるAndy Clarkeは&lt;a href=&quot;http://stuffandnonsense.co.uk/blog/about/i_dont_care_about_responsive_web_design/&quot;&gt;I don’t care about Responsive Web Design&lt;/a&gt;にて、&lt;/p&gt;
 
@@ -956,10 +936,10 @@ Web design &lt;strong&gt;is&lt;/strong&gt; responsive design, Responsive Web Des
 &lt;h3&gt;アイデアの集約と大まかなレイアウトの決定&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://css.studiomohawk.com/webdesign/2011/04/01/wireframe/&quot;&gt;ワイヤフレーム&lt;/a&gt;は、ブラウザでデザインを行う際には確実に必要なプロセス。&lt;br /&gt;
-Photoshopでのデザインであれば、ワイヤフレームの有効性はPhotoshopの習熟度によっては低くなることもあるかもしれないが、今回はそうはいかない。&lt;br /&gt;
-ワイヤフレームだって、スタティックな画像じゃないか、と思うかも知れないし、それは事実だ。  &lt;/p&gt;
+Photoshopでのデザインであればワイヤフレームの有効性はPhotoshopの習熟度によっては低くなることもあるかもしれないが、今回はそうはいかない。&lt;br /&gt;
+ワイヤフレームだって、スタティックな画像じゃないかと思うかも知れないし、それは事実だ。  &lt;/p&gt;
 
-&lt;p&gt;それでも、以前書いたように、ワイヤフレームはアイデアを形にする最初のステップであり、要素がどこにどんな風に配置されるのかを集約し、レイアウトするのにはぴったりのツールだ。&lt;/p&gt;
+&lt;p&gt;それでも以前書いたように、ワイヤフレームはアイデアを形にする最初のステップであり、要素がどこにどんな風に配置されるのかを集約しレイアウトするのにはぴったりのツールだ。&lt;/p&gt;
 
 &lt;h4&gt;このステップで利用するツール&lt;/h4&gt;
 
@@ -969,10 +949,10 @@ Photoshopでのデザインであれば、ワイヤフレームの有効性はPh
 
 &lt;h3&gt;ベースになるHTMLとCSSの作成&lt;/h3&gt;
 
-&lt;p&gt;このステップは基礎になるHTMLを作っていく。CSSリセットや、ベースのCSS、そしてヘッダやフッタ、ボディになる部分を作成する。&lt;/p&gt;
+&lt;p&gt;このステップは基礎になるHTMLを作っていく。CSSリセットやベースのCSSそしてヘッダやフッタ、ボディになる部分を作成する。&lt;/p&gt;
 
 &lt;p&gt;自分でよく使うテンプレートを持っておくことで大幅に時間を短縮できる部分だ。&lt;br /&gt;
-私は&lt;a href=&quot;http://css.studiomohawk.com/tool/2011/03/15/html5boilerplate/&quot;&gt;HTML5 Boilerplate&lt;/a&gt;に、グリッドや&lt;a href=&quot;https://github.com/stubbornella/oocss&quot;&gt;OOCSS&lt;/a&gt;のモジュールを組み込むカスタマイズを施し、よく利用するCSSのスタイルを&lt;a href=&quot;http://css.studiomohawk.com/css/2011/04/03/use_less_to_clean_up_your_css/&quot;&gt;LESS&lt;/a&gt;のミックスインとして用意している。&lt;/p&gt;
+私は&lt;a href=&quot;http://css.studiomohawk.com/tool/2011/03/15/html5boilerplate/&quot;&gt;HTML5 Boilerplate&lt;/a&gt;にグリッドや&lt;a href=&quot;https://github.com/stubbornella/oocss&quot;&gt;OOCSS&lt;/a&gt;のモジュールを組み込むカスタマイズを施し、よく利用するCSSのスタイルを&lt;a href=&quot;http://css.studiomohawk.com/css/2011/04/03/use_less_to_clean_up_your_css/&quot;&gt;LESS&lt;/a&gt;のミックスインとして用意している。&lt;/p&gt;
 
 &lt;h4&gt;このステップで利用するツール&lt;/h4&gt;
 
@@ -985,9 +965,9 @@ Photoshopでのデザインであれば、ワイヤフレームの有効性はPh
 &lt;h3&gt;レイアウト&lt;/h3&gt;
 
 &lt;p&gt;まずはグリッドを決めてしまう。&lt;br /&gt;
-Photoshopでのステップだと、グリッドを使ったり、ガイドを使ったりするのがこのステップ。
+Photoshopでのステップだとグリッドを使ったりガイドを使ったりするのがこのステップ。
 この時点でグリッドがレスポンシブデザインに対応しているとあとで楽に作業ができる。&lt;br /&gt;
-もちろん、慣れないうちは大変だし、リデザインの場合はそうもいかないこともあるだろう。&lt;/p&gt;
+もちろん慣れないうちは大変だし、リデザインの場合はそうもいかないこともあるだろう。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://griddle.it/&quot;&gt;Griddle.it&lt;/a&gt;を使って簡単にCSSでガイドを作成する方法を紹介しよう。&lt;/p&gt;
 
@@ -1001,9 +981,9 @@ Photoshopでのステップだと、グリッドを使ったり、ガイドを�
 例えば、こちらを開いてみてほしい。&lt;a href=&quot;http://griddle.it/960-12-30&quot;&gt;幅960px 12コラム 30pxのガター&lt;/a&gt;&lt;br /&gt;
 さらにバーティカルリズム用ガイドになる横線のグリッドも追加できる。
 &lt;a href=&quot;http://griddle.it/960-12-30?horizontal=30&quot;&gt;幅960px 12コラム 30pxのガター + 30pxの横線グリッド&lt;/a&gt;&lt;br /&gt;
-ここまで設計したデザインはなかなか日本では見かけないが、基礎が強固であればあるほど、表層のデザインは自由度が増すので、是非。&lt;/p&gt;
+ここまで設計したデザインはなかなか日本では見かけないが基礎が強固であればあるほど、表層のデザインは自由度が増すので、是非。&lt;/p&gt;
 
-&lt;p&gt;自動で画像を生成してくれるので、グリッドパターンが確定したら、&lt;/p&gt;
+&lt;p&gt;自動で画像を生成してくれるのでグリッドパターンが確定したら、&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;css&quot;&gt;&lt;span class=&quot;nt&quot;&gt;body&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;k&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;sx&quot;&gt;url(http://griddle.it/960-12-30)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;repeat-y&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;center&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;top&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
@@ -1013,28 +993,27 @@ Photoshopでのステップだと、グリッドを使ったり、ガイドを�
 
 &lt;p&gt;背景画像に読み込んでしまえばOK。&lt;/p&gt;
 
-&lt;p&gt;レスポンシブデザインに対応したいという方は、私のおすすめフレームワーク&lt;a href=&quot;http://lessframework.com/&quot;&gt;Less
-Framework&lt;/a&gt;を利用して、ベース(グリッドの部分だけ利用するのがおすすめ)のCSSを作成し、Less Frameworkに対応した実際にグリッドがウィンドウのサイズに合わせて変更されるこの&lt;a href=&quot;http://arnaumarch.com/en/less-grid.html&quot;&gt;JavaScript&lt;/a&gt;を組み込むと楽にできる。&lt;/p&gt;
+&lt;p&gt;レスポンシブデザインに対応したいという方は私のおすすめフレームワーク&lt;a href=&quot;http://lessframework.com/&quot;&gt;Less
+Framework&lt;/a&gt;を利用してベース(グリッドの部分だけ利用するのがおすすめ)のCSSを作成し、Less Frameworkに対応した実際にグリッドがウィンドウのサイズに合わせて変更されるこの&lt;a href=&quot;http://arnaumarch.com/en/less-grid.html&quot;&gt;JavaScript&lt;/a&gt;を組み込むと楽にできる。&lt;/p&gt;
 
-&lt;p&gt;すでに自分のレスポンシブデザインのベースがあるという場合は、Griddle.itを利用して、media
-queriesで呼び出す画像を切り替えればOK。&lt;/p&gt;
+&lt;p&gt;すでに自分のレスポンシブデザインのベースがあるという場合はGriddle.itを利用して、media queriesで呼び出す画像を切り替えればOK。&lt;/p&gt;
 
 &lt;p&gt;開発時にJSを呼び出しても問題ないという場合には、
 &lt;a href=&quot;http://bohemianalps.com/tools/grid/&quot;&gt;The Heads-Up
 Grid&lt;/a&gt;がおすすめだ。縦横のグリッドを自由に設定できる上にウィンドウサイズを検知してレスポンシブウェブデザイン用にサイズを変更してくれる。&lt;/p&gt;
 
 &lt;p&gt;また、HTML5 Boilerplateをベースに選択していて、Less
-Frameworkなどを組み込むのが面倒な場合は、Andy Clerkeの&lt;a href=&quot;http://stuffandnonsense.co.uk/projects/320andup/&quot;&gt;320 and up&lt;/a&gt;を利用するといいだろう。(モバイルファーストという概念で作られているので、若干注意が必要)&lt;/p&gt;
+Frameworkなどを組み込むのが面倒な場合はAndy Clerkeの&lt;a href=&quot;http://stuffandnonsense.co.uk/projects/320andup/&quot;&gt;320 and up&lt;/a&gt;を利用するといいだろう。(モバイルファーストという概念で作られているので、若干注意が必要)&lt;/p&gt;
 
 &lt;p&gt;さらに、レスポンシブウェブデザインでは現在のウィンドウの幅がどのサイズにあたるのかわかりづらいとちょっと面倒なので、
-&lt;a href=&quot;http://www.josscrowcroft.com/2011/code/window-size-bookmarklet/&quot;&gt;Window Size bookmarklet to test/debug CSS3 Media Queries&lt;/a&gt;のブックマークレットを利用すれば、ウィンドウサイズを知らせてくれるので、非常に便利。&lt;/p&gt;
+&lt;a href=&quot;http://www.josscrowcroft.com/2011/code/window-size-bookmarklet/&quot;&gt;Window Size bookmarklet to test/debug CSS3 Media Queries&lt;/a&gt;のブックマークレットを利用すれば、ウィンドウサイズを知らせてくれるので非常に便利。&lt;/p&gt;
 
 &lt;p&gt;ちなみにこの後のステップではCSSやHTMLを保存し、ブラウザをリフレッシュして変更を確認し〜を繰り返す。
 より時短を目指すため、&lt;a href=&quot;http://livejs.com/&quot;&gt;Live.js&lt;/a&gt;を活用することをおすすめする。&lt;br /&gt;
-このJavaScriptは、ファイルの保存を検知して、ブラウザのリロードを行わず、変更を反映するという夢のようなツール。&lt;br /&gt;
+このJavaScriptはファイルの保存を検知してブラウザのリロードを行わず、変更を反映するという夢のようなツール。&lt;br /&gt;
 ブラウザでデザインしていなくて、コーディングしている時にかなり役に立つ強力なJavaScript。&lt;/p&gt;
 
-&lt;p&gt;JSを追加したり、プロダクション用に削除したりと面倒だなと感じたら、&lt;br /&gt;
+&lt;p&gt;JSを追加したりプロダクション用に削除したりと面倒だなと感じたら、&lt;br /&gt;
 &lt;a href=&quot;http://livereload.com/&quot;&gt;LiveReload&lt;/a&gt;というMac用のアプリがおすすめだ。ブラウザの拡張機能とこのアプリさえあれば、監視するフォルダを登録したらファイルを保存したらブラウザをリロードしてくれる。&lt;br /&gt;
 ついでに、LESSやSASSなどを利用していても自動的にCSSに変換してくれる強力なアプリ。&lt;/p&gt;
 
@@ -1047,14 +1026,13 @@ Frameworkなどを組み込むのが面倒な場合は、Andy Clerkeの&lt;a hre
   &lt;li&gt;&lt;a href=&quot;http://livejs.com/&quot;&gt;Live.js&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://livereload.com/&quot;&gt;LiveReload&lt;/a&gt; (Macのみ)&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://lessframework.com/&quot;&gt;Less Framework&lt;/a&gt; + &lt;a href=&quot;http://arnaumarch.com/en/less-grid.html&quot;&gt;Less Grid&lt;/a&gt; (Less Framework利用時)&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://stuffandnonsense.co.uk/projects/320andup/&quot;&gt;320 and up&lt;/a&gt; (HTML5
-Boilerplate利用時)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://stuffandnonsense.co.uk/projects/320andup/&quot;&gt;320 and up&lt;/a&gt; (HTML5 Boilerplate利用時)&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3&gt;残りのステップは、デザインしていくだけ&lt;/h3&gt;
 
 &lt;p&gt;コンテンツなしにデザインすることができないのはPhotoshopであろうと、ブラウザでのデザインでも同じ。
-だが、画像素材や原稿がまだの場合は、想定している画像のサイズや原稿の分量などを伝えるというステップもあってもいいかも知れない。
+だが、画像素材や原稿がまだの場合は想定している画像のサイズや原稿の分量などを伝えるというステップもあってもいいかも知れない。
 (実際に私の職場では非常によくある)&lt;/p&gt;
 
 &lt;p&gt;フレキシビリティこそがブラウザでデザインすることのもっとも優れた点なので活用していこう。&lt;/p&gt;
@@ -1063,7 +1041,7 @@ Boilerplate利用時)&lt;/li&gt;
 グレーを始めとする単色だけでなく、サイズの指定はもちろん、画像のジャンルの指定すらできる優れものだ。&lt;/p&gt;
 
 &lt;p&gt;プロトタイプとして素材の提供者にブラウザで確認してもらうには十分こと足りるだろう。&lt;br /&gt;
-日本語では海外のようなLorem Ipsumテキストがないので、どうしてもダミー原稿が欲しい場合は、私は&lt;a href=&quot;http://webtools.dounokouno.com/dummytext/index.html&quot;&gt;ダミーテキストジェネレータ&lt;/a&gt;を利用している。&lt;/p&gt;
+日本語では海外のようなLorem Ipsumテキストがないのでどうしてもダミー原稿が欲しい場合は、私は&lt;a href=&quot;http://webtools.dounokouno.com/dummytext/index.html&quot;&gt;ダミーテキストジェネレータ&lt;/a&gt;を利用している。&lt;/p&gt;
 
 &lt;h2 id=&quot;tool&quot;&gt;インブラウザ デザインをより加速するオンラインツール達&lt;/h2&gt;
 
@@ -1095,7 +1073,7 @@ border-radius、box-shadow、linear-gradient、rgba、transform、transitionな�
   &lt;li&gt;&lt;a href=&quot;http://www.patternify.com/&quot;&gt;Patternify - CSS Pattern Generator&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;こちらはノイズではなく規則性のあるパターンを生成してくれるサービス。最大10pxx10pxのキャンバスと色、透明度も選択できるので、使い慣れてくると色々なパターンを作成できる。&lt;br /&gt;
+&lt;p&gt;こちらはノイズではなく規則性のあるパターンを生成してくれるサービス。最大10pxx10pxのキャンバスと色、透明度も選択できるので使い慣れてくると色々なパターンを作成できる。&lt;br /&gt;
 作成したパターンはデモ用のdata-url形式でコピーするかPNGをダウンロードできる。またパターンはURLを生成することも可能なので作ったパターンを保存することも可能。&lt;/p&gt;
 
 &lt;ul&gt;
@@ -1111,7 +1089,7 @@ Please!でもグラデーションは作成できるが、こちらはPhotoshop�
 &lt;/ul&gt;
 
 &lt;p&gt;こちらはDrop ShadowをプレビューしながらCSSを生成できるツール。やはりCSS3
-Please!でも同様の機能は提供されているが、こちらのほうが私には視覚的に理解しやすいし、数字ではなくスライダーを動かしながら調整できるところが便利。&lt;/p&gt;
+Please!でも同様の機能は提供されているが、こちらのほうが私には視覚的に理解しやすいし数字ではなくスライダーを動かしながら調整できるところが便利。&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;http://prefixr.com/&quot;&gt;Prefixr&lt;/a&gt;&lt;/li&gt;
@@ -1130,26 +1108,25 @@ Please!でも同様の機能は提供されているが、こちらのほうが�
 &lt;p&gt;CSS3はIE6-8では使えないプロパティもある。&lt;strong&gt;全てをブラウザでデザインすることは不可能だ&lt;/strong&gt;。&lt;br /&gt;
 テキスチャやCSS3では表現しづらいデザインももちろんある。&lt;br /&gt;
 &lt;strong&gt;Photoshopを絶対に使ってはならない&lt;/strong&gt;ということではない。&lt;br /&gt;
-ブラウザでデザインすることはPhotoshopでページすべてのデザインを行うよりもフレキシブルだということ、そして、現時点でそれを行うことが以前に比べれば格段に簡単になったことが大切な部分だと思ってほしい。&lt;/p&gt;
+ブラウザでデザインすることはPhotoshopでページすべてのデザインを行うよりもフレキシブルだということ、そして現時点でそれを行うことが以前に比べれば格段に簡単になったことが大切な部分だと思ってほしい。&lt;/p&gt;
 
 &lt;p&gt;Photoshopでページすべてのデザインをしていると、カラースキームを変更するのは大変。&lt;br /&gt;
 Photoshopでページすべてのデザインをしていると、フォントを変更するのは大変。&lt;br /&gt;
 Photoshopでページすべてのデザインをしていると、要素の配置1つを動かしても大変。&lt;br /&gt;
-レイヤーの管理は崩壊し、ちょっとした変更の依頼もストレスになる。&lt;br /&gt;
+レイヤーの管理は崩壊しちょっとした変更の依頼もストレスになる。&lt;br /&gt;
 もちろん、先に書いたレスポンシブウェブデザインの実現も相当な時間がかかる。&lt;/p&gt;
 
 &lt;p&gt;インブラウザ デザインではこういった部分でPhotoshopより優れている。&lt;br /&gt;
 Photoshopがインブラウザ デザインより優れている部分ももちろんある。&lt;br /&gt;
 (私にとっては十分だが)&lt;a href=&quot;http://www.pixelmator.com/&quot;&gt;Pixelmator&lt;/a&gt;も、レイヤースタイルに対応した&lt;a href=&quot;http://flyingmeat.com/acorn/&quot;&gt;Acorn&lt;/a&gt;もPhotoshopがデファクトになってきた強力な機能やユーザビリティにはまだ少し距離がある。&lt;br /&gt;
-ここで最も大切なことは、Photoshopでのデザインプロセスにも疑問を投げかける時代が来たということ。&lt;/p&gt;
+ここで最も大切なことはPhotoshopでのデザインプロセスにも疑問を投げかける時代が来たということ。&lt;/p&gt;
 
-&lt;p&gt;よりプロダクティブになることがウェブデザイナのタスクの1つで、そうすることでより優れた問題解決を提案できる。作ることそのものよりどうやって問題を解決するべきか、を考える時間を作り出していくことが大切なこと。&lt;/p&gt;
+&lt;p&gt;よりプロダクティブになることがウェブデザイナのタスクの1つでそうすることでより優れた問題解決を提案できる。作ることそのものよりどうやって問題を解決するべきか、を考える時間を作り出していくことが大切なこと。&lt;/p&gt;
 
 &lt;p&gt;ブラウザでデザインすること。&lt;br /&gt;
 このプロセス、ツールセットにバージョンをつけるとしたら、1.0RCといったところだろう。&lt;br /&gt;
-CS5.5になるほどイテレーションを繰り返しすばらしいプロダクトを提供してきたAdobe
-Photoshopと比べればまだまだ始まったばかり。&lt;br /&gt;
-このプロセス/ツールセットのバージョンアップを行うのは、ウェブデザイナたちの役割だ。&lt;/p&gt;
+CS5.5になるほどイテレーションを繰り返しすばらしいプロダクトを提供してきたAdobe Photoshopと比べればまだまだ始まったばかり。&lt;br /&gt;
+このプロセス/ツールセットのバージョンアップを行うのはウェブデザイナたちの役割だ。&lt;/p&gt;
 
 &lt;h2 id=&quot;link&quot;&gt;参考リンク&lt;/h2&gt;
 
@@ -1181,16 +1158,16 @@ Photoshopと比べればまだまだ始まったばかり。&lt;br /&gt;
 			<content type="html">
 				&lt;h2 id=&quot;whatis&quot;&gt;パフォーマンス最適化の意味&lt;/h2&gt;
 
-&lt;p&gt;ハードウェアの値段が下がり、ネットの接続環境も高速化していく。ブラウザも高速化を競い合っている。&lt;br /&gt;
+&lt;p&gt;ハードウェアの値段が下がりネットの接続環境も高速化していく。ブラウザも高速化を競い合っている。&lt;br /&gt;
 それでもなお、GoogleもYahoo!、FacebookもTwitterもページのロード時間を短縮するテクニックを生み出している。&lt;/p&gt;
 
 &lt;p&gt;なぜだろうか？&lt;/p&gt;
 
-&lt;p&gt;もちろん、カスタマの満足度を上げ、終局的には売り上げに貢献するからだ。&lt;/p&gt;
+&lt;p&gt;もちろんカスタマの満足度を上げ、終局的には売り上げに貢献するからだ。&lt;/p&gt;
 
-&lt;p&gt;GoogleもYahoo!も世界で1位2位を争うほどすばらしいデータセンタを所有しているのだから、早くて当たり前。
+&lt;p&gt;GoogleもYahoo!も世界で1位2位を争うほどすばらしいデータセンタを所有しているのだから早くて当たり前。
 なんて思っていないだろうか？
-ページのロード時間の80%はフロントエンドで最適化できる。バックエンドが重要ではないとは言わないが、我々フロントエンドデベロッパのもっとも大切なタスクの1つがページの最適化。&lt;/p&gt;
+ページのロード時間の80%はフロントエンドで最適化できる。バックエンドが重要ではないとは言わないが我々フロントエンドデベロッパのもっとも大切なタスクの1つがページの最適化。&lt;/p&gt;
 
 &lt;h2 id=&quot;why&quot;&gt;ページのロード時間で失うモノ&lt;/h2&gt;
 
@@ -1207,16 +1184,16 @@ Photoshopと比べればまだまだ始まったばかり。&lt;br /&gt;
 
 &lt;p&gt;を失うとある。  &lt;/p&gt;
 
-&lt;p&gt;さらに、3秒待たされると57%のカスタマはサイトから離脱し、そのうち80%のユーザはそのサイトへ戻ってこず、そのうち50%がネガティブな経験を他の人にも共有する。&lt;br /&gt;
-もっと加えると、平均的にユーザは実際のロード時間より15%ほど追加でロードにかかっていると感じ、人にその話をする場合、実際のロード時間より35%遅いと伝えている。&lt;/p&gt;
+&lt;p&gt;さらに、3秒待たされると57%のカスタマはサイトから離脱しそのうち80%のユーザはそのサイトへ戻ってこず、そのうち50%がネガティブな経験を他の人にも共有する。&lt;br /&gt;
+もっと加えると平均的にユーザは実際のロード時間より15%ほど追加でロードにかかっていると感じ、人にその話をする場合、実際のロード時間より35%遅いと伝えている。&lt;/p&gt;
 
-&lt;p&gt;3クリックルールにはもう意味がないかも知れないが、3秒ルールは実際に存在する。  &lt;/p&gt;
+&lt;p&gt;3クリックルールにはもう意味がないかも知れないが3秒ルールは実際に存在する。  &lt;/p&gt;
 
 &lt;h2 id=&quot;souders&quot;&gt;Steve Soudersの教え&lt;/h2&gt;
 
 &lt;p&gt;元Yahoo!のパフォーマンス担当責任者であり、現在はGoogleで働くSteve Soudersの&lt;a href=&quot;http://www.oreilly.co.jp/books/9784873113616/&quot;&gt;ハイパフォーマンスWebサイト&lt;/a&gt;はこのトピックの中で確実に読んでおくべき本。
 彼が作り出した14のルールはYahoo!のYSlowのチェック項目にもなっているので見たことがあるはずだ。&lt;br /&gt;
-GoogleのPageSpeedでも近しいチェック項目を持っているので、それぞれの項目が何を意味して、それがどうしてページロード時間の最適化につながるかについて覚えておくことをおすすめする。&lt;/p&gt;
+GoogleのPageSpeedでも近しいチェック項目を持っているのでそれぞれの項目が何を意味して、それがどうしてページロード時間の最適化につながるかについて覚えておくことをおすすめする。&lt;/p&gt;
 
 &lt;h2 id=&quot;check&quot;&gt;最適化チェックツール&lt;/h2&gt;
 
@@ -1225,20 +1202,19 @@ GoogleのPageSpeedでも近しいチェック項目を持っているので、�
   &lt;li&gt;
     &lt;p&gt;&lt;a href=&quot;http://code.google.com/speed/page-speed/&quot;&gt;Page Speed&lt;/a&gt;&lt;/p&gt;
 
-    &lt;p&gt;先ほどもその名前が出てきたが、この2つは絶対に必要なブラウザ拡張。Firefox+Firebugでも利用できるが、今では両方ともChromeでも動作する。Page
-Speedは&lt;a href=&quot;http://pagespeed.googlelabs.com/&quot;&gt;オンラインバージョン&lt;/a&gt;も公開され、モバイルでもチェックができる。&lt;/p&gt;
+    &lt;p&gt;先ほどもその名前が出てきたがこの2つは絶対に必要なブラウザ拡張。Firefox+Firebugでも利用できるが今では両方ともChromeでも動作する。Page
+Speedは&lt;a href=&quot;http://pagespeed.googlelabs.com/&quot;&gt;オンラインバージョン&lt;/a&gt;も公開されモバイルでもチェックができる。&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;a href=&quot;http://gtmetrix.com/&quot;&gt;GTmetrix&lt;/a&gt;&lt;/p&gt;
 
-    &lt;p&gt;こちらはYSlowとPage
-Speedを同時にチェックするオンラインツール。ブックマークレットも配布されている。&lt;/p&gt;
+    &lt;p&gt;こちらはYSlowとPage Speedを同時にチェックするオンラインツール。ブックマークレットも配布されている。&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;a href=&quot;http://loads.in/&quot;&gt;loads.in&lt;/a&gt;&lt;/p&gt;
 
-    &lt;p&gt;せっかく最適化しても、結果をコンスタントなテスト環境でチェックできなければ意味がない。&lt;br /&gt;
-Loads.inでは珍しく日本のサーバからのロード時間をテストしてくれる。ついでにブラウザ別の結果も見ることができるので、おすすめのオンラインツール。&lt;/p&gt;
+    &lt;p&gt;せっかく最適化しても結果をコンスタントなテスト環境でチェックできなければ意味がない。&lt;br /&gt;
+Loads.inでは珍しく日本のサーバからのロード時間をテストしてくれる。ついでにブラウザ別の結果も見ることができるのでおすすめのオンラインツール。&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -1250,7 +1226,6 @@ Loads.inでは珍しく日本のサーバからのロード時間をテストし
   &lt;li&gt;オンラインツール: &lt;a href=&quot;http://spritegen.website-performance.org/&quot;&gt;CSS Sprite Generator&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Ruby(ターミナルから利用): &lt;a href=&quot;https://github.com/merbjedi/sprite&quot;&gt;merbjedi/sprite - GitHub&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;SASS連携: &lt;a href=&quot;http://www.hagenburger.net/BLOG/Lemonade-CSS-Sprites-for-Sass-Compass.html&quot;&gt;Generate CSS Sprites on the Fly with Lemonade&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Adobe Air: &lt;a href=&quot;http://collamo.jp/tonttu&quot;&gt;Tonttu for Adobe® AIR™&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3&gt;JavaScriptとCSSの結合と縮小化&lt;/h3&gt;
@@ -1289,19 +1264,18 @@ Boilerplateの.htaccessを利用するだけでYSlowのスコアが15ポイン�
 
 &lt;h2 id=&quot;aboutspeed&quot;&gt;スピードについて&lt;/h2&gt;
 
-&lt;p&gt;つい先日FireFox4がリリースされたが、Chromeのスピードには及ばない。SafariもOperaも起動速度に関してはかなり気を使っているし、ページのレンダリングに関しても同様。&lt;br /&gt;
-毎日確実に利用するものだからこそ、スピードが大事。ということだろう。  &lt;/p&gt;
+&lt;p&gt;つい先日FireFox4がリリースされたがChromeのスピードには及ばない。SafariもOperaも起動速度に関してはかなり気を使っているしページのレンダリングに関しても同様。&lt;br /&gt;
+毎日確実に利用するものだからこそスピードが大事。ということだろう。  &lt;/p&gt;
 
 &lt;p&gt;ウェブサイトも同様にスピードが大事。&lt;br /&gt;
-Googleのページランクに関わるからでも、上に書いた実質的なロスでもかまわない、どうにかしてページロード速度の最適化が大切であるかをステークホルダと共有し、実践してほしい。&lt;br /&gt;
-もちろん個人サイトでどんな風にやっていくべきかを実験するのもいいだろう。  &lt;/p&gt;
+Googleのページランクに関わるからでも上に書いた実質的なロスでもかまわない、どうにかしてページロード速度の最適化が大切であるかをステークホルダと共有し実践してほしい。&lt;br /&gt;
+もちろん個人サイトでどんな風にやっていくべきかを実験するのもいいだろう。&lt;/p&gt;
 
 &lt;p&gt;私自身かなり気を使って最適化をしている。
-このサイトは海外のサーバなので日本では少しレスポンスが遅く、他の個人サイトと同様Amazon
-S3に移行する予定だ。  &lt;/p&gt;
+このサイトは海外のサーバなので日本では少しレスポンスが遅く他の個人サイトと同様Amazon S3に移行する予定だ。  &lt;/p&gt;
 
-&lt;p&gt;すると、.htaccessが使えないので、Rakeを使って自動化を行うよう調整中。
-Amazonのクラウドサービスを使ってみるというのもいい経験になったし、Rakeによるビルド/デプロイの自動化もツールとして昇華しやすいので会社でも役に立つと思っている。&lt;/p&gt;
+&lt;p&gt;すると、.htaccessが使えないのでRakeを使って自動化を行うよう調整中。
+Amazonのクラウドサービスを使ってみるというのもいい経験になったしRakeによるビルド/デプロイの自動化もツールとして昇華しやすいので会社でも役に立つと思っている。&lt;/p&gt;
 
 				&lt;hr /&gt;
 				&lt;h5&gt;Elsewhere&lt;/h5&gt;
@@ -1327,12 +1301,12 @@ Amazonのクラウドサービスを使ってみるというのもいい経験�
 CSSは追加してほしい仕様はあるけど、壊れている、とまでは感じない。プログラミングの何たるかをまったく理解していなかった私にも簡単に覚えられた。  &lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://sass-lang.com/&quot;&gt;SASS&lt;/a&gt;や&lt;a href=&quot;http://lesscss.org/&quot;&gt;LESS&lt;/a&gt;のようなCSSの拡張が完全に悪だとは思わないが、絶対に必要だとも感じない。&lt;br /&gt;
-でも、知っておくともっとシンプルに、もっとパワフルに、もっと素早くCSSを書くことができる、プラスアルファの便利ツールであることは間違いない。  &lt;/p&gt;
+でも知っておくともっとシンプルに、もっとパワフルに、もっと素早くCSSを書くことができるプラスアルファの便利ツールであることは間違いない。  &lt;/p&gt;
 
-&lt;p&gt;実際このブログでも、ほかの幾つかの個人プロジェクトでは私はLESSを使い始めている。&lt;br /&gt;
+&lt;p&gt;実際このブログでもほかの幾つかの個人プロジェクトでは私はLESSを使い始めている。&lt;br /&gt;
 SASSもLESSもほぼ同じ概念で、ほぼ同じ文法で書かれているが、LESSはJSを使ってダイナミックにCSSへ変換してくれたりもでき、すこしだけ開発時に楽をできるので私はLESSを選んだ。&lt;br /&gt;
-もちろん、今話題の&lt;a href=&quot;http://nodejs.org/&quot;&gt;Node.js&lt;/a&gt;でも利用できるという点もはやり好きモノの私にはぴったりだ。&lt;br /&gt;
-ちなみに、SASSでも&lt;/p&gt;
+もちろん今話題の&lt;a href=&quot;http://nodejs.org/&quot;&gt;Node.js&lt;/a&gt;でも利用できるという点もはやり好きモノの私にはぴったりだ。&lt;br /&gt;
+ちなみにSASSでも&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;sh&quot;&gt;sass --watch style.scss:style.css
 &lt;/code&gt;&lt;/pre&gt;
@@ -1343,10 +1317,10 @@ SASSもLESSもほぼ同じ概念で、ほぼ同じ文法で書かれているが
 &lt;h2 id=&quot;feature&quot;&gt;LESSでできること&lt;/h2&gt;
 
 &lt;p&gt;LESSでは、&lt;strong&gt;変数&lt;/strong&gt;、&lt;strong&gt;ミックスイン&lt;/strong&gt;、&lt;strong&gt;入れ子ルール&lt;/strong&gt;、&lt;strong&gt;名前空間&lt;/strong&gt;、&lt;strong&gt;四則演算と関数&lt;/strong&gt;などをCSSに追加することができる。&lt;br /&gt;
-プログラミングの経験があるなら、それぞれ覚えがあるだろう機能達ばかりで、CSSには存在しない機能。&lt;/p&gt;
+プログラミングの経験があるならそれぞれ覚えがあるだろう機能達ばかりでCSSには存在しない機能。&lt;/p&gt;
 
-&lt;p&gt;オフィシャルサイトに詳しく利用法については説明があるので、詳細は&lt;a href=&quot;http://lesscss.org/&quot;&gt;こちら&lt;/a&gt;を確認してほしい。&lt;br /&gt;
-もちろん英語なので、日本語訳が必要な場合はメールか&lt;a href=&quot;http://twitter.com/#!/cssradar&quot;&gt;Twitter@cssradar&lt;/a&gt;でリクエストを。&lt;/p&gt;
+&lt;p&gt;オフィシャルサイトに詳しく利用法については説明があるので詳細は&lt;a href=&quot;http://lesscss.org/&quot;&gt;こちら&lt;/a&gt;を確認してほしい。&lt;br /&gt;
+もちろん英語なので日本語訳が必要な場合はメールか&lt;a href=&quot;http://twitter.com/#!/cssradar&quot;&gt;Twitter@cssradar&lt;/a&gt;でリクエストを。&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;変数&lt;/strong&gt;&lt;/li&gt;
@@ -1377,7 +1351,7 @@ SASSもLESSもほぼ同じ概念で、ほぼ同じ文法で書かれているが
 
 &lt;p&gt;&lt;strong&gt;@+変数名&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;で定義できる。正確には変数というよりは、定数に近い使われ方をしている。  &lt;/p&gt;
+&lt;p&gt;で定義できる。正確には変数というよりは定数に近い使われ方をしている。  &lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;css&quot;&gt;&lt;span class=&quot;k&quot;&gt;@var&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;red&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 
@@ -1394,14 +1368,14 @@ SASSもLESSもほぼ同じ概念で、ほぼ同じ文法で書かれているが
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;ただし、プログラミング言語と同じくスコープがあり、上記のようにローカルに定義がない場合は、親ルールから定義を探し、それでもなければグローバルを探すように作られている。&lt;br /&gt;
-このスコープに関しては変数だけではなく、ミックスインの定義についても同様に扱われる。&lt;/p&gt;
+&lt;p&gt;ただしプログラミング言語と同じくスコープがあり上記のようにローカルに定義がない場合は、親ルールから定義を探しそれでもなければグローバルを探すように作られている。&lt;br /&gt;
+このスコープに関しては変数だけではなくミックスインの定義についても同様に扱われる。&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;strong&gt;ミックスイン&lt;/strong&gt;&lt;/p&gt;
 
-    &lt;p&gt;こちらも実際にどのようにLESSで記述し、実際にCSSでどのように解釈されるのかを見た方が早いだろう。&lt;/p&gt;
+    &lt;p&gt;こちらも実際にどのようにLESSで記述し実際にCSSでどのように解釈されるのかを見た方が早いだろう。&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -1435,14 +1409,14 @@ SASSもLESSもほぼ同じ概念で、ほぼ同じ文法で書かれているが
 
 &lt;p&gt;CSS3を利用する場合、まだまだ多くのベンダープリフィックスを追加しなければいけないのが現実。&lt;br /&gt;
 そんな際にこのミックスインは威力を発揮する。&lt;br /&gt;
-ミックスインはパラメータを渡したり、デフォルトを定義することもできるので、使い回しが効く機能でもある。&lt;br /&gt;
-詳しい説明は、&lt;a href=&quot;http://lesscss.org/#-parametric-mixins&quot;&gt;こちら&lt;/a&gt;から。&lt;/p&gt;
+ミックスインはパラメータを渡したりデフォルトを定義することもできるので、使い回しが効く機能でもある。&lt;br /&gt;
+詳しい説明は&lt;a href=&quot;http://lesscss.org/#-parametric-mixins&quot;&gt;こちら&lt;/a&gt;から。&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;strong&gt;入れ子ルール&lt;/strong&gt;&lt;/p&gt;
 
-    &lt;p&gt;変数やミックスインももちろん強力な追加機能ではあるが、私の一番のお気に入りがこの入れ子ルール。  &lt;/p&gt;
+    &lt;p&gt;変数やミックスインももちろん強力な追加機能ではあるが私の一番のお気に入りがこの入れ子ルール。  &lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -1471,10 +1445,10 @@ SASSもLESSもほぼ同じ概念で、ほぼ同じ文法で書かれているが
 &lt;/div&gt;
 
 &lt;p&gt;というように記述することができる。&lt;br /&gt;
-何度もセレクタを書かずに済むだけではなく、DOMの構造とほぼ同じ構造になるし、なにより、このように記述することを覚えるとキレイにセレクタを整理する癖がつく。&lt;br /&gt;
-なお、&lt;strong&gt;&amp;amp;:hover&lt;/strong&gt;という記述があるが、こちらは疑似クラス(:link、:visited、:hover、:focusなど)を追加するのに活躍する。&lt;br /&gt;
-&lt;strong&gt;&amp;amp;&lt;/strong&gt;という結合子は、入れ子になったセレクタを子孫として扱わず、親セレクタに追加することができる。&lt;br /&gt;
-なので、疑似クラスだけではなく、&lt;/p&gt;
+何度もセレクタを書かずに済むだけではなくDOMの構造とほぼ同じ構造になるし、なによりこのように記述することを覚えるとキレイにセレクタを整理する癖がつく。&lt;br /&gt;
+なお、&lt;strong&gt;&amp;amp;:hover&lt;/strong&gt;という記述があるがこちらは疑似クラス(:link、:visited、:hover、:focusなど)を追加するのに活躍する。&lt;br /&gt;
+&lt;strong&gt;&amp;amp;&lt;/strong&gt;という結合子は、入れ子になったセレクタを子孫として扱わず親セレクタに追加することができる。&lt;br /&gt;
+なので疑似クラスだけではなく、&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;css&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.float.left&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
@@ -1513,21 +1487,21 @@ SASSもLESSもほぼ同じ概念で、ほぼ同じ文法で書かれているが
   &lt;li&gt;
     &lt;p&gt;&lt;strong&gt;四則演算と関数&lt;/strong&gt;&lt;/p&gt;
 
-    &lt;p&gt;こちらは使ったことがまだないので、&lt;a href=&quot;http://lesscss.org/#-color-functions&quot;&gt;オフィシャルサイトで例&lt;/a&gt;を見てほしい。&lt;/p&gt;
+    &lt;p&gt;こちらは使ったことがまだないので&lt;a href=&quot;http://lesscss.org/#-color-functions&quot;&gt;オフィシャルサイトで例&lt;/a&gt;を見てほしい。&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;mixin&quot;&gt;便利なミックスインのコレクション&lt;/h2&gt;
 
-&lt;p&gt;自分がよく利用するルールのミックスインを定義しておけば、飛躍的にCSSの開発はスピードアップする。&lt;br /&gt;
-フロントエンドデベロッパやウェブデザイナはいつだって時間が足りない職種なので、自分なりのコレクションを作って、&lt;a href=&quot;https://gist.github.com/&quot;&gt;Gist&lt;/a&gt;などに置いておくと便利だ。&lt;/p&gt;
+&lt;p&gt;自分がよく利用するルールのミックスインを定義しておけば飛躍的にCSSの開発はスピードアップする。&lt;br /&gt;
+フロントエンドデベロッパやウェブデザイナはいつだって時間が足りない職種なので自分なりのコレクションを作って&lt;a href=&quot;https://gist.github.com/&quot;&gt;Gist&lt;/a&gt;などに置いておくと便利だ。&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;http://markdotto.com/bootstrap/&quot;&gt;Bootstrap.less&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://lesselements.com/&quot;&gt;LESS Elements&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;すでに便利なミックスインを公開している人もいるので、それらから自分の派生を作るほうが早いかも知れないので、ソースを見てみるといいだろう。&lt;/p&gt;
+&lt;p&gt;すでに便利なミックスインを公開している人もいるのでそれらから自分の派生を作るほうが早いかも知れないのでソースを見てみるといいだろう。&lt;/p&gt;
 
 &lt;h2 id=&quot;usage&quot;&gt;使い方&lt;/h2&gt;
 
@@ -1559,10 +1533,10 @@ SASSもLESSもほぼ同じ概念で、ほぼ同じ文法で書かれているが
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;この記述をHTMLに追記しておけばlessファイルが保存されると、CSSがリフレッシュなしに変更が適応される。&lt;br /&gt;
-毎回毎回リフレッシュするのは面倒な上、意外と時間の無駄なので、開発中はぜひ利用してほしい。&lt;/p&gt;
+&lt;p&gt;この記述をHTMLに追記しておけばlessファイルが保存されるとCSSがリフレッシュなしに変更が適応される。&lt;br /&gt;
+毎回毎回リフレッシュするのは面倒な上意外と時間の無駄なので、開発中はぜひ利用してほしい。&lt;/p&gt;
 
-&lt;p&gt;なお、URLの末尾に&lt;strong&gt;#!watch&lt;/strong&gt;としても同じことができるので、開発後に記述を削除するのを忘れそうな人は、こちらをおすすめする。&lt;/p&gt;
+&lt;p&gt;なお、URLの末尾に&lt;strong&gt;#!watch&lt;/strong&gt;としても同じことができるので開発後に記述を削除するのを忘れそうな人は、こちらをおすすめする。&lt;/p&gt;
 
 &lt;h2 id=&quot;compile&quot;&gt;CSSへのコンパイル&lt;/h2&gt;
 
@@ -1572,7 +1546,7 @@ SASSもLESSもほぼ同じ概念で、ほぼ同じ文法で書かれているが
 SASSではJavaで動作するクロスプラットフォームのUIがある。(&lt;a href=&quot;http://compass.handlino.com/&quot;&gt;Compass.app&lt;/a&gt;)&lt;/p&gt;
 
 &lt;p&gt;私はnode.jsをコマンドラインから利用してLESSをCSSに展開している。&lt;br /&gt;
-node.jsは恐ろしいほどのスピードで開発が進んでいるので、どの環境でも簡単にインストールすることができるようになってきた。&lt;/p&gt;
+node.jsは恐ろしいほどのスピードで開発が進んでいるのでどの環境でも簡単にインストールすることができるようになってきた。&lt;/p&gt;
 
 &lt;p&gt;node.jsのインストールについては&lt;a href=&quot;https://github.com/joyent/node/wiki/Installation&quot;&gt;こちら&lt;/a&gt;を参考に。&lt;/p&gt;
 
@@ -1629,8 +1603,8 @@ node.jsは恐ろしいほどのスピードで開発が進んでいるので、�
 
 &lt;p&gt;52 Weeks of UXによると、UXデザイナにとって&lt;strong&gt;なくてはならない&lt;/strong&gt;モノであり、IAのベストフレンド、とさえある。(&lt;a href=&quot;http://52weeksofux.com/post/866406780/wireframing-is-not-a-religion&quot;&gt;Wireframing is not a religion&lt;/a&gt;)&lt;/p&gt;
 
-&lt;p&gt;私が現在働いている会社にはもちろん、UXデザイナという職種もないし、IAという職種もない。デザイナがその一部を担っている。&lt;br /&gt;
-私にとってもワイヤフレームはなくてはならないツールであり、ベストフレンド。現在担当しているプロジェクトでは、この数週間に60以上のワイヤフレームを作成している。&lt;br /&gt;
+&lt;p&gt;私が現在働いている会社にはもちろんUXデザイナという職種もないし、IAという職種もない。デザイナがその一部を担っている。&lt;br /&gt;
+私にとってもワイヤフレームはなくてはならないツールでありベストフレンド。現在担当しているプロジェクトではこの数週間に60以上のワイヤフレームを作成している。&lt;br /&gt;
 まだ一度もPhotoshopを開く事なく、ワイヤフレームをベースにしたプロトタイプも4ページほど作成してある。&lt;br /&gt;
 どんな見た目になるのかはまだ誰もわからないが、どんなコンテンツがどこに必要で、どんなアクションがいつ必要なのかについては、共通の認識を持っている。
 これこそがワイヤフレームの強みであり、存在意義。&lt;/p&gt;
@@ -1640,31 +1614,31 @@ node.jsは恐ろしいほどのスピードで開発が進んでいるので、�
 &lt;p&gt;見てみないとわからない。&lt;br /&gt;
 デザイナとして働いている私自身、外部のデザイナに仕事を依頼している場合に、そんな台詞を言うことがある。&lt;/p&gt;
 
-&lt;p&gt;誰でもデザインについては、それぞれの主観を持つことができる。&lt;/p&gt;
+&lt;p&gt;誰でもデザインについてはそれぞれの主観を持つことができる。&lt;/p&gt;
 
-&lt;p&gt;どこかで、見てみないとわからない、という人は、レストランでも食べてみないと注文できないのか、というようなことを言っている場面に出くわしたことがあるが、では、国産イノシシのシヴュや、オーストラリア産仔羊肉のナバラン仕立てとメニューにあったら、どれくらいの人がどんな味の料理が出てくるかわかるか？&lt;br /&gt;
+&lt;p&gt;どこかで見てみないとわからない、という人は、レストランでも食べてみないと注文できないのか、というようなことを言っている場面に出くわしたことがあるが、では、国産イノシシのシヴュや、オーストラリア産仔羊肉のナバラン仕立てとメニューにあったら、どれくらいの人がどんな味の料理が出てくるかわかるか？&lt;br /&gt;
 私はいまだにポワレがなんだかも覚えられないくらいはフランス料理に詳しくはないから、私には無理だ。&lt;br /&gt;
-でも、そんな料理を饗してくれるレストランには、それらがどんな料理なのか素人にもわかるように教えてくれるその道のプロフェッショナルがいるから、訊けばわかる。少なくとも想像することを手助けしてくれる。&lt;/p&gt;
+でも、そんな料理を饗してくれるレストランには、それらがどんな料理なのか素人にもわかるように教えてくれるその道のプロフェッショナルがいるから訊けばわかる。少なくとも想像することを手助けしてくれる。&lt;/p&gt;
 
 &lt;p&gt;ワイヤフレームは&lt;em&gt;差異と類似を明確にする&lt;/em&gt;ツール。
 &lt;a href=&quot;http://uxmovement.com/wireframes/how-to-get-clients-to-approve-your-wireframes-every-time&quot;&gt;How to Get Clients to Approve Your Wireframes Every Time@UX Movement&lt;/a&gt;でも言及されているが、
 リデザイン前のデザインと、より効果的だと考えているワイヤフレームを比較することで違いを提示する。クライアントの要望に近しいデザインとの類似をワイヤフレームで提示する。
-この2つの比較はPhotoshopで作成した精度の高いモックアップでも可能だ。しかし、ワイヤフレームのフットワークの良さは、より効率的にパターンを生み出す原動力になる。&lt;br /&gt;
-幾つかのワイヤフレームのパターンの中で、差異や類似を提示することももちろんできる。&lt;/p&gt;
+この2つの比較はPhotoshopで作成した精度の高いモックアップでも可能だ。しかし、ワイヤフレームのフットワークの良さはより効率的にパターンを生み出す原動力になる。&lt;br /&gt;
+幾つかのワイヤフレームのパターンの中で差異や類似を提示することももちろんできる。&lt;/p&gt;
 
 &lt;h2 id=&quot;otherusage&quot;&gt;もう1つのワイヤフレームの使用法&lt;/h2&gt;
 
 &lt;p&gt;ワイヤフレームは思考を助けるツールでもある。
 思考を集約することも、拡張することも、とても自然に行うことができる。&lt;br /&gt;
-最前この数週間で60以上のワイヤフレームを作ったと書いたけれど、その内、私自身もプロジェクトメンバも納得できる状態になっているのは4枚くらいだ。&lt;br /&gt;
+最前この数週間で60以上のワイヤフレームを作ったと書いたけれど、その内私自身もプロジェクトメンバも納得できる状態になっているのは4枚くらいだ。&lt;br /&gt;
 その4枚については、合わせて10回以上は繰り返して変更を加えてきている。&lt;br /&gt;
 私が実際にワイヤフレームを作成している時間は非常に短い。Photoshopで高精度なモックアップを60枚作り、4枚を10回以上は修正する、なんてただの悪夢でしかない。
-人は誰でも、ある事柄に費やした時間に比例して、その事柄に愛着を持ってしまう習性がある。&lt;br /&gt;
-デザイナやコーダにとって、修正はいつだってつらいのはそのためだ。たとえその修正が圧倒的に効果的だと思っていても、いつでも芽生えた愛着と天秤にかける自分がいる。&lt;br /&gt;
-だからこそ、素早く作成も修正も行うことができるワイヤフレームの作成方法を模索する必要がある。&lt;/p&gt;
+人は誰でもある事柄に費やした時間に比例してその事柄に愛着を持ってしまう習性がある。&lt;br /&gt;
+デザイナやコーダにとって修正はいつだってつらいのはそのためだ。たとえその修正が圧倒的に効果的だと思っていても、いつでも芽生えた愛着と天秤にかける自分がいる。&lt;br /&gt;
+だからこそ素早く作成も修正も行うことができるワイヤフレームの作成方法を模索する必要がある。&lt;/p&gt;
 
-&lt;p&gt;また、デザインは問題を解決するための手段であるとよく言われる。ワイヤフレームは問題を見つけ出す手段でもあるところが大きな違い。&lt;br /&gt;
-迷子になっている人が、今自分がどこにいるのか把握できないのと同じく、問題を明確にできなければ、解決することは不可能。
+&lt;p&gt;またデザインは問題を解決するための手段であるとよく言われる。ワイヤフレームは問題を見つけ出す手段でもあるところが大きな違い。&lt;br /&gt;
+迷子になっている人が、今自分がどこにいるのか把握できないのと同じく、問題を明確にできなければ解決することは不可能。
 その問題を浮き彫りにするためのツールとしてもワイヤフレームは有効だ。&lt;/p&gt;
 
 &lt;h2 id=&quot;tool&quot;&gt;ワイヤフレームツール&lt;/h2&gt;
@@ -1675,15 +1649,15 @@ node.jsは恐ろしいほどのスピードで開発が進んでいるので、�
 &lt;p&gt;私が利用しているのは、&lt;a href=&quot;http://balsamiq.com/&quot;&gt;Balsamiq&lt;/a&gt;。手書き風のワイヤフレームを簡単に作成できるAdobe
 Airアプリ。環境を選ばないし、ライセンス1つで自分が使用している端末なら数に制限無くインストールできる。&lt;br /&gt;
 $79とやや高額な価格設定かと思うかも知れないが、幾つかのツールを試用してみて、マニュアルなしでも利用できる手軽さと、意外なまでに拡張性がある部分を評価して購入した。&lt;br /&gt;
-今やBalsamiqでワイヤフレームだけではなく、ワークフローやサイトマップも作成したりもするようになり、Balsamiqを使わない日はない。&lt;/p&gt;
+今やBalsamiqでワイヤフレームだけではなく、ワークフローやサイトマップも作成したりもするようになりBalsamiqを使わない日はない。&lt;/p&gt;
 
 &lt;p&gt;多くのウェブアプリも存在するジャンルではあるが、私はブラウザで作業するのがやや苦手なのでデスクトップアプリに絞って探したが、
 &lt;a href=&quot;https://gomockingbird.com/&quot;&gt;gomockingbird&lt;/a&gt;やFirefoxのアドオンとしても動作する&lt;a href=&quot;http://pencil.evolus.vn/en-US/Home.aspx&quot;&gt;Pencil Project&lt;/a&gt;なども試してみるといいだろう。&lt;/p&gt;
 
 &lt;p&gt;デスクトップアプリでBalsamiqと最後まで悩んだのが、&lt;a href=&quot;http://www.flairbuilder.com/&quot;&gt;flairbuilder&lt;/a&gt;。こちらはbalsamiqよりも高機能で実際に動作するプロトタイプを作成できる強みがある。
-ただワイヤフレームアプリにおいては、シンプルさを優先した方が確実に効率的だということで、Balsamiqを選択した。&lt;/p&gt;
+ただワイヤフレームアプリにおいてはシンプルさを優先した方が確実に効率的だということでBalsamiqを選択した。&lt;/p&gt;
 
-&lt;p&gt;もちろん、使い慣れたPhotoshopやFireworksなども工夫をすれば、かなり効率的にワイヤフレームを作ることができるはずだ。  &lt;/p&gt;
+&lt;p&gt;もちろん使い慣れたPhotoshopやFireworksなども工夫をすれば、かなり効率的にワイヤフレームを作ることができるはずだ。  &lt;/p&gt;
 
 &lt;h2 id=&quot;doc&quot;&gt;ドキュメントとしてのワイヤフレーム&lt;/h2&gt;
 
@@ -1695,13 +1669,13 @@ If the wireframe starts as a wireframe and then morphs into the actual design, g
 &lt;/blockquote&gt;
 
 &lt;p&gt;とある、&lt;br /&gt;
-要約すると、ワイヤフレームを単純なドキュメントとして作成するなら、ワイヤフレームの存在に意味はなく、本当のデザインに変化していくなら、作るべきだということ。&lt;/p&gt;
+要約すると、ワイヤフレームを単純なドキュメントとして作成するならワイヤフレームの存在に意味はなく本当のデザインに変化していくなら作るべきだということ。&lt;/p&gt;
 
 &lt;p&gt;ドキュメンテーションはどんな職種でも必要になるアウトプットの1つだと思うが、デザイナも例外無く成果物の1つとしてドキュメントがあるだろう。
 ワイヤフレームはデザイナのドキュメントとしてはもっとも視覚的なドキュメントになるはずなので、ないよりはあった方がインパクトがあるかも知れないが、
-37Signalsの記事で言及されているように、デザインに昇華しないワイヤフレームは単純に時間の無駄なので、その時間を追加のパターンの作成や、追加の修正に費やした方がいい。&lt;/p&gt;
+37Signalsの記事で言及されているように、デザインに昇華しないワイヤフレームは単純に時間の無駄なのでその時間を追加のパターンの作成や、追加の修正に費やした方がいい。&lt;/p&gt;
 
-&lt;p&gt;私にとっては、思考を手助けしてくれるツールの側面がまずあり、そこからデザインへの昇華は自然なフローとなっているので、ワイヤフレームは飛ばすことができないタスクの1つ。&lt;/p&gt;
+&lt;p&gt;私にとっては思考を手助けしてくれるツールの側面がまずあり、そこからデザインへの昇華は自然なフローとなっているのでワイヤフレームは飛ばすことができないタスクの1つ。&lt;/p&gt;
 
 &lt;h2 id=&quot;link&quot;&gt;参考リンク&lt;/h2&gt;
 
@@ -1735,8 +1709,7 @@ If the wireframe starts as a wireframe and then morphs into the actual design, g
 私も個人のプロジェクト、仕事でのプロジェクトともに、それぞれに少しだけカスタマイズを行うだけで開発を始めることができるディレクトリを持っている。  &lt;/p&gt;
 
 &lt;p&gt;今回紹介する(おそらくすでに紹介するまでもないほど知られているが)&lt;a href=&quot;http://html5boilerplate.com/&quot;&gt;HTML5 BOILERPLATE&lt;/a&gt;は、Paul IrishとDivya Manianを中心として生み出された膨大な量の知見を詰め込んだHTML5を使ったプロジェクト用のスタートポイント。&lt;br /&gt;
-知っての通り、HTML5を使い始めるのは決して今からでも&lt;strong&gt;早すぎるということは決してない&lt;/strong&gt;が、HTML5に対応するなんてまだ先、と思っていても、このHTML5
-BOILERPLATEに詰め込まれたベスト中のベストプラクティスを吸収しておけば、現在のプロジェクトもより盤石にすることができるはずだ。&lt;/p&gt;
+知っての通りHTML5を使い始めるのは決して今からでも&lt;strong&gt;早すぎるということは決してない&lt;/strong&gt;が、HTML5に対応するなんてまだ先、と思っていても、このHTML5 BOILERPLATEに詰め込まれたベスト中のベストプラクティスを吸収しておけば、現在のプロジェクトもより盤石にすることができるはずだ。&lt;/p&gt;
 
 &lt;h2 id=&quot;feature&quot;&gt;HTML5 Boilerplateの特筆すべき5つのポイント&lt;/h2&gt;
 
@@ -1840,12 +1813,12 @@ Macをメインで使い始める前、たっぷり3年以上もUbuntuというL
 Script&lt;/a&gt;が追加され、フロントエンドデベロッパの間でも、自前のオートメーションを作ることが当たり前になってきそうな流れもある。
 そんなタイミングだからこそ、ターミナルを使いこなせる人になろうと、こんな時代に提言したい。&lt;/p&gt;
 
-&lt;p&gt;私のように家ではMacで会社ではWindowsという人も多いだろう、今回はMacについての紹介になるが、きっかけさえつかんでしまえば、どうにかなる。ちなみに私はWindowsでは&lt;a href=&quot;http://www.cygwin.com/&quot;&gt;Cygwin&lt;/a&gt;を&lt;a href=&quot;http://sourceforge.net/projects/console/&quot;&gt;Console&lt;/a&gt;から利用している。&lt;/p&gt;
+&lt;p&gt;私のように家ではMacで会社ではWindowsという人も多いだろう、今回はMacについての紹介になるがきっかけさえつかんでしまえばどうにかなる。ちなみに私はWindowsでは&lt;a href=&quot;http://www.cygwin.com/&quot;&gt;Cygwin&lt;/a&gt;を&lt;a href=&quot;http://sourceforge.net/projects/console/&quot;&gt;Console&lt;/a&gt;から利用している。&lt;/p&gt;
 
 &lt;h2 id=&quot;custom&quot;&gt;まずは見た目からカスタマイズ&lt;/h2&gt;
 
-&lt;p&gt;私はGUIアプリでも、たとえそれがいかに便利でも見た目が悪いと長続きしないタチ。本末転倒かもしれないが、そんな性格がウェブデザイナとしての自分を支えていると思い込んでいる。&lt;br /&gt;
-だからこそ、ターミナルにも見た目を要求したい。&lt;/p&gt;
+&lt;p&gt;私はGUIアプリでも、たとえそれがいかに便利でも見た目が悪いと長続きしないタチ。本末転倒かもしれないがそんな性格がウェブデザイナとしての自分を支えていると思い込んでいる。&lt;br /&gt;
+だからこそターミナルにも見た目を要求したい。&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -1857,8 +1830,8 @@ Macでは&lt;a href=&quot;http://sites.google.com/site/iterm2home/&quot;&gt;iTer
   &lt;li&gt;
     &lt;p&gt;&lt;a href=&quot;https://gist.github.com/824504&quot;&gt;.bashrc&lt;/a&gt;(リンク先は私が利用している.bashrcファイルの一部)&lt;/p&gt;
 
-    &lt;p&gt;デフォルトでTerminalを開くと、黒い背景に白い文字。あまりにも地味なので、私はもう少しだけカラフルにしている。&lt;br /&gt;
-そのついでに&lt;a href=&quot;/tool/2011/01/29/git-version-control/&quot;&gt;Git&lt;/a&gt;をターミナルで使いやすくなるように、ブランチ名や変更を知らせてくれるマークもカラーをつけて表示している。&lt;/p&gt;
+    &lt;p&gt;デフォルトでTerminalを開くと黒い背景に白い文字。あまりにも地味なので私はもう少しだけカラフルにしている。&lt;br /&gt;
+そのついでに&lt;a href=&quot;/tool/2011/01/29/git-version-control/&quot;&gt;Git&lt;/a&gt;をターミナルで使いやすくなるようにブランチ名や変更を知らせてくれるマークもカラーをつけて表示している。&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -1885,7 +1858,7 @@ MacVimを利用している人なら見覚えがある.(ドット)ファイル�
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;Git用のカスタマイズは上記の部分。こちらだけでも.bashrcファイルの最後の方に追加しておけば、設定終了。&lt;br /&gt;
+&lt;p&gt;Git用のカスタマイズは上記の部分。こちらだけでも.bashrcファイルの最後の方に追加しておけば設定終了。&lt;br /&gt;
 もし.bashrcファイルが見当たらないようであれば、&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;touch ~/.bashrc
@@ -1928,42 +1901,34 @@ open ~/.bashrc
   &lt;li&gt;
     &lt;p&gt;&lt;strong&gt;cd&lt;/strong&gt; &lt;/p&gt;
 
-    &lt;p&gt;Change Directoryの略。&lt;code&gt;cd
-DIR_NAME&lt;/code&gt;のように、移動したいディレクトリ名を入力する。&lt;br /&gt;
-&lt;code&gt;Tab&lt;/code&gt;を使って、オートコンプリートできるし。&lt;code&gt;cd DIR_NAME/CHILD_DIR_NAME&lt;/code&gt;というようにさらに深い階層へもいける、/の後も数文字タイプしたらきちんとオートコンプリートしてくれる。&lt;br /&gt;
-&lt;code&gt;cd ..&lt;/code&gt;とすれば親ディレクトリに移動、&lt;code&gt;cd
-~&lt;/code&gt;とすればルートディレクトリに移動となる。&lt;/p&gt;
+    &lt;p&gt;Change Directoryの略。&lt;code&gt;cd DIR_NAME&lt;/code&gt;のように、移動したいディレクトリ名を入力する。&lt;br /&gt;
+&lt;code&gt;Tab&lt;/code&gt;を使ってオートコンプリートできるし。&lt;code&gt;cd DIR_NAME/CHILD_DIR_NAME&lt;/code&gt;というようにさらに深い階層へもいける、/の後も数文字タイプしたらきちんとオートコンプリートしてくれる。&lt;br /&gt;
+&lt;code&gt;cd ..&lt;/code&gt;とすれば親ディレクトリに移動、&lt;code&gt;cd ~&lt;/code&gt;とすればルートディレクトリに移動となる。&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;pwd&lt;/strong&gt; / 現在のディレクトリを表示してくれる。ふと迷子になりがちなので便利&lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;strong&gt;ls&lt;/strong&gt;&lt;/p&gt;
 
     &lt;p&gt;ディレクトリ内のファイル、ディレクトリを表示するコマンド。&lt;br /&gt;
-&lt;code&gt;ls
-DIR_NAME&lt;/code&gt;とすれば、DIR_NAMEの中のファイル、ディレクトリを表示しれくてる。&lt;br /&gt;
-&lt;code&gt;ls
--l&lt;/code&gt;とすると、ファイル、ディレクトリの詳細の情報つきでリスト表示しれくてる。&lt;/p&gt;
+&lt;code&gt;ls DIR_NAME&lt;/code&gt;とすれば、DIR_NAMEの中のファイル、ディレクトリを表示。&lt;br /&gt;
+&lt;code&gt;ls -l&lt;/code&gt;とすると、ファイル、ディレクトリの詳細の情報つきでリスト表示。&lt;/p&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;touch&lt;/strong&gt; / ファイルを作成するコマンド。&lt;code&gt;touch
-style.css&lt;/code&gt;とすれば、現在のディレクトリにstyle.cssを生成してくれる。&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;open&lt;/strong&gt;
-/ こちらはファイルやディレクトリを関連づけしてあるアプリで開いてくれるコマンド。&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;mkdir&lt;/strong&gt; / ディレクトリを生成するコマンド。&lt;code&gt;mkdir
-DIR_NAME&lt;/code&gt;でDIR_NAMEというディレクトリを作成できる。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;touch&lt;/strong&gt; / ファイルを作成するコマンド。&lt;code&gt;touch style.css&lt;/code&gt;とすれば現在のディレクトリにstyle.cssを生成してくれる。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;open&lt;/strong&gt; / こちらはファイルやディレクトリを関連づけしてあるアプリで開いてくれるコマンド。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;mkdir&lt;/strong&gt; / ディレクトリを生成するコマンド。&lt;code&gt;mkdir DIR_NAME&lt;/code&gt;でDIR_NAMEというディレクトリを作成できる。&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;まだまだたくさんのコマンドがあるが、私が安心して利用できる基本コマンドはこれくらいだ。ファイルをコピーしたり、削除したりするコマンドは不安が残るので少し慣れたら使い始めるといいだろう。&lt;br /&gt;
-とりあえずのところは、&lt;code&gt;open
-DIR_NAME&lt;/code&gt;としてFinderを立ち上げてコピーや削除をすれば問題ない。&lt;/p&gt;
+とりあえずのところは、&lt;code&gt;open DIR_NAME&lt;/code&gt;としてFinderを立ち上げてコピーや削除をすれば問題ない。&lt;/p&gt;
 
 &lt;h2 id=&quot;package&quot;&gt;パッケージマネジャ&lt;/h2&gt;
 
-&lt;p&gt;Bashだけでももちろん協力なツールではあるが、せっかくだからもっとたくさん機能を追加してみたい。&lt;br /&gt;
-RubyやPython、Javaなどコマンドラインでも使える強力なツールがあるが、これらのツールを管理するのはとても大変。そのために&lt;strong&gt;パッケージマネジャ&lt;/strong&gt;が必要になってくる。&lt;/p&gt;
+&lt;p&gt;Bashだけでももちろん協力なツールではあるがせっかくだからもっとたくさん機能を追加してみたい。&lt;br /&gt;
+RubyやPython、Javaなどコマンドラインでも使える強力なツールがあるがこれらのツールを管理するのはとても大変。そのために&lt;strong&gt;パッケージマネジャ&lt;/strong&gt;が必要になってくる。&lt;/p&gt;
 
-&lt;p&gt;Macにはデフォルトで使えるパッケージマネジャはインストールされていない。MacPortやFink、そして今回紹介するHomebrewがマックではデファクトとされている。&lt;/p&gt;
+&lt;p&gt;Macにはデフォルトで使えるパッケージマネジャはインストールされていない。MacPortやFink、そして今回紹介するHomebrewがMacではデファクトとされている。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://mxcl.github.com/homebrew/&quot;&gt;Homebrew&lt;/a&gt;はシンプルで強力な、新しい世代のパッケージマネジャ。非常に簡単にインストールできるし、利用も簡単なので、初心者にはもってこいのパッケージマネジャ。&lt;br /&gt;
+&lt;p&gt;&lt;a href=&quot;http://mxcl.github.com/homebrew/&quot;&gt;Homebrew&lt;/a&gt;はシンプルで強力な新しい世代のパッケージマネジャ。非常に簡単にインストールできるし利用も簡単なので、初心者にはもってこいのパッケージマネジャ。&lt;br /&gt;
 私はHomebrewでgitをインストールし直した。こちらのほうがアップデートが簡単にできるということで。&lt;/p&gt;
 
 &lt;h3&gt;Homebrewのインストール&lt;/h3&gt;
@@ -1977,39 +1942,33 @@ RubyやPython、Javaなどコマンドラインでも使える強力なツール
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;以上でインストールが完了する。&lt;/p&gt;
-
-&lt;p&gt;早速インストールが終わっているか確認してみよう。&lt;/p&gt;
+&lt;p&gt;以上でインストールが完了する。&lt;br /&gt;
+早速インストールが終わっているか確認してみよう。&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;brew --version&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;0.7.1らしいバージョンナンバが表示されれば問題ない。&lt;/p&gt;
-
-&lt;p&gt;それでは、早速ツールをインストールしてみよう。&lt;/p&gt;
+&lt;p&gt;0.7.1らしいバージョンナンバが表示されれば問題ない。&lt;br /&gt;
+それでは早速ツールをインストールしてみよう。&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;brew install curl&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;curlはさまざまなプロトコルを用いてデータを転送するライブラリ。(by &lt;a href=&quot;http://ja.wikipedia.org/wiki/CURL&quot;&gt;Wikipedia
 cURL&lt;/a&gt;)&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;brew
-search&lt;/code&gt;とすれば、インストールできるツールの一覧を表示してくてる。&lt;code&gt;brew
-list&lt;/code&gt;とすると、インストールされているツールの一覧を表示してくれる。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;brew search&lt;/code&gt;とすればインストールできるツールの一覧を表示。&lt;code&gt;brew list&lt;/code&gt;とするとインストールされているツールの一覧を表示。&lt;/p&gt;
 
-&lt;p&gt;英語ではあるが、brewのコマンドは&lt;a href=&quot;https://github.com/mxcl/homebrew/wiki/The-brew-command&quot;&gt;こちら&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;英語ではあるがbrewのコマンドは&lt;a href=&quot;https://github.com/mxcl/homebrew/wiki/The-brew-command&quot;&gt;こちら&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;ターミナルの世界へようこそ&lt;/h2&gt;
 
-&lt;p&gt;ここまでできたら、すっかりコマンド使いっぽく見える。コマンドラインになれてきたら次のステップはオートメーション。&lt;br /&gt;
-私はRubyのRakeを使って、いろいろなタスクを自動化しはじめている。&lt;br /&gt;
-興味があれば、まずはHTML5 Boilerplateの&lt;a href=&quot;https://github.com/paulirish/html5-boilerplate/wiki/Build-script&quot;&gt;Build
-Script&lt;/a&gt;について調べてみるといいだろう。&lt;br /&gt;
-現時点では、HTMLを圧縮したり、CSSをコンバインして圧縮したり、Jpeg、PNGのファイルサイズを最適化したりと実に様々なフロントエンドなタスクを自動化している。HTML5 Boilerplateではantというビルドツールを活用している。  &lt;/p&gt;
+&lt;p&gt;ここまでできたらすっかりコマンド使いっぽく見える。コマンドラインになれてきたら次のステップはオートメーション。&lt;br /&gt;
+私はRubyのRakeを使っていろいろなタスクを自動化しはじめている。&lt;br /&gt;
+興味があれば、まずはHTML5 Boilerplateの&lt;a href=&quot;https://github.com/paulirish/html5-boilerplate/wiki/Build-script&quot;&gt;Build Script&lt;/a&gt;について調べてみるといいだろう。&lt;br /&gt;
+現時点ではHTMLを圧縮したり、CSSをコンバインして圧縮したり、Jpeg、PNGのファイルサイズを最適化したりと実に様々なフロントエンドなタスクを自動化している。HTML5 Boilerplateではantというビルドツールを活用している。  &lt;/p&gt;
 
-&lt;p&gt;Rubyでは&lt;a href=&quot;https://github.com/flyerhzm/css_sprite&quot;&gt;CSS
-Spriteを自動化&lt;/a&gt;したりすることもできるようなので、あの30分はかかりそうな面倒なspriteも自動で行うことができるわけだ。&lt;/p&gt;
+&lt;p&gt;Rubyでは&lt;a href=&quot;https://github.com/flyerhzm/css_sprite&quot;&gt;CSS Spriteを自動化&lt;/a&gt;したりすることもできるようなのであの30分はかかりそうな面倒なspriteも自動で行うことができるわけだ。&lt;/p&gt;
 
-&lt;p&gt;どこかの本で読んだことの受け売りだが、60分かかるタスクがあるとしたら、59分かけてそのタスクを行うスクリプトを書いて、1分で実行する。これからのウェブデザイン/フロントエンドデベロッパにはそんな心構えが必要になってくるだろう。&lt;/p&gt;
+&lt;p&gt;どこかの本で読んだことの受け売りだが60分かかるタスクがあるとしたら、59分かけてそのタスクを行うスクリプトを書いて、1分で実行する。これからのウェブデザイン/フロントエンドデベロッパにはそんな心構えが必要になってくるだろう。&lt;/p&gt;
 
 				&lt;hr /&gt;
 				&lt;h5&gt;Elsewhere&lt;/h5&gt;
@@ -2108,7 +2067,7 @@ git config --global user.email メールアドレス@example.com
   &lt;li&gt;ホワイトスペースを無視する&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Gitではホワイトスペース1つを追加しても、ファイルを変更したと認識される(Rubyではホワイトスペースは大事)が、大抵の場合、ホワイトスペース1つでコミットする、ということもないだろう。&lt;/p&gt;
+&lt;p&gt;Gitではホワイトスペース1つを追加してもファイルを変更したと認識される(Rubyではホワイトスペースは大事)が、大抵の場合、ホワイトスペース1つでコミットする、ということもないだろう。&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;git config --global apply.whitespace nowarn
 &lt;/code&gt;&lt;/pre&gt;
@@ -2118,16 +2077,16 @@ git config --global user.email メールアドレス@example.com
   &lt;li&gt;すべてのGitレポジトリに無視ファイルを適応&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Macなら.DS_Store(普段は見えないけれど、Gitは認識する)など、OSが自動で生成するファイルとか、毎回.gitignore(無視リストファイル)を、レポジトリに追加したり、その.gitignoreをコミットしたりするのは面倒。&lt;/p&gt;
+&lt;p&gt;Macなら.DS_Store(普段は見えないけれどGitは認識する)など、OSが自動で生成するファイルとか、毎回.gitignore(無視リストファイル)をレポジトリに追加したり、その.gitignoreをコミットしたりするのは面倒。&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;git config --global core.excludesfile ~/.gitignore
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;このコマンドのままだと、ホームディレクトリに.gitignoreがあるから–globalで読んでねという意味になる。&lt;br /&gt;
-私はこのファイルを&lt;a href=&quot;http://db.tt/jxIW2Rp&quot;&gt;Dropbox&lt;/a&gt;を使って、すべての環境で同じファイルを見るようにしている。&lt;/p&gt;
+&lt;p&gt;このコマンドのままだとホームディレクトリに.gitignoreがあるから–globalで読んでねという意味になる。&lt;br /&gt;
+私はこのファイルを&lt;a href=&quot;http://db.tt/jxIW2Rp&quot;&gt;Dropbox&lt;/a&gt;を使ってすべての環境で同じファイルを見るようにしている。&lt;/p&gt;
 
-&lt;p&gt;Dropboxにdotというディレクトリを作成し、その下に.gitignoreファイルを作成してる&lt;/p&gt;
+&lt;p&gt;Dropboxにdotというディレクトリを作成しその下に.gitignoreファイルを作成してる&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;git config --global core.excludesfile /Users/&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;ユーザディレクトリ&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;/Dropbox/dot/.gitignore
 &lt;/code&gt;&lt;/pre&gt;
@@ -2181,7 +2140,7 @@ Icon?
 &lt;p&gt;既存のレポジトリをクローンしない場合、&lt;code&gt;git init&lt;/code&gt;はgitのスタートを告げるコマンド。&lt;br /&gt;
 作業ディレクトリに対して.gitディレクトリを作成する。  &lt;/p&gt;
 
-&lt;p&gt;Macユーザ、恐れるなかれ、.gitディレクトリ、だけではないが.(ドット)から始まるファイル、ディレクトリは普通はFinderには見えない隠し要素になる。&lt;br /&gt;
+&lt;p&gt;Macユーザ恐れるなかれ、.gitディレクトリ、だけではないが.(ドット)から始まるファイル、ディレクトリは普通はFinderには見えない隠し要素になる。&lt;br /&gt;
 Terminalで&lt;code&gt;ls&lt;/code&gt;とすれば、きちんと存在が確認できる。&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;defaults write com.apple.finder AppleShowAllFiles TRUE
@@ -2207,7 +2166,7 @@ killall Finder
 私は大概&lt;code&gt;git add .&lt;/code&gt;としてしまう。最後の.(ドット)は、まだレポジトリに追加されていないファイル全部、という意味だ。&lt;br /&gt;
 もちろん、&lt;code&gt;git add ファイル名&lt;/code&gt;としてファイルを1つづつ追加することも可能。&lt;/p&gt;
 
-&lt;p&gt;※readme.mdというテキストファイルを追加して、そこにプロジェクトの概要などを書き留めておくと、便利だ。.mdはMarkdownというライトウェイトマークアップ言語の拡張子。こちらについては、別記事で紹介する予定。&lt;/p&gt;
+&lt;p&gt;※readme.mdというテキストファイルを追加して、そこにプロジェクトの概要などを書き留めておくと、便利だ。.mdはMarkdownというライトウェイトマークアップ言語の拡張子。&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;code&gt;git commit&lt;/code&gt;&lt;/li&gt;
@@ -2598,8 +2557,7 @@ Radarでは一般的なブログと異なり1度更新した記事でも可能�
 &lt;p&gt;フロントエンドデベロッパが日々立ち向かう技術的な問題はGoogleで検索すれば解決方法がすぐに見つかる時代。
 最新の情報はTwitterやFacebookで自分の信頼できるソースを選んで得る事ができる時代。&lt;/p&gt;
 
-&lt;p&gt;そんな時代に私なりのベストプラクティスを収集し集約して紹介するのがCSS
-Radarの編集方針としています。&lt;/p&gt;
+&lt;p&gt;そんな時代に私なりのベストプラクティスを収集し集約して紹介するのがCSS Radarの編集方針としています。&lt;/p&gt;
 
 &lt;h2 id=&quot;about-me&quot;&gt;私自身について&lt;/h2&gt;
 
@@ -2612,7 +2570,7 @@ HTMLとCSSが私のメインエリアで、JSを書いたり、Smartyなどの�
 
 &lt;ul&gt;
   &lt;li&gt;OS: Mac OSX(自宅)、Windows7(会社)&lt;/li&gt;
-  &lt;li&gt;エディタ: Vim&lt;/li&gt;
+  &lt;li&gt;エディタ: Vim (&lt;a href=&quot;https://github.com/studiomohawk/vim&quot;&gt;.vimrc&lt;/a&gt;)&lt;/li&gt;
   &lt;li&gt;ブラウザ: Google Chrome、Firefox(デバッグ専用)&lt;/li&gt;
   &lt;li&gt;イヤフォン: Sony MDR-CD900ST(家)、Sennheiser IE 8(外)&lt;/li&gt;
 &lt;/ul&gt;
@@ -2621,7 +2579,9 @@ HTMLとCSSが私のメインエリアで、JSを書いたり、Smartyなどの�
 
 &lt;p&gt;CSS Radarではなかなか新しい記事が更新されません。&lt;br /&gt;
 最新の情報は&lt;a href=&quot;https://twitter.com/intent/user?user_id=107867741&quot;&gt;Twitter@cssradar&lt;/a&gt;にて1日5件以内で紹介しています。&lt;br /&gt;
-また&lt;a href=&quot;http://tinyletter.com/cssradar&quot;&gt;CSS Radar Newsletter&lt;/a&gt;にて1週間分のつぶやきをまとめてメールマガジンとしてまとめています。&lt;/p&gt;
+また&lt;a href=&quot;http://tinyletter.com/cssradar&quot;&gt;CSS Radar Newsletter&lt;/a&gt;にて1週間分のつぶやきをまとめてメールマガジンとしてまとめています。&lt;br /&gt;
+Google+でCSS
+Radar用のページも作成してみましたので&lt;a href=&quot;https://plus.google.com/u/0/b/109704095110060909968/&quot;&gt;こちら&lt;/a&gt;でも。&lt;/p&gt;
 
 &lt;p&gt;記事への質問、リクエストなどは、&lt;a href=&quot;https://twitter.com/intent/user?user_id=107867741&quot;&gt;Twitter@cssradar&lt;/a&gt;か、cssradar+ask@gmail.comにて受け付けているのでお気軽にどうぞ。&lt;/p&gt;
 

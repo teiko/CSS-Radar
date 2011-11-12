@@ -19,19 +19,17 @@ toc:
 
 ## Jekyllとは {#whatis}
 
-Amazon S3にて静的ファイルによるウェブサイトを構築できるようになり、Amazon Web
-Serviceが日本リージョンを追加したことで、これからJekyllのような静的ファイルジェネレータを使ったブログが日本でも増えるのではないか。  
+Amazon S3にて静的ファイルによるウェブサイトを構築できるようになり、Amazon Web Serviceが日本リージョンを追加したことで、これからJekyllのような静的ファイルジェネレータを使ったブログが日本でも増えるのではないか。  
 
-Jekyllといえば、このCSS
-Radarも今年1月からwordpressを離れ、Jekyllを使ってブログを構築している。  
+Jekyllといえば、このCSS Radarも今年1月からwordpressを離れ、Jekyllを使ってブログを構築している。  
 (残念ながらまだAmazon S3でのホストはしていない)  
 
-Amazon Web Service勉強会でも、JekyllとAmazon S3についての発表があった。([usteam](http://www.ustream.tv/recorded/14269210))  
-そこで、今回はRubyでも、コマンドラインでも初心者である私でもつくれるようになったJekyllについて紹介しよう。
+Amazon Web Service勉強会でもJekyllとAmazon S3についての発表があった。([usteam](http://www.ustream.tv/recorded/14269210))  
+そこで、今回はRubyでもコマンドラインでも初心者である私でもつくれるようになったJekyllについて紹介しよう。
 
 ## 開発環境の準備 {#prepare}
 
-JekyllはRubyで作成されているので、当然ながらRubyが必要。  
+JekyllはRubyで作成されているので当然ながらRubyが必要。  
 Rubyの導入については、[ウェブデザイナのためのRuby](http://css.studiomohawk.com/tool/2011/05/14/ruby_for_designer_frontend_dev/)を参考にしてほしい。
 
 Rubyの準備ができたら、
@@ -40,18 +38,16 @@ Rubyの準備ができたら、
 gem install jekyll
 {% endhighlight %}
 
-*パーミッションがどうの、というエラーがでたら、``sudo gem instal
-jekyll``とすればインストールできるはず。
+*パーミッションがどうのというエラーがでたら、``sudo gem instal jekyll``とすればインストールできるはず。
 
-CSS
-RadarではHTMLやら、CSSなどのソースコードの表示もあるので、Pygmentsを使ってシンタックスハイライトを行っている。  
-Homebrewを使っているなら、インストールは簡単。
+CSS RadarではHTMLやら、CSSなどのソースコードの表示もあるので、Pygmentsを使ってシンタックスハイライトを行っている。  
+Homebrewを使っているならインストールは簡単。
 
 {% highlight sh %}
 brew install pip && pip install pygments
 {% endhighlight %}
 
-としてから、Homebrewでは実行ファイルにsymlinkがつかないそうで、下記を実行してsymlinkをつくる
+としてから、Homebrewでは実行ファイルにsymlinkがつかないそうで下記を実行してsymlinkをつくる
 
 {% highlight sh %}
 ln -s /usr/local/Cellar/python/2.7/bin/pygmentize /usr/local/bin/pygmentize
@@ -82,7 +78,7 @@ ln -s /usr/local/Cellar/python/2.7/bin/pygmentize /usr/local/bin/pygmentize
 
 ### 記事の作成
 
-Jekyllでは、記事の作成は.markdown、または.textileという軽量マークアップ言語の文法で記述されたプレーンテキストファイルで行う。  
+Jekyllでは、記事の作成は.markdownまたは.textileという軽量マークアップ言語の文法で記述されたプレーンテキストファイルで行う。  
 ``$YEAR-$MONTH-$DATE-$TITLE.$FORMAT``という形式で、\_postsフォルダに格納されたファイルをJekyllがプロセスしてくれる。  
 
 例えば、2011年5月14日に作成したウェブデザイナのためのRuby入門という記事なら、``2011-05-22-ruby-for-designer.markdown``というファイル名になる。  
@@ -101,14 +97,13 @@ date: 2011-06-11 13:39:28
 今回の記事のYAML front matterが上記。  
 layoutでは、\_layoutsに作成したテンプレート定義ファイルを設定し、  
 categoryにはカテゴリ、titleにはもちろんタイトル、そしてdateには更新日を記述することができる。  
-ここで必須になるのは、layoutとtitleの2ヶ所のみとなり、YAML front
-matterで設定した項目は、記事であればその記事内のテンプレート定義ファイル内の変数として利用することが可能。
+ここで必須になるのは、layoutとtitleの2ヶ所のみとなり、YAML front matterで設定した項目は、記事であればその記事内のテンプレート定義ファイル内の変数として利用することが可能。
 
 ## テンプレートの作成 {#template}
 
 それではテンプレートの作成について見てみよう。
 
-テンプレート定義ファイルは何の変哲もないHTMLで記述される。例外は記事ファイル内のYAML front matterに記述するlayoutの部分で利用する、テンプレート名をこちらも同じく、
+テンプレート定義ファイルは何の変哲もないHTMLで記述される。例外は記事ファイル内のYAML front matterに記述するlayoutの部分で利用するテンプレート名をこちらも同じく、
 
 {% highlight sh %}
 ---
@@ -116,8 +111,7 @@ layout: post
 ---
 {% endhighlight %}
 
-というようにYAML front
-matterとして記述するという点と、後述するLiquidというテンプレートエンジンを利用して記事部分のレンダリングなどを行ったりするという点が異なる。　　
+というようにYAML front matterとして記述するという点と、後述するLiquidというテンプレートエンジンを利用して記事部分のレンダリングなどを行ったりするという点が異なる。　　
 
 wordpressでもそうだが、この手のテンプレファイル系は実際にファイル自体を見た方が早い。  
 私が公開しているJekyll用テーマファイル、[the_minimumの記事用レイアウトファイル](https://github.com/studiomohawk/jekyll-theme-the_minimum/blob/master/_layouts/post.html)を見ながら、
@@ -125,9 +119,9 @@ wordpressでもそうだが、この手のテンプレファイル系は実際�
 
 ## Liquidについて {#liquid}
 
-Liquidは非常にシンプルなテンプレートエンジンで、これまでwordpressに慣れてきた場合は少し物足りなく感じるかもしれないが、その代わり覚えるのは簡単。
-Liquidで利用できるタグについては、[こちら](https://github.com/tobi/liquid/wiki/liquid-for-designers)を参考に、  
-また、Jekyllで利用できるLiquidの拡張タグについては、[こちら](https://github.com/mojombo/jekyll/wiki/Liquid-Extensions)。
+Liquidは非常にシンプルなテンプレートエンジンで、これまでwordpressに慣れてきた場合は少し物足りなく感じるかもしれないがその代わり覚えるのは簡単。
+Liquidで利用できるタグについては[こちら](https://github.com/tobi/liquid/wiki/liquid-for-designers)を参考に、  
+またJekyllで利用できるLiquidの拡張タグについては[こちら](https://github.com/mojombo/jekyll/wiki/Liquid-Extensions)。
 
 先ほどのthe_minimumのpost.htmlを見ながらLiquidテンプレートタグで必須になるもタグと、便利なタグについて紹介しよう。
 
@@ -138,22 +132,21 @@ Liquidで利用できるタグについては、[こちら](https://github.com/t
 <script src="https://gist.github.com/1021118.js?file=liquid.html"></script>
 
 インクルードはメンテナンスのために覚えておきたいタグで、  
-オフィシャルページにもあまり説明のないページネーションについてはもっともシンプルな例ながら、利用できるタグについてはほぼ網羅しているので、カスタマイズする際の参考になれば。
+オフィシャルページにもあまり説明のないページネーションについてはもっともシンプルな例ながら利用できるタグについてはほぼ網羅しているので、カスタマイズする際の参考になれば。
 
 ## \_config.ymlの設定 {#config}
 
-ここで利用できる値はほぼ無限にあるものの、まずはオフィシャルを参考にしてほしい。
+ここで利用できる値はほぼ無限にあるもののまずはオフィシャルを参考にしてほしい。
 [https://github.com/mojombo/jekyll/wiki/Configuration](https://github.com/mojombo/jekyll/wiki/Configuration)
 
-\_config.ymlは非常に強力で、オフィシャルで使えるとしている設定以外にも自由に設定を拡張できる。  
+\_config.ymlは非常に強力でオフィシャルで使えるとしている設定以外にも自由に設定を拡張できる。  
 こちらについても、[the_minimumのファイルを参考にしてほしい](https://github.com/studiomohawk/jekyll-theme-the_minimum/blob/master/_config.yml)。
 
 \_config.ymlで設定した値はテンプレートファイル内で、
 
 ``site.項目``  
 
-のように呼び出す事ができる。例えば、the_minimumで設定したGoogle
-Analytics用IDを格納する``ga``を呼び出す場合は、
+のように呼び出す事ができる。例えば、the_minimumで設定したGoogle Analytics用IDを格納する``ga``を呼び出す場合は、
 
 ``site.ga``
 
@@ -162,10 +155,10 @@ Analytics用IDを格納する``ga``を呼び出す場合は、
 
 ## ページの作り方 {#page}
 
-wordpressでは単一ページを作成し、aboutページなどを作成してきたという人もいることだろう。  
+wordpressでは単一ページを作成しaboutページなどを作成してきたという人もいることだろう。  
 Jekyllでも単一ページを作成することが可能。
 
-ページの作成方法についてもやはりシンプル設計で、トップページにあたる部分``index.html``(トップページも単一ページ)と同じ階層にhtmlファイルを設置すればOK。  
+ページの作成方法についてもやはりシンプル設計でトップページにあたる部分``index.html``(トップページも単一ページ)と同じ階層にhtmlファイルを設置すればOK。  
 こちらはCSS Radarのファイルを覗いてみてほしい。
 
 - [404ページ](https://github.com/studiomohawk/CSS-Radar/blob/master/404.html)
@@ -177,24 +170,24 @@ Jekyllでも単一ページを作成することが可能。
 Jekyllでは``\_layouts``、``\_posts``、``_site``のみが必須のフォルダと先ほど書いたが、Liquidの説明部分で書いたようにインクルードファイルを格納する、``_include``フォルダや、Jekyllに拡張機能を追加するための、``_plugins``フォルダを作成することができる。アンダーバーがフォルダ名の頭にある場合、Jekyllはそれらをシステムファイルとして扱い、プロセスの際にそれらフォルダも見に行くようになっている。  
 
 アンダーバーがついていないフォルダはJekyllとしては何の処理もしないが、きちんと``\_site``フォルダへ移動してくれる。  
-なので、CSSやJavascript、そして画像などを格納するフォルダを、それぞれ、``style``、``script``、``image``というようにして、ファイルを格納しておこう。
+なので、CSSやJavascript、そして画像などを格納するフォルダをそれぞれ、``style``、``script``、``image``というようにしてファイルを格納しておこう。
 
 ## ローカル環境でプレビュー {#preview}
 
-このチュートリアル中に新たにデザインを作成し、Jekyll用にコーディングを完成するのは難しいと思うので、ここから先はすでに作成した私のthe_minimumをダウンロードしてから実践して見てほしい。
+このチュートリアル中に新たにデザインを作成しJekyll用にコーディングを完成するのは難しいと思うので、ここから先はすでに作成した私のthe_minimumをダウンロードしてから実践して見てほしい。
 
 Jekyllではコマンドラインを利用してファイルの生成を行う。そう、デザイナには不可解な黒い画面。  
-黒い画面とはいえ、使うコマンドは片手で数えられる程度なので、問題ないし、コピペできるように記述するので、是非試してみてほしい。
+黒い画面とはいえ使うコマンドは片手で数えられる程度なので問題ないし、コピペできるように記述するので是非試してみてほしい。
 
-それでは、[the_minimumのダウンロードは終わっただろうか](https://github.com/studiomohawk/jekyll-theme-the_minimum)？  
-ターミナルを開いて、the_minimumをダウンロードしたフォルダに移動してほしい。移動は``cd``。
+それでは[the_minimumのダウンロードは終わっただろうか](https://github.com/studiomohawk/jekyll-theme-the_minimum)？  
+ターミナルを開いてthe_minimumをダウンロードしたフォルダに移動してほしい。移動は``cd``。
 
 {% highlight sh %}
 jekyll --server --auto
 {% endhighlight %}
 
 ``--server``オプションはプレビュー環境用のサーバを立ち上げ、  
-``--auto``オプションは、ローカルファイルが保存されるたびに、ファイル生成を行うオプション。
+``--auto``オプションはローカルファイルが保存されるたびにファイル生成を行うオプション。
 
 このコマンドをターミナルにて実行したら、
 
@@ -202,8 +195,8 @@ jekyll --server --auto
 
 をブラウザで見るとJekyllをローカル環境で動作させた結果を見る事ができる。  
 
-Jekyllは非常に強力なのに、シンプルで、インクルードなど便利な機能もついてくるので使い方を工夫すればすばらしいプロトタイプ作成ツールにもなるのではないかと思って、ベースとなるテンプレートを鋭意作成中。
-話は少しそれたが、思っていた以上に簡単だったのではないだろうか？
+Jekyllは非常に強力なのにシンプルでインクルードなど便利な機能もついてくるので使い方を工夫すればすばらしいプロトタイプ作成ツールにもなるのではないかと思って、ベースとなるテンプレートを鋭意作成中。
+話は少しそれたが思っていた以上に簡単だったのではないだろうか？
 
 ## サーバへのアップロード {#upload}
 
@@ -212,7 +205,7 @@ FTPを使って、``\_site``内に生成されたファイル群をアップロ�
 
 私は面倒くさがりなのでrakeを使ってrsyncでサーバとローカルファイルの同期をとっている。
 ``rake rsync:live``
-とするだけで、指定のローカルフォルダとサーバの同期がとれるようにしてある。
+とするだけで指定のローカルフォルダとサーバの同期がとれるようにしてある。
 
 ## rakeを使って自動化する {#automation}
 
@@ -221,12 +214,11 @@ Jekyllはrubyによって書かれているので、rakeを使っていつも行
 
 - *新しい記事を書く / ``rake post:new["title","category"]``*
 
-Jekyllではファイル名もルールに従って記述する必要があったり、YAML front
-matterの設定を毎回しなければならなかったりする。
+Jekyllではファイル名もルールに従って記述する必要があったり、YAML front matterの設定を毎回しなければならなかったりする。
 
 ``rake post:new["title","category"]``
 
-とするだけで、``title``からファイル名と記事のタイトルを生成し、ついでにカテゴリ名を``category``から生成してくれる。  
+とするだけで、``title``からファイル名と記事のタイトルを生成しついでにカテゴリ名を``category``から生成してくれる。  
 ``title``の方はURLの一部になるだけあって日本語は利用できない。結果、記事のタイトルは生成後に日本語に差し替える必要はある。  
 
 {% highlight ruby %}
@@ -272,7 +264,7 @@ Jekyllは静的なファイルを``\_site``ディレクトリに生成してく�
 でもどう考えても毎回FTPを使うのは面倒なので、``rsync``を使ってサーバとローカルの同期を取ってしまおう。
 
 ``rake
-rsync:dryrun``はテスト用で実際には何もサーバには同期されないが、どのファイルが同期されるかをチェックするためにある。  
+rsync:dryrun``はテスト用で実際には何もサーバには同期されないがどのファイルが同期されるかをチェックするためにある。  
 初めてrsyncする場合、正しく設定ができているのかを含めて実際のサーバ側のファイル達には影響なく実行できるのでまずはこちらでテストを。
 
 ``rake rsync:live``

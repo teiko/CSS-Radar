@@ -13,27 +13,23 @@ toc:
 
 ## Rubyはウェブデザイナに優しい {#rubyis}
 
-CSS
-Radarと名がついている割には、CSSの話があまりないなと最近になって気がついたけれど、誰も気にしちゃいないだろう。  
+CSS Radarと名がついている割にはCSSの話があまりないなと最近になって気がついたけれど、誰も気にしちゃいないだろう。  
 今回はCSSやデザインからはほど遠いように思えるRubyについて。  
-前にも書いた気がするが、私は極度の面倒くさがり。とにかく楽をするためなら、どんな苦労もいとわない。
-Rubyにチャレンジしている真っ最中ながら、色々な新しい概念に触れ、色々な新しいワザを覚え、少しずつながら、面倒なことを楽にすることもでき始めてきた。
-そこで、Rubyを少しだけ使い倒す方法を紹介しようと思い立った。
+前にも書いた気がするが私は極度の面倒くさがり。とにかく楽をするためなら、どんな苦労もいとわない。
+Rubyにチャレンジしている真っ最中ながら、色々な新しい概念に触れ、色々な新しいワザを覚え、少しずつながら面倒なことを楽にすることもでき始めてきた。
+そこでRubyを少しだけ使い倒す方法を紹介しようと思い立った。
 
 たまにはPhotoshopを離れて([私はあまり使いませんが](http://css.studiomohawk.com/webdesign/2011/04/16/designing_in_browser/))、新しいことに挑戦してみませんか？
 
-*私はRuby初心者ですので、間違っている記述や、もっと簡単にできるのに、という部分が多々あるでしょう。そんな際は是非メールをください。  
-なお、今回の記事はMac OSXでの話で、Windowsについてはまったく触れませんが、基本的な概念は同じです。
-{: .small}
+*私はRuby初心者ですので間違っている記述や、もっと簡単にできるのに、という部分が多々あるでしょう。そんな際は是非メールをください。  
+なお今回の記事はMac OSXでの話で、Windowsについてはまったく触れませんが、基本的な概念は同じです。{: .small}
 
 ## Rubyのインストール {#install}
 
-Mac OS
-XにはRubyが標準でインストールされている。でも、最新版ではなく、まれに最新版でないと動作しないプログラムもあるので、最新版をインストールしておく必要がある。
+Mac OS XにはRubyが標準でインストールされている。でも最新版ではなく、まれに最新版でないと動作しないプログラムもあるので最新版をインストールしておく必要がある。
 
-MacにおけるRubyの管理は、[RVM - Ruby Version
-Manager](https://rvm.beginrescueend.com/)がおすすめ。  
-RVMを利用するためには、gitが必須になる。gitのインストールについては、[こちらを参照してほしい](http://css.studiomohawk.com/tool/2011/01/29/git-version-control/)。
+MacにおけるRubyの管理は、[RVM - Ruby Version Manager](https://rvm.beginrescueend.com/)がおすすめ。  
+RVMを利用するためにはgitが必須になる。gitのインストールについては[こちらを参照してほしい](http://css.studiomohawk.com/tool/2011/01/29/git-version-control/)。
 
 **RVMのインストール方法**
 
@@ -56,14 +52,14 @@ sudo bash < <(curl -s https://rvm.beginrescueend.com/install/rvm)
 type rvm | head -1
 {% endhighlight %}
 
-とターミナルで実行してみる
+とターミナルで実行してみる。
 
 {% highlight sh %}
 rvm is a function
 {% endhighlight %}
 
 と返事が返ってきたら成功。
-成功したら、またターミナルにて
+成功したらまたターミナルにて
 
 {% highlight sh %}
 source ~/.rvm/scripts/rvm
@@ -75,17 +71,16 @@ source ~/.rvm/scripts/rvm
 rvm install 1.9.2-head
 {% endhighlight %}
 
-とすれば、ruby 1.9.2-headのバージョンをインストールできる。  
-ちなみに、RVMでインストールできるバージョンは
+とすればruby 1.9.2-headのバージョンをインストールできる。  
+ちなみにRVMでインストールできるバージョンは
 
 {% highlight sh %}
 rvm list known
 {% endhighlight %}
 
-とすればリストが表示されるので、表示されたパッケージを`rvm
-install`の後に記述すればそのパッケージをインストールできる。
+とすればリストが表示されるので表示されたパッケージを`rvm install`の後に記述すればそのパッケージをインストールできる。
 
-なお、RVMではバージョンごとにgemのパッケージを管理するため、さっきまで使えたはずのgemがないとエラーが出る、なんて事態に遭遇したら、
+なおRVMではバージョンごとにgemのパッケージを管理するためさっきまで使えたはずのgemがないとエラーが出る、なんて事態に遭遇したら、
 
 {% highlight sh %}
 ruby -v
@@ -95,7 +90,6 @@ ruby -v
 
 {% highlight sh %}
 rvm --default use 1.9.2 # とすると、1.9.2をデフォルトで利用しはじめ
-
 rvm use system # システムにインストールされているRubyと
 rvm default # デフォルト設定したRubyを切り替えることも可能 
 {% endhighlight %}
@@ -105,22 +99,22 @@ rvm default # デフォルト設定したRubyを切り替えることも可能
 ## Ruby Gem {#gem}
 
 RubyにはGemと呼ばれるパッケージマネージャがある。1.9系以降からはRubyの標準機能となったそうだ。  
-MacではGemも標準でインストールされていたと思うが、記憶が確かではないので確認してほしい。
+MacではGemも標準でインストールされていたと思うが記憶が確かではないので確認してほしい。
 
 {% highlight sh %}
 sudo gem update --system
 {% endhighlight %}
 
-とすると、アップデートできるので試してみてほしい。
+とするとアップデートできるので試してみてほしい。
 
-パッケージマネージャってなんだ、という点については、Ubuntuを使っていた私にはすんなり理解できたが、そうでもない人が多いのでMacでいうところの、macportやfink、homebrewみたいなライブラリ集積地みたいなものだと覚えておけばいいはず。
-*Homebrewについては、[こちらの記事](http://css.studiomohawk.com/tool/2011/02/13/terminal-101/)で紹介したので、参考にしてほしい。
+パッケージマネージャってなんだ、という点についてはUbuntuを使っていた私にはすんなり理解できたが、そうでもない人が多いのでMacでいうところの、macportやfink、homebrewみたいなライブラリ集積地みたいなものだと覚えておけばいいはず。
+*Homebrewについては、[こちらの記事](http://css.studiomohawk.com/tool/2011/02/13/terminal-101/)で紹介したので参考にしてほしい。
 
 {% highlight sh %}
 gem install PACKAGENAME
 {% endhighlight %}
 
-として、パッケージをインストールできる。  
+としてパッケージをインストールできる。  
 例えば、
 
 {% highlight sh %}
@@ -134,16 +128,16 @@ gem install rake
 ### CSS Sprite
 
 CSSスプライトはパフォーマンス向上のためには必須になるテクニックだが、作成するのも、管理するのも、メンテナンスするのもとても面倒。
-ある特定のディレクトリに画像を入れて、自動でスプライト画像を作成し、CSSもあわせて作ってくれたら。を叶えるプログラムがRubyにある。
+ある特定のディレクトリに画像を入れて自動でスプライト画像を作成しCSSもあわせて作ってくれたら。を叶えるプログラムがRubyにある。
 
 - **[merbjedi / sprite](https://github.com/merbjedi/sprite)**
 
 **インストール**
 
-`rmagick`gemが必要になるので、まずはこのgemをインストール。
+`rmagick`gemが必要になるのでまずはこのgemをインストール。
 
 {% highlight sh %}
-gem install rmagick #私はこのコマンドではエラーになったので、下記を実行してから、再度チャレンジした
+gem install rmagick #私はこのコマンドではエラーになったので、下記を実行してから再度チャレンジした
 
 # エラーになった場合は
 sudo brew install libxml2
@@ -221,18 +215,18 @@ public/
 {% endhighlight %}
 
 というようなスタイルを書き出してくれる。  
-sassのmixinも利用できるようで、設定も変更できる。
+sassのmixinも利用できるようで設定も変更できる。
 
 詳しくは[こちら](https://github.com/merbjedi/sprite)(英語)。
 
 ### SASS/LESS
 
-LESSは今ではnode.jsプロジェクトとして生まれ変わったが、最新版ではないものの、gemからインストールはできる。
-SASSについては、先日1年ぶりほどのアップデートがありアクティブにRubyプロジェクトとして成長している。
+LESSは今ではnode.jsプロジェクトとして生まれ変わったが最新版ではないものの、gemからインストールはできる。
+SASSについては先日1年ぶりほどのアップデートがありアクティブにRubyプロジェクトとして成長している。
 
-ちなみに、SASSでは[Lemonade](http://www.hagenburger.net/BLOG/Lemonade-CSS-Sprites-for-Sass-Compass.html)というパッケージを利用してCSS Spriteの自動化を行うこともできる。
+ちなみにSASSでは[Lemonade](http://www.hagenburger.net/BLOG/Lemonade-CSS-Sprites-for-Sass-Compass.html)というパッケージを利用してCSS Spriteの自動化を行うこともできる。
 
-LESSについての説明は、[LESS: CSSをよりシンプルに、パワフルに](http://css.studiomohawk.com/css/2011/04/03/use_less_to_clean_up_your_css/)を参考にしてほしい。
+LESSについての説明は[LESS: CSSをよりシンプルに、パワフルに](http://css.studiomohawk.com/css/2011/04/03/use_less_to_clean_up_your_css/)を参考にしてほしい。
 
 **インストール**
 
@@ -244,11 +238,10 @@ gem install sass #SASS
 ### Juicer
 
 リクエスト回数を減らすためには、CSS/JSの呼び出しは最小にしておく必要がある。  
-が、CSSもJSもメンテナンス性を考えれば、たくさんのファイルになってしまうのが常。  
+が、CSSもJSもメンテナンス性を考えればたくさんのファイルになってしまうのが常。  
 この矛盾を解決するためのプログラムが[Juicer](http://cjohansen.no/en/ruby/juicer_a_css_and_javascript_packaging_tool)。
 
-Juicerは、YUI
-Compressorを利用してCSS/JSを圧縮した上で、CSSであれば@importを使ってファイルを結合してくれ、JSであれば、
+Juicerは、YUI Compressorを利用してCSS/JSを圧縮した上で、CSSであれば@importを使ってファイルを結合してくれ、JSであれば、
 
 {% highlight sh %}
 /**
@@ -257,8 +250,8 @@ Compressorを利用してCSS/JSを圧縮した上で、CSSであれば@importを
  */
 {% endhighlight %}
 
-というコメントを使って、ファイルの結合を行うことが可能。  
-CSSはmaster.cssというファイルに@importのみを記述して、JSもmaster.jsというファイルにコメント文だけ記述している。
+というコメントを使ってファイルの結合を行うことが可能。  
+CSSはmaster.cssというファイルに@importのみを記述してJSもmaster.jsというファイルにコメント文だけ記述している。
 
 実行すると、それぞれmaster.min.css、master.min.jsというファイルを書き出してくれる。
 
@@ -299,7 +292,7 @@ juicer install jslint # JsLintをインストール
 [CSS Redundancy
 Checker](http://code.google.com/p/css-redundancy-checker/)は、あるHTML郡で使われていないスタイルルールをリストアップしてくれるという強力なツール。  
 フロントエンドデベロッパのタスクのほとんどはIteration、日本語にすると反復することが多く、その反復がよりよいモノを生み出すための最も大事な原動力となる。  
-しかしその副産物として、使っていないスタイルルールであふれかえって、何を消したらまずいのかもはやわからない状態になってしまう。  
+しかしその副産物として使っていないスタイルルールであふれかえって、何を消したらまずいのかもはやわからない状態になってしまう。  
 その問題を解決するのがこのツールというわけだ。
 
 使い方
@@ -308,8 +301,8 @@ Checker](http://code.google.com/p/css-redundancy-checker/)は、あるHTML郡で
 ruby css-redundancy-checker.rb [CSSファイル名] [HTMLファイルディレクトリ または URLを一行ずつ記述した.txt]
 {% endhighlight %}
 
-とするだけ。CSSを分割して管理している場合は、Juicerで結合してから実行するといいだろう。
-もちろんある特定のCSSファイルをチェックしたい場合は、個別に指定すればOK。
+とするだけ。CSSを分割して管理している場合はJuicerで結合してから実行するといいだろう。
+もちろんある特定のCSSファイルをチェックしたい場合は個別に指定すればOK。
 
 **インストール**
 
@@ -319,12 +312,12 @@ svn checkout http://css-redundancy-checker.googlecode.com/svn/trunk/ css-redunda
 # svnをインストールしていない場合は、sudo brew install svnとしてから
 {% endhighlight %}
 
-css-redundancy-checker.rbという名前の通り、このスクリプトは単純な1ファイル。  
-なので、実行する際はインストールしたディレクトリに移動してから実行する必要がある。
+css-redundancy-checker.rbという名前の通りこのスクリプトは単純な1ファイル。  
+なので実行する際はインストールしたディレクトリに移動してから実行する必要がある。
 
 ### Rake
 
-Rakeはそれ自体ではなにもしないが、非常に強力なツール。  
+Rakeはそれ自体ではなにもしないが非常に強力なツール。  
 ビルドツールとして誕生したRakeのはずだが、私はビルドツールがなんのことかも完璧には理解できない。  
 要するに、A)の次はB)を実行し、C)を実行するのは、A)を実行する必要がある。  
 というなプロセスをrubyを使って行うことができる。いわばエディタなどにあるマクロみたいな存在。
@@ -338,8 +331,7 @@ Rakeはそれ自体ではなにもしないが、非常に強力なツール。
 - `juicer`を使って、CSS/JSの圧縮/結合
 - [htmlcompressor](http://code.google.com/p/htmlcompressor/)を使ってHTMLの最適化
 
-このプロセスをrake taskとして作成すれば、`rake
-タスク名`とするだけで一気に終了できる。  
+このプロセスをrake taskとして作成すれば、`rake タスク名`とするだけで一気に終了できる。  
 
 `rsync`や`ftp`なども合わせるとファイルアップロードまで自動化できる。
 
@@ -349,15 +341,13 @@ Rakeはそれ自体ではなにもしないが、非常に強力なツール。
 - [Using the Rake Build Language](http://martinfowler.com/articles/rake.html)
 - [Rake Quick Reference by Greg Houston](http://pastie.org/242691)
 
-などが参考になるだろう。もちろん全部英語の文書なので、CSS
-Radarの癖にRakeの詳しい説明を知りたい方は、[Twitter@cssradar](http://twitter.com/#!/cssradar)にてリクエストしてほしい。  
-私も覚えたてなので、全部の質問には答えることができるかわからないが。
+などが参考になるだろう。もちろん全部英語の文書なので、CSS Radarの癖にRakeの詳しい説明を知りたい方は、[Twitter@cssradar](http://twitter.com/#!/cssradar)にてリクエストしてほしい。  
+私も覚えたてなので全部の質問には答えることができるかわからないが。
 
 ## まとめ {#conclusion}
 
 ウェブデザイナ/フロントエンドデベロッパのタスクは多岐に渡る。  
-Adobe
-Suitesを使いこなし、HTML/CSS/JSを駆使し、ユーザビリティ/アクセシビリティに考慮し、行動心理学を応用しつつ、ウェブサイトをユーザに届ける。  
+Adobe Suitesを使いこなし、HTML/CSS/JSを駆使し、ユーザビリティ/アクセシビリティに考慮し、行動心理学を応用しつつ、ウェブサイトをユーザに届ける。  
 その上、プログラマの領分であるはずのRubyにまで手を出す。  
 それもすべて時間を生み出すための技術。  
 その時間がよりよいサイトを生み出すための原動力だから。  

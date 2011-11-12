@@ -22,13 +22,13 @@ Vimにおける設定ファイルである.vimrc。
 Vimで覚えるべきポイントは大きく分けて3つ。
 コマンド、プラグイン、そして設定。  
 この記事ではその3つにVimについての情報源を追加した4つを軸にしつつ、時系列でエントリを追記する形をとることにする。  
-なお、プラグインを追加する際、設定も同時に行う場合が多いが、その場合はプラグインのエントリに記述する。
-また、同様に覚えたコマンドをより簡単に呼び出すための設定もコマンドのエントリに記述する。
+なお、プラグインを追加する際、設定も同時に行う場合が多いがその場合はプラグインのエントリに記述する。
+また同様に覚えたコマンドをより簡単に呼び出すための設定もコマンドのエントリに記述する。
 
-私のVimに対するアプローチは、Ruby on RailsとjQueryのコアメンバであるYehuda Katz氏の記事、[Everyone Who Tried to Convince Me to use Vim was Wrong](http://yehudakatz.com/2010/07/29/everyone-who-tried-to-convince-me-to-use-vim-was-wrong/)と同じで、始めからVimのやり方に合わせるのではなく、マウスを使ったって、Control + Sで保存したって、別にかまわないと思っている。
+私のVimに対するアプローチは、Ruby on RailsとjQueryのコアメンバであるYehuda Katz氏の記事、[Everyone Who Tried to Convince Me to use Vim was Wrong](http://yehudakatz.com/2010/07/29/everyone-who-tried-to-convince-me-to-use-vim-was-wrong/)と同じで、始めからVimのやり方に合わせるのではなくマウスを使ったって、Control + Sで保存したって、別にかまわないと思っている。
 
 私にとってVimはフィロソフィーではなく、あくまでもツールである。  
-便利に使えるからこそのツールで、エンドユーザはその壮大な設計思想など気にする必要はない。自分のペースで自分らしく使いこなす事が真の効率化なのだから。
+便利に使えるからこそのツールでエンドユーザはその壮大な設計思想など気にする必要はない。自分のペースで自分らしく使いこなす事が真の効率化なのだから。
 
 ## コマンド {#command}
 
@@ -41,8 +41,7 @@ Vimで覚えるべきポイントは大きく分けて3つ。
 - ``ctrl-w s`` こちらは現在のファイルを左右に分割
 - ``ctrl-w v`` こちらは現在のファイルを上下に分割
 
-HTML
-+ CSSの組み合わせは大体の場合セットで開いていた方が何かと便利。そんな際は
+HTML + CSSの組み合わせは大体の場合セットで開いていた方が何かと便利。そんな際は
 
 - ``:sp FILENAME`` FILENAMEを新しく左右に分割されたウィンドウにロード
 - ``:vp FILENAME`` FILENAMEを新しく上下に分割されたウィンドウにロード
@@ -118,11 +117,11 @@ Tabular.vimは``=``や、``:``のような決まった文字を基点にツラ�
 }
 {% endhighlight %}
 
-このようになる。(環境によっては、再現されない可能性がある、そんな際は[Bitstream Vera Sans Mono](http://ftp.gnome.org/pub/GNOME/sources/ttf-bitstream-vera/1.10/)をインストールすれば見られるようになる。日本語Fontではないが、プログラマ向Fontとして有名なので、持っていて損はしないだろう)
+このようになる。(環境によっては再現されない可能性がある、そんな際は[Bitstream Vera Sans Mono](http://ftp.gnome.org/pub/GNOME/sources/ttf-bitstream-vera/1.10/)をインストールすれば見られるようになる。日本語Fontではないがプログラマ向Fontとして有名なので持っていて損はしないだろう)
 
 - ``nnoremap <leader>tab :Tab /:\zs``
 
-.vimrcには、上記のマッピングを追記した。例とは異なるツラの揃え方だが、私はこちらのほうが好み。
+.vimrcには、上記のマッピングを追記した。例とは異なるツラの揃え方だが私はこちらのほうが好み。
 
 - [godlygeek/tabular - GitHub](https://github.com/godlygeek/tabular)
 
@@ -200,8 +199,7 @@ imap <C-t> <Esc>:tabnew<CR>
 
 ## 参考リンク {#link}
 
-- [Vim Recipes](http://vim.runpaint.org/toc/)
-  / 基本から応用まで非常にシンプルでミニマムなフォーマットで丁寧に解説してくれる (英語)
+- [Vim Recipes](http://vim.runpaint.org/toc/) / 基本から応用まで非常にシンプルでミニマムなフォーマットで丁寧に解説してくれる (英語)
 - [Vimcasts - free screencasts about the text editor Vim](http://vimcasts.org/) / Vimのチュートリアルビデオキャスト。基本のコマンドからプラグインまで詳しく解説している(英語)
 - [Smash Into Vim by PeepCode](http://peepcode.com/products/smash-into-vim-i) / Vimのチュートリアルビデオ。基本をわかりやすく解説 パート1 $12 (英語)
 - [Smash Into Vim II by PeepCode](http://peepcode.com/products/smash-into-vim-ii) / Vimのチュートリアルビデオ。基本をわかりやすく解説 パート2 $12 (英語)
