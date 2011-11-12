@@ -1,19 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
- <link rel="hub" href="https://pubsubhubbub.appspot.com"/>
- <title>CSS Radar | For Front End Developers</title>
- <link href="http://css.studiomohawk.com/atom.xml" rel="self"/>
- <link href="http://css.studiomohawk.com"/>
- <updated>2011-11-10T00:23:36+09:00</updated>
- <id>http://layouts.studiomohawk.com/</id>
-
- 
- <entry>
-   <title>Vim</title>
-   <link href="http://css.studiomohawk.com/tool/2011/07/24/vim-bits-and-pieces/"/>
-   <updated>Liquid error: undefined method `xmlschema' for "2011-07-29 23:01:04":String</updated>
-   <id>http://css.studiomohawk.com/tool/2011/07/24/vim-bits-and-pieces</id>
-   <content type="html">&lt;h2 id=&quot;preface&quot;&gt;はじめに&lt;/h2&gt;
+	<link rel="hub" href="https://pubsubhubbub.appspot.com"/>
+	<title>CSS Radar | For Front End Developers</title>
+	<link href="http://css.studiomohawk.com/atom.xml" rel="self"/>
+	<link href="http://css.studiomohawk.com"/>
+	<updated>2011-11-12T10:02:12+09:00</updated>
+	<id>http://css.studiomohawk.com/</id>
+	<author>
+		<name>Yuya Saito</name>
+		<email>cssradar@gmail.com</email>
+	</author>
+	
+		<entry>
+			<title>Vim</title>
+			<link href="http://css.studiomohawk.com/tool/2011/07/24/vim-bits-and-pieces/"/>
+			<updated>2011-07-24T00:57:55+09:00</updated>
+			<id>http://css.studiomohawk.com/tool/2011/07/24/vim-bits-and-pieces</id>
+			<content type="html">
+				&lt;h2 id=&quot;preface&quot;&gt;はじめに&lt;/h2&gt;
 
 &lt;p&gt;Vimにおける設定ファイルである.vimrc。&lt;br /&gt;
 私のGoogleサーチによる他者の知の結晶とも言える.vimrcはgithubにあるので、参考になれば。&lt;/p&gt;
@@ -233,15 +237,24 @@ imap &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;C&lt;span class=&quot;
   &lt;li&gt;&lt;a href=&quot;http://peepcode.com/products/smash-into-vim-i&quot;&gt;Smash Into Vim by PeepCode&lt;/a&gt; / Vimのチュートリアルビデオ。基本をわかりやすく解説 パート1 $12 (英語)&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://peepcode.com/products/smash-into-vim-ii&quot;&gt;Smash Into Vim II by PeepCode&lt;/a&gt; / Vimのチュートリアルビデオ。基本をわかりやすく解説 パート2 $12 (英語)&lt;/li&gt;
 &lt;/ul&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>Jekyll</title>
-   <link href="http://css.studiomohawk.com/tool/2011/06/11/jekyll-101.tool/"/>
-   <updated>Liquid error: undefined method `xmlschema' for nil:NilClass</updated>
-   <id>http://css.studiomohawk.com/tool/2011/06/11/jekyll-101.tool</id>
-   <content type="html">&lt;h2 id=&quot;whatis&quot;&gt;Jekyllとは&lt;/h2&gt;
+
+				&lt;hr /&gt;
+				&lt;h5&gt;Elsewhere&lt;/h5&gt;
+				&lt;ul&gt;
+					&lt;li&gt;&lt;a href=&quot;http://twitter.com/#!/cssradar&quot; rel=&quot;me&quot; title=&quot;cssradar@twitter&quot;&gt;cssradar@twitter&lt;/a&gt; / 1日5件以内のウェブデザイン情報をつぶやきます&lt;/li&gt;
+					&lt;li&gt;&lt;a href=&quot;http://tinyletter.com/cssradar&quot; rel=&quot;me&quot; title=&quot;Newsletter&quot;&gt;CSS Radar Newsletter&lt;/a&gt; / CSS Radarニュースレター。Twitterまとめ + α&lt;/li&gt;
+					&lt;li&gt;&lt;a href=&quot;https://plus.google.com/b/109704095110060909968/&quot; rel=&quot;me&quot; title=&quot;Google+ Page&quot;&gt;Google +&lt;/a&gt; / どんな風に使っていくかアイデア募集中&lt;/li&gt;
+				&lt;/ul&gt;
+			</content>
+		</entry>
+	
+		<entry>
+			<title>Jekyll</title>
+			<link href="http://css.studiomohawk.com/tool/2011/06/11/jekyll-101.tool/"/>
+			<updated>2011-06-11T13:39:28+09:00</updated>
+			<id>http://css.studiomohawk.com/tool/2011/06/11/jekyll-101.tool</id>
+			<content type="html">
+				&lt;h2 id=&quot;whatis&quot;&gt;Jekyllとは&lt;/h2&gt;
 
 &lt;p&gt;Amazon S3にて静的ファイルによるウェブサイトを構築できるようになり、Amazon Web
 Serviceが日本リージョンを追加したことで、これからJekyllのような静的ファイルジェネレータを使ったブログが日本でも増えるのではないか。  &lt;/p&gt;
@@ -525,15 +538,24 @@ rsync:dryrun&lt;/code&gt;はテスト用で実際には何もサーバには同�
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-</content>
- </entry>
- 
- <entry>
-   <title>ウェブデザイナのためのRuby</title>
-   <link href="http://css.studiomohawk.com/tool/2011/05/14/ruby_for_designer_frontend_dev/"/>
-   <updated>Liquid error: undefined method `xmlschema' for nil:NilClass</updated>
-   <id>http://css.studiomohawk.com/tool/2011/05/14/ruby_for_designer_frontend_dev</id>
-   <content type="html">&lt;h2 id=&quot;rubyis&quot;&gt;Rubyはウェブデザイナに優しい&lt;/h2&gt;
+
+				&lt;hr /&gt;
+				&lt;h5&gt;Elsewhere&lt;/h5&gt;
+				&lt;ul&gt;
+					&lt;li&gt;&lt;a href=&quot;http://twitter.com/#!/cssradar&quot; rel=&quot;me&quot; title=&quot;cssradar@twitter&quot;&gt;cssradar@twitter&lt;/a&gt; / 1日5件以内のウェブデザイン情報をつぶやきます&lt;/li&gt;
+					&lt;li&gt;&lt;a href=&quot;http://tinyletter.com/cssradar&quot; rel=&quot;me&quot; title=&quot;Newsletter&quot;&gt;CSS Radar Newsletter&lt;/a&gt; / CSS Radarニュースレター。Twitterまとめ + α&lt;/li&gt;
+					&lt;li&gt;&lt;a href=&quot;https://plus.google.com/b/109704095110060909968/&quot; rel=&quot;me&quot; title=&quot;Google+ Page&quot;&gt;Google +&lt;/a&gt; / どんな風に使っていくかアイデア募集中&lt;/li&gt;
+				&lt;/ul&gt;
+			</content>
+		</entry>
+	
+		<entry>
+			<title>ウェブデザイナのためのRuby</title>
+			<link href="http://css.studiomohawk.com/tool/2011/05/14/ruby_for_designer_frontend_dev/"/>
+			<updated>2011-05-14T00:03:59+09:00</updated>
+			<id>http://css.studiomohawk.com/tool/2011/05/14/ruby_for_designer_frontend_dev</id>
+			<content type="html">
+				&lt;h2 id=&quot;rubyis&quot;&gt;Rubyはウェブデザイナに優しい&lt;/h2&gt;
 
 &lt;p&gt;CSS
 Radarと名がついている割には、CSSの話があまりないなと最近になって気がついたけれど、誰も気にしちゃいないだろう。&lt;br /&gt;
@@ -890,15 +912,24 @@ Suitesを使いこなし、HTML/CSS/JSを駆使し、ユーザビリティ/ア�
 その時間がよりよいサイトを生み出すための原動力だから。&lt;br /&gt;
 新しいことへの出会いはいつだってインスピレーションへ続く近道だと信じているので、是非チャレンジしてほしい。&lt;br /&gt;
 もし今回紹介しなかった便利なスクリプトなどご存知でしたら、是非教えてください。&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>インブラウザ デザイン</title>
-   <link href="http://css.studiomohawk.com/webdesign/2011/04/16/designing_in_browser/"/>
-   <updated>Liquid error: undefined method `xmlschema' for "2011-10-29 22:37:19":String</updated>
-   <id>http://css.studiomohawk.com/webdesign/2011/04/16/designing_in_browser</id>
-   <content type="html">&lt;h2 id=&quot;whatis&quot;&gt;インブラウザ デザインとは&lt;/h2&gt;
+
+				&lt;hr /&gt;
+				&lt;h5&gt;Elsewhere&lt;/h5&gt;
+				&lt;ul&gt;
+					&lt;li&gt;&lt;a href=&quot;http://twitter.com/#!/cssradar&quot; rel=&quot;me&quot; title=&quot;cssradar@twitter&quot;&gt;cssradar@twitter&lt;/a&gt; / 1日5件以内のウェブデザイン情報をつぶやきます&lt;/li&gt;
+					&lt;li&gt;&lt;a href=&quot;http://tinyletter.com/cssradar&quot; rel=&quot;me&quot; title=&quot;Newsletter&quot;&gt;CSS Radar Newsletter&lt;/a&gt; / CSS Radarニュースレター。Twitterまとめ + α&lt;/li&gt;
+					&lt;li&gt;&lt;a href=&quot;https://plus.google.com/b/109704095110060909968/&quot; rel=&quot;me&quot; title=&quot;Google+ Page&quot;&gt;Google +&lt;/a&gt; / どんな風に使っていくかアイデア募集中&lt;/li&gt;
+				&lt;/ul&gt;
+			</content>
+		</entry>
+	
+		<entry>
+			<title>インブラウザ デザイン</title>
+			<link href="http://css.studiomohawk.com/webdesign/2011/04/16/designing_in_browser/"/>
+			<updated>2011-04-16T10:53:05+09:00</updated>
+			<id>http://css.studiomohawk.com/webdesign/2011/04/16/designing_in_browser</id>
+			<content type="html">
+				&lt;h2 id=&quot;whatis&quot;&gt;インブラウザ デザインとは&lt;/h2&gt;
 
 &lt;p&gt;長い間、Adobe
 Photoshopはウェブデザインのデファクトアプリとして君臨してきた。もちろん、今も私のMac
@@ -1131,15 +1162,24 @@ Photoshopと比べればまだまだ始まったばかり。&lt;br /&gt;
   &lt;li&gt;&lt;a href=&quot;http://www.quora.com/Joel-Lewenstein/Life-Without-Photoshop&quot;&gt;Life Without Photoshop by Joel Lewenstein (Quora)&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://www.inspiredm.com/learn-to-use-your-browser-in-web-design/&quot;&gt;Learn to Use Your Browser in Web Design (Inspired Magazine)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>パフォーマンス最適化</title>
-   <link href="http://css.studiomohawk.com/frontend/2011/04/09/why_speed_matters/"/>
-   <updated>Liquid error: undefined method `xmlschema' for nil:NilClass</updated>
-   <id>http://css.studiomohawk.com/frontend/2011/04/09/why_speed_matters</id>
-   <content type="html">&lt;h2 id=&quot;whatis&quot;&gt;パフォーマンス最適化の意味&lt;/h2&gt;
+
+				&lt;hr /&gt;
+				&lt;h5&gt;Elsewhere&lt;/h5&gt;
+				&lt;ul&gt;
+					&lt;li&gt;&lt;a href=&quot;http://twitter.com/#!/cssradar&quot; rel=&quot;me&quot; title=&quot;cssradar@twitter&quot;&gt;cssradar@twitter&lt;/a&gt; / 1日5件以内のウェブデザイン情報をつぶやきます&lt;/li&gt;
+					&lt;li&gt;&lt;a href=&quot;http://tinyletter.com/cssradar&quot; rel=&quot;me&quot; title=&quot;Newsletter&quot;&gt;CSS Radar Newsletter&lt;/a&gt; / CSS Radarニュースレター。Twitterまとめ + α&lt;/li&gt;
+					&lt;li&gt;&lt;a href=&quot;https://plus.google.com/b/109704095110060909968/&quot; rel=&quot;me&quot; title=&quot;Google+ Page&quot;&gt;Google +&lt;/a&gt; / どんな風に使っていくかアイデア募集中&lt;/li&gt;
+				&lt;/ul&gt;
+			</content>
+		</entry>
+	
+		<entry>
+			<title>パフォーマンス最適化</title>
+			<link href="http://css.studiomohawk.com/frontend/2011/04/09/why_speed_matters/"/>
+			<updated>2011-04-09T11:46:40+09:00</updated>
+			<id>http://css.studiomohawk.com/frontend/2011/04/09/why_speed_matters</id>
+			<content type="html">
+				&lt;h2 id=&quot;whatis&quot;&gt;パフォーマンス最適化の意味&lt;/h2&gt;
 
 &lt;p&gt;ハードウェアの値段が下がり、ネットの接続環境も高速化していく。ブラウザも高速化を競い合っている。&lt;br /&gt;
 それでもなお、GoogleもYahoo!、FacebookもTwitterもページのロード時間を短縮するテクニックを生み出している。&lt;/p&gt;
@@ -1262,15 +1302,24 @@ S3に移行する予定だ。  &lt;/p&gt;
 
 &lt;p&gt;すると、.htaccessが使えないので、Rakeを使って自動化を行うよう調整中。
 Amazonのクラウドサービスを使ってみるというのもいい経験になったし、Rakeによるビルド/デプロイの自動化もツールとして昇華しやすいので会社でも役に立つと思っている。&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>LESS - CSSプリプロフェッサ</title>
-   <link href="http://css.studiomohawk.com/css/2011/04/03/use_less_to_clean_up_your_css/"/>
-   <updated>Liquid error: undefined method `xmlschema' for nil:NilClass</updated>
-   <id>http://css.studiomohawk.com/css/2011/04/03/use_less_to_clean_up_your_css</id>
-   <content type="html">&lt;h2 id=&quot;whatis&quot;&gt;LESSとは&lt;/h2&gt;
+
+				&lt;hr /&gt;
+				&lt;h5&gt;Elsewhere&lt;/h5&gt;
+				&lt;ul&gt;
+					&lt;li&gt;&lt;a href=&quot;http://twitter.com/#!/cssradar&quot; rel=&quot;me&quot; title=&quot;cssradar@twitter&quot;&gt;cssradar@twitter&lt;/a&gt; / 1日5件以内のウェブデザイン情報をつぶやきます&lt;/li&gt;
+					&lt;li&gt;&lt;a href=&quot;http://tinyletter.com/cssradar&quot; rel=&quot;me&quot; title=&quot;Newsletter&quot;&gt;CSS Radar Newsletter&lt;/a&gt; / CSS Radarニュースレター。Twitterまとめ + α&lt;/li&gt;
+					&lt;li&gt;&lt;a href=&quot;https://plus.google.com/b/109704095110060909968/&quot; rel=&quot;me&quot; title=&quot;Google+ Page&quot;&gt;Google +&lt;/a&gt; / どんな風に使っていくかアイデア募集中&lt;/li&gt;
+				&lt;/ul&gt;
+			</content>
+		</entry>
+	
+		<entry>
+			<title>LESS - CSSプリプロフェッサ</title>
+			<link href="http://css.studiomohawk.com/css/2011/04/03/use_less_to_clean_up_your_css/"/>
+			<updated>2011-04-03T12:51:36+09:00</updated>
+			<id>http://css.studiomohawk.com/css/2011/04/03/use_less_to_clean_up_your_css</id>
+			<content type="html">
+				&lt;h2 id=&quot;whatis&quot;&gt;LESSとは&lt;/h2&gt;
 
 &lt;p&gt;If it ain’t broken, don’t fix it.&lt;/p&gt;
 
@@ -1553,15 +1602,24 @@ node.jsは恐ろしいほどのスピードで開発が進んでいるので、�
   &lt;li&gt;&lt;a href=&quot;http://lesscss.org/&quot;&gt;LESS&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://sass-lang.com/&quot;&gt;SASS&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>ワイヤフレーム</title>
-   <link href="http://css.studiomohawk.com/webdesign/2011/04/01/wireframe/"/>
-   <updated>Liquid error: undefined method `xmlschema' for nil:NilClass</updated>
-   <id>http://css.studiomohawk.com/webdesign/2011/04/01/wireframe</id>
-   <content type="html">&lt;p&gt;&lt;img src=&quot;/webdesign/2011/04/01/wireframe/protoplate.png&quot; alt=&quot;Image&quot; class=&quot;huge&quot; /&gt;&lt;/p&gt;
+
+				&lt;hr /&gt;
+				&lt;h5&gt;Elsewhere&lt;/h5&gt;
+				&lt;ul&gt;
+					&lt;li&gt;&lt;a href=&quot;http://twitter.com/#!/cssradar&quot; rel=&quot;me&quot; title=&quot;cssradar@twitter&quot;&gt;cssradar@twitter&lt;/a&gt; / 1日5件以内のウェブデザイン情報をつぶやきます&lt;/li&gt;
+					&lt;li&gt;&lt;a href=&quot;http://tinyletter.com/cssradar&quot; rel=&quot;me&quot; title=&quot;Newsletter&quot;&gt;CSS Radar Newsletter&lt;/a&gt; / CSS Radarニュースレター。Twitterまとめ + α&lt;/li&gt;
+					&lt;li&gt;&lt;a href=&quot;https://plus.google.com/b/109704095110060909968/&quot; rel=&quot;me&quot; title=&quot;Google+ Page&quot;&gt;Google +&lt;/a&gt; / どんな風に使っていくかアイデア募集中&lt;/li&gt;
+				&lt;/ul&gt;
+			</content>
+		</entry>
+	
+		<entry>
+			<title>ワイヤフレーム</title>
+			<link href="http://css.studiomohawk.com/webdesign/2011/04/01/wireframe/"/>
+			<updated>2011-04-01T00:00:00+09:00</updated>
+			<id>http://css.studiomohawk.com/webdesign/2011/04/01/wireframe</id>
+			<content type="html">
+				&lt;p&gt;&lt;img src=&quot;/webdesign/2011/04/01/wireframe/protoplate.png&quot; alt=&quot;Image&quot; class=&quot;huge&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;whatis&quot;&gt;ワイヤフレームとは&lt;/h2&gt;
 
@@ -1654,15 +1712,24 @@ If the wireframe starts as a wireframe and then morphs into the actual design, g
   &lt;li&gt;&lt;a href=&quot;http://userpathways.com/2008/06/the-what-when-and-why-of-wireframes/&quot;&gt;The what, when and why of wireframes&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://www.uxmag.com/design/shades-of-grey-wireframes-as-thinking-device&quot;&gt;Shades of Grey: Wireframes as Thinking Device&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>HTML5 Boilerplate</title>
-   <link href="http://css.studiomohawk.com/tool/2011/03/15/html5boilerplate/"/>
-   <updated>Liquid error: undefined method `xmlschema' for nil:NilClass</updated>
-   <id>http://css.studiomohawk.com/tool/2011/03/15/html5boilerplate</id>
-   <content type="html">&lt;h2 id=&quot;whatis&quot;&gt;HTML5 Boilderplateとは&lt;/h2&gt;
+
+				&lt;hr /&gt;
+				&lt;h5&gt;Elsewhere&lt;/h5&gt;
+				&lt;ul&gt;
+					&lt;li&gt;&lt;a href=&quot;http://twitter.com/#!/cssradar&quot; rel=&quot;me&quot; title=&quot;cssradar@twitter&quot;&gt;cssradar@twitter&lt;/a&gt; / 1日5件以内のウェブデザイン情報をつぶやきます&lt;/li&gt;
+					&lt;li&gt;&lt;a href=&quot;http://tinyletter.com/cssradar&quot; rel=&quot;me&quot; title=&quot;Newsletter&quot;&gt;CSS Radar Newsletter&lt;/a&gt; / CSS Radarニュースレター。Twitterまとめ + α&lt;/li&gt;
+					&lt;li&gt;&lt;a href=&quot;https://plus.google.com/b/109704095110060909968/&quot; rel=&quot;me&quot; title=&quot;Google+ Page&quot;&gt;Google +&lt;/a&gt; / どんな風に使っていくかアイデア募集中&lt;/li&gt;
+				&lt;/ul&gt;
+			</content>
+		</entry>
+	
+		<entry>
+			<title>HTML5 Boilerplate</title>
+			<link href="http://css.studiomohawk.com/tool/2011/03/15/html5boilerplate/"/>
+			<updated>2011-03-15T00:00:00+09:00</updated>
+			<id>http://css.studiomohawk.com/tool/2011/03/15/html5boilerplate</id>
+			<content type="html">
+				&lt;h2 id=&quot;whatis&quot;&gt;HTML5 Boilderplateとは&lt;/h2&gt;
 
 &lt;p&gt;フロントエンドデベロッパな人たちはウェブ開発プロジェクトを始めるにあたり、HTML、CSS、JSのスケルトン(必要最小限の記述をしたファイル達)を含んだディレクトリを持っている人が多い事だろう。&lt;br /&gt;
 私も個人のプロジェクト、仕事でのプロジェクトともに、それぞれに少しだけカスタマイズを行うだけで開発を始めることができるディレクトリを持っている。  &lt;/p&gt;
@@ -1737,15 +1804,24 @@ BoilerplateにPull Requestを送ってくださいませ。&lt;/p&gt;
   &lt;li&gt;&lt;a href=&quot;http://www.ibm.com/developerworks/jp/web/library/wa-html5boilerplate/&quot;&gt;HTML5 Boilerplate を使用して Web 開発を容易に始める @IBM Developer Works&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://www.1stwebdesigner.com/design/snippets-html5-boilerplate/&quot;&gt;20 Snippets You should be using from Html5 Boilerplate @1st Web Designer&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>コマンドライン</title>
-   <link href="http://css.studiomohawk.com/tool/2011/02/13/terminal-101/"/>
-   <updated>Liquid error: undefined method `xmlschema' for nil:NilClass</updated>
-   <id>http://css.studiomohawk.com/tool/2011/02/13/terminal-101</id>
-   <content type="html">&lt;h2 id=&quot;whatis&quot;&gt;コマンドラインについて&lt;/h2&gt;
+
+				&lt;hr /&gt;
+				&lt;h5&gt;Elsewhere&lt;/h5&gt;
+				&lt;ul&gt;
+					&lt;li&gt;&lt;a href=&quot;http://twitter.com/#!/cssradar&quot; rel=&quot;me&quot; title=&quot;cssradar@twitter&quot;&gt;cssradar@twitter&lt;/a&gt; / 1日5件以内のウェブデザイン情報をつぶやきます&lt;/li&gt;
+					&lt;li&gt;&lt;a href=&quot;http://tinyletter.com/cssradar&quot; rel=&quot;me&quot; title=&quot;Newsletter&quot;&gt;CSS Radar Newsletter&lt;/a&gt; / CSS Radarニュースレター。Twitterまとめ + α&lt;/li&gt;
+					&lt;li&gt;&lt;a href=&quot;https://plus.google.com/b/109704095110060909968/&quot; rel=&quot;me&quot; title=&quot;Google+ Page&quot;&gt;Google +&lt;/a&gt; / どんな風に使っていくかアイデア募集中&lt;/li&gt;
+				&lt;/ul&gt;
+			</content>
+		</entry>
+	
+		<entry>
+			<title>コマンドライン</title>
+			<link href="http://css.studiomohawk.com/tool/2011/02/13/terminal-101/"/>
+			<updated>2011-02-13T00:00:00+09:00</updated>
+			<id>http://css.studiomohawk.com/tool/2011/02/13/terminal-101</id>
+			<content type="html">
+				&lt;h2 id=&quot;whatis&quot;&gt;コマンドラインについて&lt;/h2&gt;
 
 &lt;p&gt;Terminal.appは怖い。&lt;br /&gt;
 GUIでなんだって出来る時代にパソコンに出会った私にとっても、それは変わらない。&lt;br /&gt;
@@ -1934,15 +2010,24 @@ Script&lt;/a&gt;について調べてみるといいだろう。&lt;br /&gt;
 Spriteを自動化&lt;/a&gt;したりすることもできるようなので、あの30分はかかりそうな面倒なspriteも自動で行うことができるわけだ。&lt;/p&gt;
 
 &lt;p&gt;どこかの本で読んだことの受け売りだが、60分かかるタスクがあるとしたら、59分かけてそのタスクを行うスクリプトを書いて、1分で実行する。これからのウェブデザイン/フロントエンドデベロッパにはそんな心構えが必要になってくるだろう。&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>Git バージョンコントロール</title>
-   <link href="http://css.studiomohawk.com/tool/2011/01/29/git-version-control/"/>
-   <updated>Liquid error: undefined method `xmlschema' for "2011-11-03 17:45:45":String</updated>
-   <id>http://css.studiomohawk.com/tool/2011/01/29/git-version-control</id>
-   <content type="html">&lt;h2 id=&quot;whatis&quot;&gt;バージョンコントロールについて&lt;/h2&gt;
+
+				&lt;hr /&gt;
+				&lt;h5&gt;Elsewhere&lt;/h5&gt;
+				&lt;ul&gt;
+					&lt;li&gt;&lt;a href=&quot;http://twitter.com/#!/cssradar&quot; rel=&quot;me&quot; title=&quot;cssradar@twitter&quot;&gt;cssradar@twitter&lt;/a&gt; / 1日5件以内のウェブデザイン情報をつぶやきます&lt;/li&gt;
+					&lt;li&gt;&lt;a href=&quot;http://tinyletter.com/cssradar&quot; rel=&quot;me&quot; title=&quot;Newsletter&quot;&gt;CSS Radar Newsletter&lt;/a&gt; / CSS Radarニュースレター。Twitterまとめ + α&lt;/li&gt;
+					&lt;li&gt;&lt;a href=&quot;https://plus.google.com/b/109704095110060909968/&quot; rel=&quot;me&quot; title=&quot;Google+ Page&quot;&gt;Google +&lt;/a&gt; / どんな風に使っていくかアイデア募集中&lt;/li&gt;
+				&lt;/ul&gt;
+			</content>
+		</entry>
+	
+		<entry>
+			<title>Git バージョンコントロール</title>
+			<link href="http://css.studiomohawk.com/tool/2011/01/29/git-version-control/"/>
+			<updated>2011-01-29T00:00:00+09:00</updated>
+			<id>http://css.studiomohawk.com/tool/2011/01/29/git-version-control</id>
+			<content type="html">
+				&lt;h2 id=&quot;whatis&quot;&gt;バージョンコントロールについて&lt;/h2&gt;
 
 &lt;p&gt;バージョンコントロール。まだ始めていなかったら、今からでも遅くはない。  &lt;/p&gt;
 
@@ -2331,15 +2416,24 @@ git merge upstream/master &lt;span class=&quot;c&quot;&gt;# 変更を自分の�
   &lt;li&gt;&lt;a href=&quot;http://www.alistapart.com/articles/get-started-with-git/&quot;&gt;Get Started with Git (A List Apart)&lt;/a&gt; - A List ApartにてAl Shaw氏による記事&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://gitcasts.com/&quot;&gt;GitCasts&lt;/a&gt; - Gitのスクリーンキャスト。英語だが、グラフィカルな環境でしか覚えられない人には最適&lt;/li&gt;
 &lt;/ul&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>レスポンシブウェブデザイン</title>
-   <link href="http://css.studiomohawk.com/css/2011/01/24/about-responsive-web-design/"/>
-   <updated>Liquid error: undefined method `xmlschema' for nil:NilClass</updated>
-   <id>http://css.studiomohawk.com/css/2011/01/24/about-responsive-web-design</id>
-   <content type="html">&lt;h2 id=&quot;whatis&quot;&gt;レスポンシブウェブデザインとは&lt;/h2&gt;
+
+				&lt;hr /&gt;
+				&lt;h5&gt;Elsewhere&lt;/h5&gt;
+				&lt;ul&gt;
+					&lt;li&gt;&lt;a href=&quot;http://twitter.com/#!/cssradar&quot; rel=&quot;me&quot; title=&quot;cssradar@twitter&quot;&gt;cssradar@twitter&lt;/a&gt; / 1日5件以内のウェブデザイン情報をつぶやきます&lt;/li&gt;
+					&lt;li&gt;&lt;a href=&quot;http://tinyletter.com/cssradar&quot; rel=&quot;me&quot; title=&quot;Newsletter&quot;&gt;CSS Radar Newsletter&lt;/a&gt; / CSS Radarニュースレター。Twitterまとめ + α&lt;/li&gt;
+					&lt;li&gt;&lt;a href=&quot;https://plus.google.com/b/109704095110060909968/&quot; rel=&quot;me&quot; title=&quot;Google+ Page&quot;&gt;Google +&lt;/a&gt; / どんな風に使っていくかアイデア募集中&lt;/li&gt;
+				&lt;/ul&gt;
+			</content>
+		</entry>
+	
+		<entry>
+			<title>レスポンシブウェブデザイン</title>
+			<link href="http://css.studiomohawk.com/css/2011/01/24/about-responsive-web-design/"/>
+			<updated>2011-01-24T00:00:00+09:00</updated>
+			<id>http://css.studiomohawk.com/css/2011/01/24/about-responsive-web-design</id>
+			<content type="html">
+				&lt;h2 id=&quot;whatis&quot;&gt;レスポンシブウェブデザインとは&lt;/h2&gt;
 
 &lt;p&gt;いまこの記事を読んでいるモニタのサイズは何インチだろうか？&lt;br /&gt;
 iPhone、アンドロイドOS搭載スマートフォン、iPad、ネットブック、ノートPC、デスクトップPCと数年前なら思いもよらなかったモニタ/スクリーンサイズでユーザはウェブサイトを閲覧し始めている。
@@ -2475,15 +2569,24 @@ Media Queriesについては、&lt;a href=&quot;http://hardboiledwebdesign.com/&
   &lt;li&gt;&lt;a href=&quot;http://5by5.tv/bigwebshow/6&quot;&gt;EPISODE #6: MOBILE FIRST (The Big Web Show)&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://membership.thinkvitamin.com/library/responsive-web-design/mobile/context&quot;&gt;Responsive Web Design: Mobile: Context (Think Vitamin)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>About CSS Radar</title>
-   <link href="http://css.studiomohawk.com/cssradar/2011/01/23/about-cssrader/"/>
-   <updated>Liquid error: undefined method `xmlschema' for "2011-11-03 16:37:57":String</updated>
-   <id>http://css.studiomohawk.com/cssradar/2011/01/23/about-cssrader</id>
-   <content type="html">&lt;h2 id=&quot;about-site&quot;&gt;CSS Radarについて&lt;/h2&gt;
+
+				&lt;hr /&gt;
+				&lt;h5&gt;Elsewhere&lt;/h5&gt;
+				&lt;ul&gt;
+					&lt;li&gt;&lt;a href=&quot;http://twitter.com/#!/cssradar&quot; rel=&quot;me&quot; title=&quot;cssradar@twitter&quot;&gt;cssradar@twitter&lt;/a&gt; / 1日5件以内のウェブデザイン情報をつぶやきます&lt;/li&gt;
+					&lt;li&gt;&lt;a href=&quot;http://tinyletter.com/cssradar&quot; rel=&quot;me&quot; title=&quot;Newsletter&quot;&gt;CSS Radar Newsletter&lt;/a&gt; / CSS Radarニュースレター。Twitterまとめ + α&lt;/li&gt;
+					&lt;li&gt;&lt;a href=&quot;https://plus.google.com/b/109704095110060909968/&quot; rel=&quot;me&quot; title=&quot;Google+ Page&quot;&gt;Google +&lt;/a&gt; / どんな風に使っていくかアイデア募集中&lt;/li&gt;
+				&lt;/ul&gt;
+			</content>
+		</entry>
+	
+		<entry>
+			<title>About CSS Radar</title>
+			<link href="http://css.studiomohawk.com/cssradar/2011/01/23/about-cssrader/"/>
+			<updated>2011-01-23T00:00:00+09:00</updated>
+			<id>http://css.studiomohawk.com/cssradar/2011/01/23/about-cssrader</id>
+			<content type="html">
+				&lt;h2 id=&quot;about-site&quot;&gt;CSS Radarについて&lt;/h2&gt;
 
 &lt;p&gt;CSS
 Radarは現役フロントエンドデベロッパ/ウェブデザイナとして働く斉藤祐也がフロントエンドにまつわるベストプラクティスを紹介するブログ。&lt;br /&gt;
@@ -2521,8 +2624,15 @@ HTMLとCSSが私のメインエリアで、JSを書いたり、Smartyなどの�
 また&lt;a href=&quot;http://tinyletter.com/cssradar&quot;&gt;CSS Radar Newsletter&lt;/a&gt;にて1週間分のつぶやきをまとめてメールマガジンとしてまとめています。&lt;/p&gt;
 
 &lt;p&gt;記事への質問、リクエストなどは、&lt;a href=&quot;https://twitter.com/intent/user?user_id=107867741&quot;&gt;Twitter@cssradar&lt;/a&gt;か、cssradar+ask@gmail.comにて受け付けているのでお気軽にどうぞ。&lt;/p&gt;
-</content>
- </entry>
- 
- 
+
+				&lt;hr /&gt;
+				&lt;h5&gt;Elsewhere&lt;/h5&gt;
+				&lt;ul&gt;
+					&lt;li&gt;&lt;a href=&quot;http://twitter.com/#!/cssradar&quot; rel=&quot;me&quot; title=&quot;cssradar@twitter&quot;&gt;cssradar@twitter&lt;/a&gt; / 1日5件以内のウェブデザイン情報をつぶやきます&lt;/li&gt;
+					&lt;li&gt;&lt;a href=&quot;http://tinyletter.com/cssradar&quot; rel=&quot;me&quot; title=&quot;Newsletter&quot;&gt;CSS Radar Newsletter&lt;/a&gt; / CSS Radarニュースレター。Twitterまとめ + α&lt;/li&gt;
+					&lt;li&gt;&lt;a href=&quot;https://plus.google.com/b/109704095110060909968/&quot; rel=&quot;me&quot; title=&quot;Google+ Page&quot;&gt;Google +&lt;/a&gt; / どんな風に使っていくかアイデア募集中&lt;/li&gt;
+				&lt;/ul&gt;
+			</content>
+		</entry>
+	
 </feed>

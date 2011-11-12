@@ -6,68 +6,68 @@
 		http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
 <loc>http://css.studiomohawk.com</loc>
-	<lastmod>2011-11-10T00:23:36+09:00</lastmod>
+	<lastmod>2011-11-12T10:02:12+09:00</lastmod>
 	<priority>1.0</priority>
 </url>
 
 <url>
 	<loc>http://css.studiomohawk.com/tool/2011/07/24/vim-bits-and-pieces/</loc>
-	<lastmod>Liquid error: undefined method `xmlschema' for "2011-07-29 23:01:04":String</lastmod>
+	<lastmod>2011-07-24T00:57:55+09:00</lastmod>
 </url>
 
 <url>
 	<loc>http://css.studiomohawk.com/tool/2011/06/11/jekyll-101.tool/</loc>
-	<lastmod>Liquid error: undefined method `xmlschema' for nil:NilClass</lastmod>
+	<lastmod>2011-06-11T13:39:28+09:00</lastmod>
 </url>
 
 <url>
 	<loc>http://css.studiomohawk.com/tool/2011/05/14/ruby_for_designer_frontend_dev/</loc>
-	<lastmod>Liquid error: undefined method `xmlschema' for nil:NilClass</lastmod>
+	<lastmod>2011-05-14T00:03:59+09:00</lastmod>
 </url>
 
 <url>
 	<loc>http://css.studiomohawk.com/webdesign/2011/04/16/designing_in_browser/</loc>
-	<lastmod>Liquid error: undefined method `xmlschema' for "2011-10-29 22:37:19":String</lastmod>
+	<lastmod>2011-04-16T10:53:05+09:00</lastmod>
 </url>
 
 <url>
 	<loc>http://css.studiomohawk.com/frontend/2011/04/09/why_speed_matters/</loc>
-	<lastmod>Liquid error: undefined method `xmlschema' for nil:NilClass</lastmod>
+	<lastmod>2011-04-09T11:46:40+09:00</lastmod>
 </url>
 
 <url>
 	<loc>http://css.studiomohawk.com/css/2011/04/03/use_less_to_clean_up_your_css/</loc>
-	<lastmod>Liquid error: undefined method `xmlschema' for nil:NilClass</lastmod>
+	<lastmod>2011-04-03T12:51:36+09:00</lastmod>
 </url>
 
 <url>
 	<loc>http://css.studiomohawk.com/webdesign/2011/04/01/wireframe/</loc>
-	<lastmod>Liquid error: undefined method `xmlschema' for nil:NilClass</lastmod>
+	<lastmod>2011-04-01T00:00:00+09:00</lastmod>
 </url>
 
 <url>
 	<loc>http://css.studiomohawk.com/tool/2011/03/15/html5boilerplate/</loc>
-	<lastmod>Liquid error: undefined method `xmlschema' for nil:NilClass</lastmod>
+	<lastmod>2011-03-15T00:00:00+09:00</lastmod>
 </url>
 
 <url>
 	<loc>http://css.studiomohawk.com/tool/2011/02/13/terminal-101/</loc>
-	<lastmod>Liquid error: undefined method `xmlschema' for nil:NilClass</lastmod>
+	<lastmod>2011-02-13T00:00:00+09:00</lastmod>
 </url>
 
 <url>
 	<loc>http://css.studiomohawk.com/tool/2011/01/29/git-version-control/</loc>
-	<lastmod>Liquid error: undefined method `xmlschema' for "2011-11-03 17:45:45":String</lastmod>
+	<lastmod>2011-01-29T00:00:00+09:00</lastmod>
 </url>
 
 <url>
 	<loc>http://css.studiomohawk.com/css/2011/01/24/about-responsive-web-design/</loc>
-	<lastmod>Liquid error: undefined method `xmlschema' for nil:NilClass</lastmod>
+	<lastmod>2011-01-24T00:00:00+09:00</lastmod>
 </url>
 
 <url>
 	<loc>http://css.studiomohawk.com/cssradar/2011/01/23/about-cssrader/</loc>
-	<lastmod>Liquid error: undefined method `xmlschema' for "2011-11-03 16:37:57":String</lastmod>
+	<lastmod>2011-01-23T00:00:00+09:00</lastmod>
 </url>
 
 </urlset>

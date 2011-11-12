@@ -11,13 +11,13 @@
 						<h1 class="entry-title">{{ page.title }}</h1>
 						<div class="meta">
 							{% if page.update %}
-							<date class="update-pub" title="{{ page.update | date_to_xmlschema }}" datetime="{{ page.update | date_to_xmlschema }}" pubdate>
+							<date class="update-pub" title="{{ page.update }}" datetime="{{ page.update }}" pubdate>
 								<span class="day">{{ page.update | date: '%d' }}</span>
 								<span class="month"><abbr>{{ page.update | date: '%b' }}</abbr></span>
 								<span class="year">{{ page.update | date: '%Y' }}</span>
 							</date>
 							{% endif %}
-							<date class="date-pub" title="{{ page.date | date_to_xmlschema }}" datetime="{{ page.update | date_to_xmlschema }}" pubdate>
+							<date class="date-pub" title="{{ page.date | date_to_xmlschema }}" datetime="{{ page.date | date_to_xmlschema }}" pubdate>
 								<span class="day">{{ page.date | date: '%d' }}</span>
 								<span class="month"><abbr>{{ page.date | date: '%b' }}</abbr></span>
 								<span class="year">{{ page.date | date: '%Y' }}</span>
