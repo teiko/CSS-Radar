@@ -2,8 +2,8 @@
 layout: post
 category: tool
 title: Vim
-date: 2011-07-24 00:57:55
-update: 2011-07-29 23:01:04
+date: 2011-07-24 00:57:55 +0900
+update: 2011-11-19T10:48:38+09:00
 toc:
 - {text: はじめに, hash: preface}
 - {text: コマンド, hash: command}
@@ -79,6 +79,15 @@ splitの略、onはonlyの略で、qはquitなので、覚えやすいはずだ�
 - ``:tab ball``
 
 ## プラグイン {#plugin}
+
+### [Prefixr](https://github.com/mr-szymanski/prefixr)
+
+CSS3をクロスブラウザで適応するにはブラウザプリフィックス(-o-や、-webkit-など)を記述する必要がある。  
+Nettus+にて作成された[Prefixr](http://prefixr.com/)というウェブツールはW3Cで現時点で発表されている記述やどのブラウザプリフィックス付きの記述1つを書いておけばボタン1つで全プリフィックスに変換してくれる強力なツール。  
+そのAPIを利用してvimのプラグインにしたのがこれ。
+
+変換したい値を選択して``:Prefixr``とコマンドを叩けばウェブツールと同じことができる。  
+Vimから離れずに強力なツールが利用できるので非常に時短。
 
 ### [Tabular.vim](https://github.com/godlygeek/tabular)
 
@@ -176,6 +185,32 @@ call pathogen#helptags()
 - [tpope/vim-pathogen - GitHub](https://github.com/tpope/vim-pathogen)
 
 ## 設定 {#config}
+
+CSSのHEX値の明度をキーボードで上げ下げできるスクリプト[vimHexUpdate](https://github.com/dancrew32/vimHexUpdate)  
+HEX値は例の``#333333``というCSSを書く事を生業としている人は泣けるスクリプトだろう。
+
+- ``F8``で1段階暗く
+- ``F9``で1段階明るく
+
+もちろんどのキーにするのかは設定を変更できる。  
+
+上記ページをローカルにクローンしてcssScriptというディレクトリを.vimディレクトリにコピー。  
+そして下記設定を.vimrcに追加するだけ。
+
+{% highlight vim %}
+" vimHexUpdate: http://j.mp/tLfjWa
+" Update a hex value up/down a shade
+function! HexUpdate(operator, shade)
+    let hex = expand("<cword>")
+    let newHex = system("php ~/.vim/cssScript/hex.php ". hex ." ". a:operator . a:shade)
+    execute "normal ciw". newHex
+endfunction
+
+nnoremap <F8> :call HexUpdate("-",1)<CR>
+nnoremap <F9> :call HexUpdate("+",1)<CR>
+"}
+{% endhighlight %}
+
 
 ### タブをFirefoxのように操る
 
