@@ -4,7 +4,7 @@
 	<title>CSS Radar | For Front End Developers</title>
 	<link href="http://css.studiomohawk.com/atom.xml" rel="self"/>
 	<link href="http://css.studiomohawk.com"/>
-	<updated>2011-11-17T22:52:33+09:00</updated>
+	<updated>2011-11-19T13:09:50+09:00</updated>
 	<id>http://css.studiomohawk.com/</id>
 	<author>
 		<name>Yuya Saito</name>
@@ -14,7 +14,7 @@
 		<entry>
 			<title>Vim</title>
 			<link href="http://css.studiomohawk.com/tool/2011/07/24/vim-bits-and-pieces/"/>
-			<updated>2011-07-24T00:57:55+09:00</updated>
+			<updated>2011-11-19 10:48:38 +0900</updated>
 			<id>http://css.studiomohawk.com/tool/2011/07/24/vim-bits-and-pieces</id>
 			<content type="html">
 				&lt;h2 id=&quot;preface&quot;&gt;はじめに&lt;/h2&gt;
@@ -100,6 +100,15 @@ splitの略、onはonlyの略で、qはquitなので、覚えやすいはずだ�
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;plugin&quot;&gt;プラグイン&lt;/h2&gt;
+
+&lt;h3&gt;&lt;a href=&quot;https://github.com/mr-szymanski/prefixr&quot;&gt;Prefixr&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;CSS3をクロスブラウザで適応するにはブラウザプリフィックス(-o-や、-webkit-など)を記述する必要がある。&lt;br /&gt;
+Nettus+にて作成された&lt;a href=&quot;http://prefixr.com/&quot;&gt;Prefixr&lt;/a&gt;というウェブツールはW3Cで現時点で発表されている記述やどのブラウザプリフィックス付きの記述1つを書いておけばボタン1つで全プリフィックスに変換してくれる強力なツール。&lt;br /&gt;
+そのAPIを利用してvimのプラグインにしたのがこれ。&lt;/p&gt;
+
+&lt;p&gt;変換したい値を選択して&lt;code&gt;:Prefixr&lt;/code&gt;とコマンドを叩けばウェブツールと同じことができる。&lt;br /&gt;
+Vimから離れずに強力なツールが利用できるので非常に時短。&lt;/p&gt;
 
 &lt;h3&gt;&lt;a href=&quot;https://github.com/godlygeek/tabular&quot;&gt;Tabular.vim&lt;/a&gt;&lt;/h3&gt;
 
@@ -206,6 +215,33 @@ git submodule sync
 
 &lt;h2 id=&quot;config&quot;&gt;設定&lt;/h2&gt;
 
+&lt;p&gt;CSSのHEX値の明度をキーボードで上げ下げできるスクリプト&lt;a href=&quot;https://github.com/dancrew32/vimHexUpdate&quot;&gt;vimHexUpdate&lt;/a&gt;&lt;br /&gt;
+HEX値は例の&lt;code&gt;#333333&lt;/code&gt;というCSSを書く事を生業としている人は泣けるスクリプトだろう。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code&gt;F8&lt;/code&gt;で1段階暗く&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;F9&lt;/code&gt;で1段階明るく&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;もちろんどのキーにするのかは設定を変更できる。  &lt;/p&gt;
+
+&lt;p&gt;上記ページをローカルにクローンしてcssScriptというディレクトリを.vimディレクトリにコピー。&lt;br /&gt;
+そして下記設定を.vimrcに追加するだけ。&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;vim&quot;&gt;&lt;span class=&quot;c&quot;&gt;&amp;quot; vimHexUpdate: http://j.mp/tLfjWa&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;&amp;quot; Update a hex value up/down a shade&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;!&lt;/span&gt; HexUpdate&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;operator&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; shade&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; hex &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; expand&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&amp;lt;cword&amp;gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; newHex &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; system&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;php ~/.vim/cssScript/hex.php &amp;quot;&lt;/span&gt;. hex .&lt;span class=&quot;s2&quot;&gt;&amp;quot; &amp;quot;&lt;/span&gt;. a:operator . a:shade&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    execute &lt;span class=&quot;c&quot;&gt;&amp;quot;normal ciw&amp;quot;. newHex&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;endfunction&lt;/span&gt;
+
+nnoremap &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;F8&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; :&lt;span class=&quot;k&quot;&gt;call&lt;/span&gt; HexUpdate&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;-&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&amp;lt;&lt;/span&gt;CR&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
+nnoremap &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;F9&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; :&lt;span class=&quot;k&quot;&gt;call&lt;/span&gt; HexUpdate&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;+&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&amp;lt;&lt;/span&gt;CR&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;&amp;quot;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
 &lt;h3&gt;タブをFirefoxのように操る&lt;/h3&gt;
 
 &lt;ul&gt;
@@ -249,7 +285,7 @@ imap &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;C&lt;span class=&quot;
 		<entry>
 			<title>Jekyll</title>
 			<link href="http://css.studiomohawk.com/tool/2011/06/11/jekyll-101.tool/"/>
-			<updated>2011-06-11T13:39:28+09:00</updated>
+			<updated></updated>
 			<id>http://css.studiomohawk.com/tool/2011/06/11/jekyll-101.tool</id>
 			<content type="html">
 				&lt;h2 id=&quot;whatis&quot;&gt;Jekyllとは&lt;/h2&gt;
@@ -542,7 +578,7 @@ rsync:dryrun&lt;/code&gt;はテスト用で実際には何もサーバには同�
 		<entry>
 			<title>ウェブデザイナのためのRuby</title>
 			<link href="http://css.studiomohawk.com/tool/2011/05/14/ruby_for_designer_frontend_dev/"/>
-			<updated>2011-05-14T00:03:59+09:00</updated>
+			<updated></updated>
 			<id>http://css.studiomohawk.com/tool/2011/05/14/ruby_for_designer_frontend_dev</id>
 			<content type="html">
 				&lt;h2 id=&quot;rubyis&quot;&gt;Rubyはウェブデザイナに優しい&lt;/h2&gt;
@@ -907,7 +943,7 @@ Adobe Suitesを使いこなし、HTML/CSS/JSを駆使し、ユーザビリティ
 		<entry>
 			<title>インブラウザ デザイン</title>
 			<link href="http://css.studiomohawk.com/webdesign/2011/04/16/designing_in_browser/"/>
-			<updated>2011-04-16T10:53:05+09:00</updated>
+			<updated>2011-10-29 22:37:19</updated>
 			<id>http://css.studiomohawk.com/webdesign/2011/04/16/designing_in_browser</id>
 			<content type="html">
 				&lt;h2 id=&quot;whatis&quot;&gt;インブラウザ デザインとは&lt;/h2&gt;
@@ -1153,7 +1189,7 @@ CS5.5になるほどイテレーションを繰り返しすばらしいプロダ
 		<entry>
 			<title>パフォーマンス最適化</title>
 			<link href="http://css.studiomohawk.com/frontend/2011/04/09/why_speed_matters/"/>
-			<updated>2011-04-09T11:46:40+09:00</updated>
+			<updated></updated>
 			<id>http://css.studiomohawk.com/frontend/2011/04/09/why_speed_matters</id>
 			<content type="html">
 				&lt;h2 id=&quot;whatis&quot;&gt;パフォーマンス最適化の意味&lt;/h2&gt;
@@ -1290,7 +1326,7 @@ Amazonのクラウドサービスを使ってみるというのもいい経験�
 		<entry>
 			<title>LESS - CSSプリプロフェッサ</title>
 			<link href="http://css.studiomohawk.com/css/2011/04/03/use_less_to_clean_up_your_css/"/>
-			<updated>2011-04-03T12:51:36+09:00</updated>
+			<updated></updated>
 			<id>http://css.studiomohawk.com/css/2011/04/03/use_less_to_clean_up_your_css</id>
 			<content type="html">
 				&lt;h2 id=&quot;whatis&quot;&gt;LESSとは&lt;/h2&gt;
@@ -1590,7 +1626,7 @@ node.jsは恐ろしいほどのスピードで開発が進んでいるのでど�
 		<entry>
 			<title>ワイヤフレーム</title>
 			<link href="http://css.studiomohawk.com/webdesign/2011/04/01/wireframe/"/>
-			<updated>2011-04-01T00:00:00+09:00</updated>
+			<updated></updated>
 			<id>http://css.studiomohawk.com/webdesign/2011/04/01/wireframe</id>
 			<content type="html">
 				&lt;p&gt;&lt;img src=&quot;/webdesign/2011/04/01/wireframe/protoplate.png&quot; alt=&quot;Image&quot; class=&quot;huge&quot; /&gt;&lt;/p&gt;
@@ -1700,7 +1736,7 @@ If the wireframe starts as a wireframe and then morphs into the actual design, g
 		<entry>
 			<title>HTML5 Boilerplate</title>
 			<link href="http://css.studiomohawk.com/tool/2011/03/15/html5boilerplate/"/>
-			<updated>2011-03-15T00:00:00+09:00</updated>
+			<updated></updated>
 			<id>http://css.studiomohawk.com/tool/2011/03/15/html5boilerplate</id>
 			<content type="html">
 				&lt;h2 id=&quot;whatis&quot;&gt;HTML5 Boilderplateとは&lt;/h2&gt;
@@ -1791,7 +1827,7 @@ BoilerplateにPull Requestを送ってくださいませ。&lt;/p&gt;
 		<entry>
 			<title>コマンドライン</title>
 			<link href="http://css.studiomohawk.com/tool/2011/02/13/terminal-101/"/>
-			<updated>2011-02-13T00:00:00+09:00</updated>
+			<updated></updated>
 			<id>http://css.studiomohawk.com/tool/2011/02/13/terminal-101</id>
 			<content type="html">
 				&lt;h2 id=&quot;whatis&quot;&gt;コマンドラインについて&lt;/h2&gt;
@@ -1983,7 +2019,7 @@ cURL&lt;/a&gt;)&lt;/p&gt;
 		<entry>
 			<title>Git バージョンコントロール</title>
 			<link href="http://css.studiomohawk.com/tool/2011/01/29/git-version-control/"/>
-			<updated>2011-01-29T00:00:00+09:00</updated>
+			<updated>2011-11-03 17:45:45</updated>
 			<id>http://css.studiomohawk.com/tool/2011/01/29/git-version-control</id>
 			<content type="html">
 				&lt;h2 id=&quot;whatis&quot;&gt;バージョンコントロールについて&lt;/h2&gt;
@@ -2389,7 +2425,7 @@ git merge upstream/master &lt;span class=&quot;c&quot;&gt;# 変更を自分の�
 		<entry>
 			<title>レスポンシブウェブデザイン</title>
 			<link href="http://css.studiomohawk.com/css/2011/01/24/about-responsive-web-design/"/>
-			<updated>2011-01-24T00:00:00+09:00</updated>
+			<updated>2011-11-19 13:07:17 +0900</updated>
 			<id>http://css.studiomohawk.com/css/2011/01/24/about-responsive-web-design</id>
 			<content type="html">
 				&lt;h2 id=&quot;whatis&quot;&gt;レスポンシブウェブデザインとは&lt;/h2&gt;
@@ -2399,7 +2435,7 @@ iPhone、アンドロイドOS搭載スマートフォン、iPad、ネットブ�
 今後もさらに解像度が異なる環境が増えていくことは間違いない。&lt;/p&gt;
 
 &lt;p&gt;ではそのサイズのモニタごとに、スクリーンごとにデザインを作り、HTML/CSSを書き足していくのか？&lt;br /&gt;
-その疑問への1つの回答がレスポンシブウェブデザイン(Responsive Web Design)。
+その疑問への1つの回答がレスポンシブウェブデザイン(Responsive Web Design)。&lt;br /&gt;
 多くの場合、CSS3で利用が可能になる予定のMedia Queriesを活用して、モニタ/スクリーンのサイズに合わせて最適なデザインを供給するデザイン/コーディング手法がレスポンシブウェブデザインと呼ばれている。&lt;/p&gt;
 
 &lt;h2 id=&quot;ex&quot;&gt;レスポンシブウェブデザインの例&lt;/h2&gt;
@@ -2408,9 +2444,9 @@ iPhone、アンドロイドOS搭載スマートフォン、iPad、ネットブ�
   &lt;li&gt;&lt;a href=&quot;http://colly.com/&quot;&gt;Simon Collison&lt;/a&gt; / Simon Collisonはレスポンシブウェブデザインをいち早く導入したウェブデザイナ&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://www.informationarchitects.jp/en/&quot;&gt;Information Architects&lt;/a&gt; / WordPressを使ってレスポンシブデザインを実現している&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://thinkvitamin.com/&quot;&gt;Think Vitamin&lt;/a&gt; / こちらも最近のリニューアルからレスポンシブウェブデザインを導入&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.bostonglobe.com/&quot;&gt;The Boston Globe&lt;/a&gt; / メジャーな新聞社のサイト。ここまで大きな規模は初&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://css-tricks.com/&quot;&gt;CSS-Tricks&lt;/a&gt; / レスポンシブウェブデザイン + CSS3のアニメーションを組み込んだ意欲作&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;p&gt;実際にサイトを訪れてブラウザのサイズを変更してほしい。サイズに応じてレイアウトが変わっていくのを見てほしい。&lt;/p&gt;
 
 &lt;h2 id=&quot;whatisnot&quot;&gt;レスポンシブウェブデザインが解決しないこと&lt;/h2&gt;
 
@@ -2448,12 +2484,12 @@ for example, if the user goals for your mobile site are more limited in scope th
 &lt;p&gt;というような観点で検討するべきだと話している。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://5by5.tv/bigwebshow/6&quot;&gt;EPISODE #6: MOBILE FIRST (The Big Web Show)&lt;/a&gt;では、Luke Wroblewskiは「モバイルからまずデザインを始める」という提案をしている。&lt;br /&gt;
-こちらも非常に興味深い。現時点では通常デスクトップ用のデザインからスタートし、その後にハンドヘルドデバイス用に最適化していくのが通常のフローと言えるが、Lukeはモバイルデバイス用のデザインを先に行う事で、モバイルで提供すべきサービスの根幹に集中することができ、デザインだけではなく、UIやサイト構造、そしてインタラクションもシンプルにすることができると話している。&lt;br /&gt;
+こちらも非常に興味深い。現時点では通常デスクトップ用のデザインからスタートし、その後にハンドヘルドデバイス用に最適化していくのが通常のフローと言えるが、Lukeはモバイルデバイス用のデザインを先に行う事でモバイルで提供すべきサービスの根幹に集中することができ、デザインだけではなく、UIやサイト構造、そしてインタラクションもシンプルにすることができると話している。&lt;br /&gt;
 ミニマムなスタート地点からデスクトップ用デザインなど大きなモニタ/スクリーン、マウスやキーボードなどに対応するデザインを作ることで、すべてのユーザに対して最適なデザインを提供できるという考え方だ。&lt;/p&gt;
 
-&lt;h2&gt;Media Queries {@mediaqueries}&lt;/h2&gt;
+&lt;h2 id=&quot;mediaqueries&quot;&gt;Media Queries&lt;/h2&gt;
 
-&lt;p&gt;レスポンシブデザインでは、多くの場合、CSS3でサポートされる予定のMedia Queriesを活用し、サイズの異なるモニタ/スクリーンに対し最適なデザインを提供する。&lt;br /&gt;
+&lt;p&gt;レスポンシブデザインでは多くの場合、CSS3でサポートされる予定のMedia Queriesを活用しサイズの異なるモニタ/スクリーンに対し最適なデザインを提供する。&lt;br /&gt;
 Media Queriesについては、&lt;a href=&quot;http://hardboiledwebdesign.com/&quot;&gt;Hardboiled Web Design&lt;/a&gt;の著者であるAndy Clarkの記事&lt;a href=&quot;http://www.stuffandnonsense.co.uk/blog/about/hardboiled_css3_media_queries&quot;&gt;Hardboiled CSS3 Media Queries&lt;/a&gt;で実例を見る事ができる。&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;css&quot;&gt;&lt;span class=&quot;lineno&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/* iPhone 3 (横向き) ----------- */&lt;/span&gt;
@@ -2479,7 +2515,7 @@ Media Queriesについては、&lt;a href=&quot;http://hardboiledwebdesign.com/&
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;W3Cによれば&lt;code&gt;@import&lt;/code&gt;を使っても上記のように記述することが可能だ。(&lt;a href=&quot;http://www.w3.org/TR/css3-mediaqueries/#media0&quot;&gt;Media Queries&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;W3Cによれば&lt;code&gt;@import&lt;/code&gt;を使っても上記のように記述することが可能。(&lt;a href=&quot;http://www.w3.org/TR/css3-mediaqueries/#media0&quot;&gt;Media Queries&lt;/a&gt;)&lt;/p&gt;
 
 &lt;p&gt;現時点でのMedia Queriesのサポート状況は、Firefox, Chrome, Safari, Opera, Internet Explorer 9, Android スマートフォン, そしてiOSデバイス(iPhone、iPhone4、iPad、iPod touch)がサポートしている。(※Androidスマートフォン、iPhone、iPod touchについては、W3Cで宣言されているすべての値を利用できるわけではないようだ)&lt;/p&gt;
 
@@ -2493,7 +2529,7 @@ Media Queriesについては、&lt;a href=&quot;http://hardboiledwebdesign.com/&
 &lt;code&gt;meta viewport&lt;/code&gt;については&lt;a href=&quot;http://developer.apple.com/library/safari/#documentation/appleapplications/reference/safariwebcontent/UsingtheViewport/UsingtheViewport.html&quot;&gt;Safari Reference Library&lt;/a&gt;(英語)が詳しい説明をしている。&lt;br /&gt;
 またはQuirksmodeの&lt;a href=&quot;http://www.quirksmode.org/blog/archives/2010/09/combining_meta.htm&quot;&gt;Combining meta viewport and media queries&lt;/a&gt;(英語)も参考になる。&lt;/p&gt;
 
-&lt;p&gt;また、IE6〜IE8まではCSS3で拡張される予定のMedia Queriesはサポートされていないので、レスポンシブデザインの実装をしないか、&lt;a href=&quot;http://code.google.com/p/css3-mediaqueries-js/&quot;&gt;css3-mediaqueries-js&lt;/a&gt;というJavaScriptを使った実装は可能だ。
+&lt;p&gt;また、IE6〜IE8まではCSS3で拡張される予定のMedia Queriesはサポートされていないので、レスポンシブデザインの実装をしないか、&lt;a href=&quot;http://code.google.com/p/css3-mediaqueries-js/&quot;&gt;css3-mediaqueries-js&lt;/a&gt;というJavaScriptを使った実装は可能だ。&lt;br /&gt;
 レスポンシブウェブデザインは&lt;em&gt;すべてのブラウザで見た目を同じにしなくてはならない&lt;/em&gt;という思想からはほど遠くプログレッシブエンハンスメントという手法に近いので、無理にIE6〜IE8への実装をする必要性はない。&lt;br /&gt;
 レスポンシブウェブデザインは、確かにユーザのスクリーンサイズに合わせた最適なデザインを提供することができるが、それができなくてもユーザビリティはマイナスになったりはしない。&lt;/p&gt;
 
@@ -2503,7 +2539,7 @@ Media Queriesについては、&lt;a href=&quot;http://hardboiledwebdesign.com/&
 そこで現れ始めたのが、レスポンシブウェブデザインのためのグリッドCSSだ。&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://lessframework.com/&quot;&gt;Less Framework3&lt;/a&gt; &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://lessframework.com/&quot;&gt;Less Framework&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;黄金比をベースに3、5、8、13コラム、最小320pxから1280px以上のモニタ/スクリーンに合わせてコラムグリッドの数を変更する。実際に配布されているのは、&lt;code&gt;body&lt;/code&gt;に対してmedea queriesを使って幅のサイズを指定するところのみ。コラムグリッドについては、配布されるファイルのコメントを参考にグリッド用のクラスを作成する。非常にミニマムな構成なので、レスポンシブウェブデザインを学ぶ上でのソースコードリーディングに最適だ。&lt;/p&gt;
@@ -2514,9 +2550,134 @@ Media Queriesについては、&lt;a href=&quot;http://hardboiledwebdesign.com/&
 
 &lt;p&gt;こちらは、その名前の通り1140px以上を最大幅とするレスポンシブグリッドCSS。Less Framework3と異なる点はコラムグリッド用のクラスは用意されているところ。そしてコラムグリッドとガター(コラムとコラムの間のマージン)はパーセントで指定されているところ。画像に対しても&lt;code&gt;max-width&lt;/code&gt;を指定し、モニタ/スクリーンのサイズに対して最適なサイズに変更されるようになっていたりする。Photoshopのファイルも配布している。&lt;/p&gt;
 
+&lt;h2 id=&quot;problem&quot;&gt;レスポンシブウェブデザインの問題点&lt;/h2&gt;
+
+&lt;h3&gt;レスポンシブイメージ&lt;/h3&gt;
+
+&lt;p&gt;まさに魔法とも思える画像へのレスポンシブ対応である&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;css&quot;&gt;&lt;span class=&quot;nt&quot;&gt;img&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;embed&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;video&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;max-width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;に隠された問題点を指摘できるだろうか？&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;ブラウザによって縮小された画像のクオリティ&lt;/li&gt;
+  &lt;li&gt;大きなサイズの画像であることには変わらない = 帯域の無駄&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;この問題点に対して、多くの解決が提案され続けている。&lt;br /&gt;
+多くの提案については、&lt;a href=&quot;http://www.cloudfour.com/responsive-imgs-part-2/&quot;&gt;Responsive IMGs Part 2 — In-depth Look at Techniques « Cloud Four&lt;/a&gt;(英語)にてその手法と問題点についてよくまとまっているので目を通しておくことをおすすめする。  &lt;/p&gt;
+
+&lt;p&gt;この記事からさらにまとめると&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://adaptive-images.com/&quot;&gt;Adaptive Images in HTML&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;JavaScript + PHP
++ .htaccessを利用したほぼサーバーサイドで解決できるこの手法は、画像が常に同じファイル名であるためにCDNを利用している場合に問題が出る可能性があるがインフラチームと連携すれば実装面と効果面でROIが高いと言える解決。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.monoliitti.com/images/&quot;&gt;Testing Responsive Images&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;JavaScriptのみで解決する方法がこちら&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;noscript&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-large=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;Koala.jpg&amp;#39;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-small=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;Koala-small.jpg&amp;#39;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-alt=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;Koala&amp;#39;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;Koala.jpg&amp;#39;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;alt=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;Koala&amp;#39;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/noscript&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;まずは画像を&lt;code&gt;noscript&lt;/code&gt;タグで囲んで、&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;noscript[data-large][data-small]&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;each&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;src&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;screen&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;width&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;500&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;large&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;small&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;lt;img src=&amp;quot;&amp;#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;src&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;quot; alt=&amp;quot;&amp;#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;alt&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;quot; /&amp;gt;&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;insertAfter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;とjQueryでスクリーンサイズに合わせて別画像を呼び出す。&lt;br /&gt;
+&lt;code&gt;noscript&lt;/code&gt;を使うという慣れない実装ながら、CDNでも問題を起こさないし、大小の画像を両方にリクエストを投げる事もない。リクエストの回数と画像のダウンロードにかかる帯域を節約できる見た目以上にエレガントな解決方法。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.sencha.com/learn/how-to-use-src-sencha-io/&quot;&gt;How to use src.sencha.io&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;tinySrcというサービスがSenchaに吸収され、src.sencha.ioとして生まれ変わった解決法。&lt;br /&gt;
+こちらは画像をsrc.sencha.ioに投げるとデバイスに最適化したサイズに変換して戻してくれる。&lt;br /&gt;
+Senchaのインフラに頼り切ることにはなるが、個人サイトレベルであれば問題ないだろう。  &lt;/p&gt;
+
+&lt;p&gt;と3つほどが解決の候補にあげられる。&lt;br /&gt;
+サイトの規模やサーバーサイドチームと相談の上、環境に応じた解決を適切に選択してほしい。&lt;/p&gt;
+
+&lt;h3&gt;レスポンシブ広告&lt;/h3&gt;
+
+&lt;p&gt;ウェブサイトには画像や動画など以外にも固定幅の要素がある。&lt;br /&gt;
+それが広告。ほとんどのウェブデザイナは広告表示にまつわる仕事をしたことがあるだろう。&lt;br /&gt;
+ウェブサイトの収入は多くの場合この広告に頼っている現状を考えると、レスポンシブウェブデザインを加速するにはこの問題を解決しないわけにはいかない。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.markboulton.co.uk/journal/comments/responsive-advertising&quot;&gt;Responsive Advertising via Mark Boulton&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Mark BoultonがBoston
+Globeのレスポンシブウェブデザイン対応から得た経験から、問題の解決作を提案している。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://artequalswork.com/posts/responsive-ads.php&quot;&gt;Responsive Advertising via ART=WORKR&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;そのMark Boultonの提案への改善策を提案しているのがこちら。&lt;/p&gt;
+
+&lt;p&gt;どちらの解決作も&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;広告は標準化された固定サイズである&lt;/li&gt;
+  &lt;li&gt;広告はサイズと掲載位置をベースに制作され販売される&lt;/li&gt;
+  &lt;li&gt;広告にはpop-over、動画などリッチアドという広告もある&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;という3点にフォーカスして問題の解決を図ろうとしている。&lt;br /&gt;
+結論からいって、3.への解決はどちらも苦慮中で、1.は標準サイズのクリエイティブを再利用して解決できるとしている。  &lt;/p&gt;
+
+&lt;p&gt;問題は2.の掲載位置。現状ではセールスチームの人間がお客さんにこのサイトのこの位置に掲載されます、と言って販売してくるわけだから、往々にして掲載位置を固定するためにテンプレートが存在することになる。&lt;br /&gt;
+つまり&lt;/p&gt;
+
+&lt;p&gt;テンプレート &amp;gt; 掲載位置とサイズ &amp;gt; 広告&lt;/p&gt;
+
+&lt;p&gt;というメンタルモデルとなるというのがMark
+Boltonの考えで、彼の提案は掲載位置とそれに伴うサイズでの販売ではなく、それらをパッケージ化して販売し、スクリーンサイズに合わせて表示する広告サイズを変化させるというもの。&lt;br /&gt;
+全サイズでのインプレッション数をパッケージとして保証すれば問題は解決されるということだ。&lt;/p&gt;
+
+&lt;p&gt;それに対して、ART=WORKの提案は&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;レンジ&lt;/strong&gt; &amp;gt; テンプレート &amp;gt; 掲載位置とサイズ &amp;gt; 広告&lt;/p&gt;
+
+&lt;p&gt;というように先ほどのメンタルモデルに&lt;strong&gt;レンジ&lt;/strong&gt;という上位の概念を取り入れたもの。&lt;br /&gt;
+ここでいうレンジについては、実際に画像を見てもらった方がわかりやすい。(&lt;a href=&quot;http://artequalswork.com/uploads/responsive-templates.jpg&quot;&gt;レンジについて&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;ウィンドウサイズをレンジで区切ってそのレンジに合わせてこれまで通りに広告を販売できる。&lt;br /&gt;
+モバイルデバイス用に広告を表示させる場合は、そのレンジで購入すればいいという単純な仕組み。  &lt;/p&gt;
+
+&lt;p&gt;私の経験では現状日本では、PC用、モバイル用というレンジに近い概念で広告は販売されている。少なくとも私の会社ではそうだ。&lt;br /&gt;
+これは日本ではそもそもスマートフォン以前の携帯端末への広告販売に適応してきた歴史があるからだ。&lt;br /&gt;
+携帯用、PC用、両方でという販売形態はすでに販売側にも実装側にも制作側にも経験がある。&lt;br /&gt;
+この分野に置いては日本が海外を先行していると言えるので、経験を海外に向けて発表でいるいい機会と言える。&lt;/p&gt;
+
 &lt;h2 id=&quot;links&quot;&gt;参考リンク&lt;/h2&gt;
 
 &lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://bradfrostweb.com/blog/web/mobile-first-responsive-web-design/&quot;&gt;Mobile-First Responsive Web Design (Brad Frost Web)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.getfinch.com/finch/entry/its-not-responsive-web-building-its-responsive-web-design/&quot;&gt;It’s Not Responsive Web Building, It’s Responsive Web Design (FINCH)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.lukew.com/ff/entry.asp?1314&quot;&gt;An Event Apart: The Responsive Designer’s Workflow (LukeW)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://boagworld.com/dev/complex_responsive_design/&quot;&gt;Responsive Design: Beyond the Blog (Boagworld)&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://www.alistapart.com/articles/responsive-web-design/&quot;&gt;Responsive Web Design (A list Apart)&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://www.w3.org/TR/css3-mediaqueries/&quot;&gt;Media Queries (W3C)&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://www.smashingmagazine.com/2011/01/12/guidelines-for-responsive-web-design/&quot;&gt;Responsive Web Design: What It Is and How To Use It (Smashing Magazine)&lt;/a&gt;&lt;/li&gt;
@@ -2527,6 +2688,14 @@ Media Queriesについては、&lt;a href=&quot;http://hardboiledwebdesign.com/&
   &lt;li&gt;&lt;a href=&quot;http://www.lukew.com/ff/entry.asp?1117&quot;&gt;Mobile First Helps with Big Issues (LukeW)&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://5by5.tv/bigwebshow/6&quot;&gt;EPISODE #6: MOBILE FIRST (The Big Web Show)&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://membership.thinkvitamin.com/library/responsive-web-design/mobile/context&quot;&gt;Responsive Web Design: Mobile: Context (Think Vitamin)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;books&quot;&gt;参考図書&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://easy-readers.net/books/adaptive-web-design/&quot;&gt;Adaptive Web Design: Crafting Rich Experiences with Progressive Enhancement — Easy Readers&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.abookapart.com/products/mobile-first&quot;&gt;A Book Apart, Mobile First&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.abookapart.com/products/responsive-web-design&quot;&gt;A Book Apart, Responsive Web Design&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 				&lt;hr /&gt;
@@ -2542,7 +2711,7 @@ Media Queriesについては、&lt;a href=&quot;http://hardboiledwebdesign.com/&
 		<entry>
 			<title>About CSS Radar</title>
 			<link href="http://css.studiomohawk.com/cssradar/2011/01/23/about-cssrader/"/>
-			<updated>2011-01-23T00:00:00+09:00</updated>
+			<updated>2011-11-12 10:23:27</updated>
 			<id>http://css.studiomohawk.com/cssradar/2011/01/23/about-cssrader</id>
 			<content type="html">
 				&lt;h2 id=&quot;about-site&quot;&gt;CSS Radarについて&lt;/h2&gt;
