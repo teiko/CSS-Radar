@@ -234,6 +234,7 @@ imap <C-t> <Esc>:tabnew<CR>
 
 ## 参考リンク {#link}
 
+- [Coming Home to Vim / Steve Losh](http://stevelosh.com/blog/2010/09/coming-home-to-vim/) / 様々なテキストエディタからVimに落ち着いた経緯と細かい設定の解説がおすすめ(英語)
 - [Vim Recipes](http://vim.runpaint.org/toc/) / 基本から応用まで非常にシンプルでミニマムなフォーマットで丁寧に解説してくれる (英語)
 - [Vimcasts - free screencasts about the text editor Vim](http://vimcasts.org/) / Vimのチュートリアルビデオキャスト。基本のコマンドからプラグインまで詳しく解説している(英語)
 - [Smash Into Vim by PeepCode](http://peepcode.com/products/smash-into-vim-i) / Vimのチュートリアルビデオ。基本をわかりやすく解説 パート1 $12 (英語)
