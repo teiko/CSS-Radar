@@ -12,6 +12,7 @@ toc:
 - {text: Gitの基本的なワークフロー, hash: workflow}
 - {text: GitのTips & Tricks, hash: tips}
 - {text: Githubの使い方, hash: github}
+- {text: ヘルパスクリプト, hash: helper}
 - {text: 参考リンク, hash: link}
 ---
 
@@ -358,6 +359,26 @@ git remote add upstream オリジナルのレポジトリのgitパス #パスは
 git fetch upstream # 変更をfetch
 git merge upstream/master # 変更を自分のブランチにmergeする
 {% endhighlight %}
+
+## ヘルパスクリプト {#helper}
+
+### Git Extras
+
+[visionmedia/git-extras](https://github.com/visionmedia/git-extras)
+
+Git ExtrasはGitに便利コマンドを追加するスクリプト集。  
+
+- ``git commits-since yesterday`` で昨日からのコミットだけを見る事ができたり、
+- ``git delete-submodule lib/foo`` でlib/fooのsubmoduleを削除したり、
+- ``git-touch [filename]`` でfilenameを作成して、``git add``したり、
+- ``git undo`` で最後のコミットを削除したりする。
+
+インストールは簡単。
+{% highlight bash %}
+curl https://raw.github.com/visionmedia/git-extras/master/bin/git-extras | INSTALL=y sh
+{% endhighlight %}
+
+紹介した以外にも沢山のコマンドが追加されるので入れておいても損はしないと思う。
 
 ## 参考リンク {#link}
 
