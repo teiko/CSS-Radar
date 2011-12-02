@@ -3,7 +3,7 @@ layout: post
 title: Git バージョンコントロール
 category: tool
 date: 2011-01-29 00:00:00
-update: 2011-11-03 17:45:45
+update: 2011-12-03T01:40:50+09:00
 toc:
 - {text: バージョンコントロールについて, hash: whatis}
 - {text: Gitのインストール, hash: install}
