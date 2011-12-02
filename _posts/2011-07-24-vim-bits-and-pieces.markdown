@@ -3,7 +3,7 @@ layout: post
 category: tool
 title: Vim
 date: 2011-07-24 00:57:55 +0900
-update: 2011-11-19T10:48:38+09:00
+update: 2011-12-03T01:07:36+09:00
 toc:
 - {text: はじめに, hash: preface}
 - {text: コマンド, hash: command}
@@ -79,6 +79,23 @@ splitの略、onはonlyの略で、qはquitなので、覚えやすいはずだ�
 - ``:tab ball``
 
 ## プラグイン {#plugin}
+
+### [snipMate](https://github.com/garbas/vim-snipmate)
+
+色々あって利用してこなかったsnipMateに挑戦中。オリジナルのsnipMateは更新が止まっている様子なので、こちらのforkをおすすめされた。  
+snipMateはTextMateのスニペット機能を模したプラグイン。特定のキーワードとtabで登録したスニペットが呼び出せる。  
+
+### [MatchTag](http://www.vim.org/scripts/script.php?script_id=3818)
+
+MatchTagはNotePad++で使えたあの便利なHTMLタグを選ぶとセットになっているタグをハイライトしてくれるプラグイン。
+ずーとこれだけが気になっていたけれど、これで完璧。HTMLを生業にしている人は必携。
+
+### [Headlights](https://github.com/mbadran/headlights)
+
+![Image]({% postfile headlights.png %})
+
+Headlightsはbundlesというメニュを追加するプラグイン。ハードコアVimmerには総スカンかも知れないが、インストールしてあるプラグイン達でできることをマウスで追いかけられる。  
+プラグインがインストールされているかのチェックにもなるし、いまいちヘルプもわかりづらいという初心者におすすめ。
 
 ### [Prefixr](https://github.com/mr-szymanski/prefixr)
 
@@ -186,32 +203,6 @@ call pathogen#helptags()
 
 ## 設定 {#config}
 
-CSSのHEX値の明度をキーボードで上げ下げできるスクリプト[vimHexUpdate](https://github.com/dancrew32/vimHexUpdate)  
-HEX値は例の``#333333``というCSSを書く事を生業としている人は泣けるスクリプトだろう。
-
-- ``F8``で1段階暗く
-- ``F9``で1段階明るく
-
-もちろんどのキーにするのかは設定を変更できる。  
-
-上記ページをローカルにクローンしてcssScriptというディレクトリを.vimディレクトリにコピー。  
-そして下記設定を.vimrcに追加するだけ。
-
-{% highlight vim %}
-" vimHexUpdate: http://j.mp/tLfjWa
-" Update a hex value up/down a shade
-function! HexUpdate(operator, shade)
-    let hex = expand("<cword>")
-    let newHex = system("php ~/.vim/cssScript/hex.php ". hex ." ". a:operator . a:shade)
-    execute "normal ciw". newHex
-endfunction
-
-nnoremap <F8> :call HexUpdate("-",1)<CR>
-nnoremap <F9> :call HexUpdate("+",1)<CR>
-"}
-{% endhighlight %}
-
-
 ### タブをFirefoxのように操る
 
 - ``Control + Tab``で次のタブへ
@@ -231,9 +222,9 @@ imap <C-t> <Esc>:tabnew<CR>
 " }
 {% endhighlight %}
 
-
 ## 参考リンク {#link}
 
+- [Vim Toolbox, 2010 Edition :: phly, boy, phly](http://mwop.net/blog/249-Vim-Toolbox,-2010-Edition) / 10年ほどVimを利用しているというMatthew Weier O'Phinney氏のVimについての記事(英語)
 - [Coming Home to Vim / Steve Losh](http://stevelosh.com/blog/2010/09/coming-home-to-vim/) / 様々なテキストエディタからVimに落ち着いた経緯と細かい設定の解説がおすすめ(英語)
 - [Vim Recipes](http://vim.runpaint.org/toc/) / 基本から応用まで非常にシンプルでミニマムなフォーマットで丁寧に解説してくれる (英語)
 - [Vimcasts - free screencasts about the text editor Vim](http://vimcasts.org/) / Vimのチュートリアルビデオキャスト。基本のコマンドからプラグインまで詳しく解説している(英語)
