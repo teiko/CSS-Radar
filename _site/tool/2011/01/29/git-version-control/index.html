@@ -449,6 +449,29 @@ git merge upstream/master <span class="c"># 変更を自分のブランチにmer
 </code></pre>
 </div>
 
+<h2 id="helper">ヘルパスクリプト</h2>
+
+<h3>Git Extras</h3>
+
+<p><a href="https://github.com/visionmedia/git-extras">visionmedia/git-extras</a></p>
+
+<p>Git ExtrasはGitに便利コマンドを追加するスクリプト集。  </p>
+
+<ul>
+  <li><code>git commits-since yesterday</code> で昨日からのコミットだけを見る事ができたり、</li>
+  <li><code>git delete-submodule lib/foo</code> でlib/fooのsubmoduleを削除したり、</li>
+  <li><code>git-touch [filename]</code> でfilenameを作成して、<code>git add</code>したり、</li>
+  <li><code>git undo</code> で最後のコミットを削除したりする。</li>
+</ul>
+
+<p>インストールは簡単。</p>
+
+<div class="highlight"><pre><code class="bash">curl https://raw.github.com/visionmedia/git-extras/master/bin/git-extras | <span class="nv">INSTALL</span><span class="o">=</span>y sh
+</code></pre>
+</div>
+
+<p>紹介した以外にも沢山のコマンドが追加されるので入れておいても損はしないと思う。</p>
+
 <h2 id="link">参考リンク</h2>
 
 <ul>

@@ -4,7 +4,7 @@
 	<title>CSS Radar | For Front End Developers</title>
 	<link href="http://css.studiomohawk.com/atom.xml" rel="self"/>
 	<link href="http://css.studiomohawk.com"/>
-	<updated>2011-11-26T01:12:45+09:00</updated>
+	<updated>2011-12-03T01:33:29+09:00</updated>
 	<id>http://css.studiomohawk.com/</id>
 	<author>
 		<name>Yuya Saito</name>
@@ -14,7 +14,7 @@
 		<entry>
 			<title>Vim</title>
 			<link href="http://css.studiomohawk.com/tool/2011/07/24/vim-bits-and-pieces/"/>
-			<updated>2011-11-19 10:48:38 +0900</updated>
+			<updated>2011-12-03 01:07:36 +0900</updated>
 			<id>http://css.studiomohawk.com/tool/2011/07/24/vim-bits-and-pieces</id>
 			<content type="html">
 				&lt;h2 id=&quot;preface&quot;&gt;はじめに&lt;/h2&gt;
@@ -100,6 +100,23 @@ splitの略、onはonlyの略で、qはquitなので、覚えやすいはずだ�
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;plugin&quot;&gt;プラグイン&lt;/h2&gt;
+
+&lt;h3&gt;&lt;a href=&quot;https://github.com/garbas/vim-snipmate&quot;&gt;snipMate&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;色々あって利用してこなかったsnipMateに挑戦中。オリジナルのsnipMateは更新が止まっている様子なので、こちらのforkをおすすめされた。&lt;br /&gt;
+snipMateはTextMateのスニペット機能を模したプラグイン。特定のキーワードとtabで登録したスニペットが呼び出せる。  &lt;/p&gt;
+
+&lt;h3&gt;&lt;a href=&quot;http://www.vim.org/scripts/script.php?script_id=3818&quot;&gt;MatchTag&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;MatchTagはNotePad++で使えたあの便利なHTMLタグを選ぶとセットになっているタグをハイライトしてくれるプラグイン。
+ずーとこれだけが気になっていたけれど、これで完璧。HTMLを生業にしている人は必携。&lt;/p&gt;
+
+&lt;h3&gt;&lt;a href=&quot;https://github.com/mbadran/headlights&quot;&gt;Headlights&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/tool/2011/07/24/vim-bits-and-pieces/headlights.png&quot; alt=&quot;Image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Headlightsはbundlesというメニュを追加するプラグイン。ハードコアVimmerには総スカンかも知れないが、インストールしてあるプラグイン達でできることをマウスで追いかけられる。&lt;br /&gt;
+プラグインがインストールされているかのチェックにもなるし、いまいちヘルプもわかりづらいという初心者におすすめ。&lt;/p&gt;
 
 &lt;h3&gt;&lt;a href=&quot;https://github.com/mr-szymanski/prefixr&quot;&gt;Prefixr&lt;/a&gt;&lt;/h3&gt;
 
@@ -215,33 +232,6 @@ git submodule sync
 
 &lt;h2 id=&quot;config&quot;&gt;設定&lt;/h2&gt;
 
-&lt;p&gt;CSSのHEX値の明度をキーボードで上げ下げできるスクリプト&lt;a href=&quot;https://github.com/dancrew32/vimHexUpdate&quot;&gt;vimHexUpdate&lt;/a&gt;&lt;br /&gt;
-HEX値は例の&lt;code&gt;#333333&lt;/code&gt;というCSSを書く事を生業としている人は泣けるスクリプトだろう。&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code&gt;F8&lt;/code&gt;で1段階暗く&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;F9&lt;/code&gt;で1段階明るく&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;もちろんどのキーにするのかは設定を変更できる。  &lt;/p&gt;
-
-&lt;p&gt;上記ページをローカルにクローンしてcssScriptというディレクトリを.vimディレクトリにコピー。&lt;br /&gt;
-そして下記設定を.vimrcに追加するだけ。&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;vim&quot;&gt;&lt;span class=&quot;c&quot;&gt;&amp;quot; vimHexUpdate: http://j.mp/tLfjWa&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;&amp;quot; Update a hex value up/down a shade&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;!&lt;/span&gt; HexUpdate&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;operator&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; shade&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; hex &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; expand&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&amp;lt;cword&amp;gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; newHex &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; system&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;php ~/.vim/cssScript/hex.php &amp;quot;&lt;/span&gt;. hex .&lt;span class=&quot;s2&quot;&gt;&amp;quot; &amp;quot;&lt;/span&gt;. a:operator . a:shade&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    execute &lt;span class=&quot;c&quot;&gt;&amp;quot;normal ciw&amp;quot;. newHex&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;endfunction&lt;/span&gt;
-
-nnoremap &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;F8&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; :&lt;span class=&quot;k&quot;&gt;call&lt;/span&gt; HexUpdate&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;-&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&amp;lt;&lt;/span&gt;CR&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
-nnoremap &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;F9&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; :&lt;span class=&quot;k&quot;&gt;call&lt;/span&gt; HexUpdate&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;+&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&amp;lt;&lt;/span&gt;CR&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;&amp;quot;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
 &lt;h3&gt;タブをFirefoxのように操る&lt;/h3&gt;
 
 &lt;ul&gt;
@@ -266,6 +256,7 @@ imap &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;C&lt;span class=&quot;
 &lt;h2 id=&quot;link&quot;&gt;参考リンク&lt;/h2&gt;
 
 &lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://mwop.net/blog/249-Vim-Toolbox,-2010-Edition&quot;&gt;Vim Toolbox, 2010 Edition :: phly, boy, phly&lt;/a&gt; / 10年ほどVimを利用しているというMatthew Weier O’Phinney氏のVimについての記事(英語)&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://stevelosh.com/blog/2010/09/coming-home-to-vim/&quot;&gt;Coming Home to Vim / Steve Losh&lt;/a&gt; / 様々なテキストエディタからVimに落ち着いた経緯と細かい設定の解説がおすすめ(英語)&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://vim.runpaint.org/toc/&quot;&gt;Vim Recipes&lt;/a&gt; / 基本から応用まで非常にシンプルでミニマムなフォーマットで丁寧に解説してくれる (英語)&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://vimcasts.org/&quot;&gt;Vimcasts - free screencasts about the text editor Vim&lt;/a&gt; / Vimのチュートリアルビデオキャスト。基本のコマンドからプラグインまで詳しく解説している(英語)&lt;/li&gt;
@@ -2400,6 +2391,29 @@ git fetch upstream &lt;span class=&quot;c&quot;&gt;# 変更をfetch&lt;/span&gt;
 git merge upstream/master &lt;span class=&quot;c&quot;&gt;# 変更を自分のブランチにmergeする&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
+
+&lt;h2 id=&quot;helper&quot;&gt;ヘルパスクリプト&lt;/h2&gt;
+
+&lt;h3&gt;Git Extras&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/visionmedia/git-extras&quot;&gt;visionmedia/git-extras&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Git ExtrasはGitに便利コマンドを追加するスクリプト集。  &lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code&gt;git commits-since yesterday&lt;/code&gt; で昨日からのコミットだけを見る事ができたり、&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;git delete-submodule lib/foo&lt;/code&gt; でlib/fooのsubmoduleを削除したり、&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;git-touch [filename]&lt;/code&gt; でfilenameを作成して、&lt;code&gt;git add&lt;/code&gt;したり、&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;git undo&lt;/code&gt; で最後のコミットを削除したりする。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;インストールは簡単。&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;curl https://raw.github.com/visionmedia/git-extras/master/bin/git-extras | &lt;span class=&quot;nv&quot;&gt;INSTALL&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;y sh
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;紹介した以外にも沢山のコマンドが追加されるので入れておいても損はしないと思う。&lt;/p&gt;
 
 &lt;h2 id=&quot;link&quot;&gt;参考リンク&lt;/h2&gt;
 
