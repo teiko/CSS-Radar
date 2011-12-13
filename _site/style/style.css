@@ -31,35 +31,8 @@ a:hover {
 .logo a:visited { color: #fafafa; }
 .tagline {
   position: relative;
-  top: -10px;
-  text-align: center;
-}
-.menu {
-  font-size: 0.75em;
-  position: fixed;
-  top: 0;
-  right: 20px;
-  width: 120px;
-  background-color: #585a51;
-  color: #fafafa;
-  text-transform: small-caps;
-  padding-top: 20px;
-  font-weight: bold;
-  text-shadow: 1px 1px 1px #333333;
-  padding-bottom: 20px;
-  text-align: center;
-  border: 1px solid #3e4039;
-  border-top: 0px;
-  z-index: 300;
-}
-.menu li:before {
-  content: "▼";
-  margin-right: 3px;
-}
-.menu:hover {
-  background: #65675d;
-  color: #ffffff;
-  cursor: pointer;
+  top: -24px;
+  letter-spacing: 0.07em;
 }
 .backnumber {
   display: none;
@@ -299,6 +272,11 @@ a:hover {
 .home .article-inner .meta .update-pub:after { content: "/"; }
 .home .article-inner .meta .category:before { content: "on "; }
 .home .article-inner .meta .date-pub:before { content: "published at"; }
+.home .article-inner ul {
+  list-style: square;
+  padding-left: 1em;
+}
+.home .article-inner ul a:link { border: 0 none; }
 .home #main footer {
   background: #151919;
   border-top: 1px solid rgba(57, 64, 67, 0.8);
@@ -344,6 +322,11 @@ a:hover {
 .archive .article-inner .meta .update-pub:after { content: "/"; }
 .archive .article-inner .meta .category:before { content: "on "; }
 .archive .article-inner .meta .date-pub:before { content: "published at"; }
+.archive .article-inner ul {
+  list-style: square;
+  padding-left: 1em;
+}
+.archive .article-inner ul a:link { border: 0 none; }
 .archive #main footer {
   background: #151919;
   border-top: 1px solid rgba(57, 64, 67, 0.8);

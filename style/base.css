@@ -86,4 +86,8 @@ em { font-weight: bold; }
 	font-weight: normal;
 	line-height: inherit;
 }
-
+/* TOOLS
+-------------------------------------------------------- */
+.hide { display: none; }
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; *line-height: 0; }
+.ir br { display: none; }

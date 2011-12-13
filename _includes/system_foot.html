@@ -1,2 +1,14 @@
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
 {% include_js master %}
+<script>
+	(function(d, s) {
+	 var js, fjs = d.getElementsByTagName(s)[0], load = function(url, id) {
+	 if (d.getElementById(id)) {return;}
+	 js = d.createElement(s); js.src = url; js.id = id;
+	 fjs.parentNode.insertBefore(js, fjs);
+	 };
+	 load('//www.readability.com/embed.js', 'rdb');
+	 load('https://apis.google.com/js/plusone.js', 'gplus1js');
+	 load('//platform.twitter.com/widgets.js', 'tweetjs');
+	 }(document, 'script'));
+</script>

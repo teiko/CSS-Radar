@@ -4,7 +4,7 @@
 	<title>CSS Radar | For Front End Developers</title>
 	<link href="http://css.studiomohawk.com/atom.xml" rel="self"/>
 	<link href="http://css.studiomohawk.com"/>
-	<updated>2011-12-09T00:42:16+09:00</updated>
+	<updated>2011-12-14T00:12:01+09:00</updated>
 	<id>http://css.studiomohawk.com/</id>
 	<author>
 		<name>Yuya Saito</name>
@@ -2724,9 +2724,9 @@ Boltonの考えで、彼の提案は掲載位置とそれに伴うサイズで�
 		</entry>
 	
 		<entry>
-			<title>About CSS Radar</title>
+			<title>About CSS Radar and Me</title>
 			<link href="http://css.studiomohawk.com/cssradar/2011/01/23/about-cssrader/"/>
-			<updated>2011-11-12 10:23:27</updated>
+			<updated>2011-12-14 00:10:43 +0900</updated>
 			<id>http://css.studiomohawk.com/cssradar/2011/01/23/about-cssrader</id>
 			<content type="html">
 				&lt;h2 id=&quot;about-site&quot;&gt;CSS Radarについて&lt;/h2&gt;
@@ -2735,37 +2735,84 @@ Boltonの考えで、彼の提案は掲載位置とそれに伴うサイズで�
 Radarは現役フロントエンドデベロッパ/ウェブデザイナとして働く斉藤祐也がフロントエンドにまつわるベストプラクティスを紹介するブログ。&lt;br /&gt;
 2〜3年は遅れているという日本のウェブをアップデートしたい。そんな思いで更新していきます。&lt;/p&gt;
 
-&lt;p&gt;CSS
-Radarでは一般的なブログと異なり1度更新した記事でも可能な限り最新の情報にアップデートをしていきます。  &lt;/p&gt;
+&lt;p&gt;CSS Radarでは一般的なブログと異なり1度更新した記事でも可能な限り最新の情報にアップデートをしていきます。  &lt;/p&gt;
 
 &lt;p&gt;フロントエンドデベロッパが日々立ち向かう技術的な問題はGoogleで検索すれば解決方法がすぐに見つかる時代。
 最新の情報はTwitterやFacebookで自分の信頼できるソースを選んで得る事ができる時代。&lt;/p&gt;
 
-&lt;p&gt;そんな時代に私なりのベストプラクティスを収集し集約して紹介するのがCSS Radarの編集方針としています。&lt;/p&gt;
+&lt;p&gt;そんな時代に私なりのベストプラクティスを収集し集約して紹介するのがCSS Radarの編集方針としています。
+1記事 = 1トピックとして、トピックについて知っておきたいベースライン、そしてベストプラクティスを短編の本のように仕立てていく。&lt;br /&gt;
+トピックについての短編技術書というように考えて編成してます。&lt;br /&gt;
+トレンドだけに流されず、ノウハウだけにとどまらず、実践的な知識、技術を共有できるように心がけてます。&lt;/p&gt;
 
 &lt;h2 id=&quot;about-me&quot;&gt;私自身について&lt;/h2&gt;
 
 &lt;p&gt;コンプライアンスの確認を取る気がないので、社名はヒミツとしますが、斉藤祐也は東京にあるとあるウェブ企業にてフロントエンドデベロッパ/ウェブデザイナとして働いている32歳。&lt;br /&gt;
-アメリカ、ラスベガスにてプリントジャーナリズムの学士を取得、卒業後いろいろあって現職にお世話になっています。&lt;br /&gt;
-HTMLとCSSが私のメインエリアで、JSを書いたり、Smartyなどのテンプレ言語も使ったり、ワイヤフレームを書いたり、プロジェクトの初動期のリサーチをしたり、現職のデザインレギュレーションを書いたりするのが主な仕事です。&lt;br /&gt;
-もちろん、ビジュアルデザインの担当もするし、インタラクションやユーザビリティ、SEOについての問題を解決するのをサポートしたりもします。&lt;/p&gt;
+アメリカ、ラスベガスにてプリントジャーナリズムの学士を取得、卒業後いろいろあって現職にお世話になっています。  &lt;/p&gt;
 
-&lt;h3&gt;使っているツール&lt;/h3&gt;
+&lt;p&gt;ジャーナリズムを専攻したのは本の気の迷いでしたが、情報のカケラを集めて、1つのストーリを組み立てていくという作業は思いのほか自分に合っていることが判明。&lt;br /&gt;
+アメリカで英文科よりは少しはマシな気はするものの、英語自体が主体の学科は日本人の私に取っては地獄そのものといっていいくらい厳しい毎日でした。&lt;br /&gt;
+無事に卒業資格を得て、お世話になった教授との最後の面談で言われた言葉は今でも、これからも忘れません。&lt;br /&gt;
+「アメリカのどの新聞社でもあなたは働ける実力がある」&lt;br /&gt;
+見事なまでに新聞では働いてませんが、情報戦争のウェブの世界であの時培った技術は役に立ってます。&lt;/p&gt;
+
+&lt;p&gt;HTMLとCSSが私のメインエリアで、JSを書いたり、Smartyなどのテンプレ言語も使ったり、ワイヤフレームを書いたり、プロジェクトの初動期のリサーチをしたり、現職のデザインレギュレーションを書いたりするのが主な仕事です。&lt;br /&gt;
+もちろん、ビジュアルデザインの担当もするし、インタラクションやユーザビリティ、SEOについての問題を解決するのをサポートしたりもします。&lt;br /&gt;
+私の仕事を一言で表現すると問題を解決する提案を実現することです。&lt;/p&gt;
+
+&lt;h3&gt;デスクトップツール&lt;/h3&gt;
 
 &lt;ul&gt;
   &lt;li&gt;OS: Mac OSX(自宅)、Windows7(会社)&lt;/li&gt;
-  &lt;li&gt;エディタ: Vim (&lt;a href=&quot;https://github.com/studiomohawk/vim&quot;&gt;.vimrc&lt;/a&gt;)&lt;/li&gt;
-  &lt;li&gt;ブラウザ: Google Chrome、Firefox(デバッグ専用)&lt;/li&gt;
+  &lt;li&gt;エディタ: MacVim (&lt;a href=&quot;https://github.com/studiomohawk/vim&quot;&gt;.vimrc&lt;/a&gt;)、&lt;a href=&quot;http://bywordapp.com/&quot;&gt;byword&lt;/a&gt;、&lt;a href=&quot;http://www.literatureandlatte.com/scrivener.php&quot;&gt;Scrivener&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;ビジュアルエディタ: Photoshop、&lt;a href=&quot;http://www.pixelmator.com/&quot;&gt;Pixelmator&lt;/a&gt;、&lt;a href=&quot;http://www.balsamiq.com/&quot;&gt;Balsamiq&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;ブラウザ: Google Chrome、Firefox&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;その他ツール&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;カメラ: Nikon D90(AF Nikkor 35mm f/2D)&lt;/li&gt;
+  &lt;li&gt;デジタル現像: Aperture&lt;/li&gt;
   &lt;li&gt;イヤフォン: Sony MDR-CD900ST(家)、Sennheiser IE 8(外)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;about-question&quot;&gt;記事のリクエスト、質問など&lt;/h2&gt;
+&lt;h3&gt;情報/更新ツール&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/intent/user?user_id=107867741&quot;&gt;Twitter@cssradar&lt;/a&gt;や、&lt;a href=&quot;https://github.com/studiomohawk/fakebrain/wiki&quot;&gt;fakebrain project&lt;/a&gt;、そしてもちろんCSS Radarの更新に必要な情報は以下のツールによってまかなわれています。&lt;/p&gt;
+
+&lt;h4&gt;情報系&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Google Reader + &lt;a href=&quot;http://reederapp.com/&quot;&gt;Reeder&lt;/a&gt; / &lt;a href=&quot;https://github.com/studiomohawk/fakebrain/wiki/feeds-for-front-end-developers&quot;&gt;フロントエンドデベロッパのためのフィード&lt;/a&gt;でまとめた以外も加えて180ほどのフィード情報&lt;/li&gt;
+  &lt;li&gt;ポッドキャスト + &lt;a href=&quot;http://vemedio.com/products/instacast&quot;&gt;Instacast for iPhone&lt;/a&gt; / &lt;a href=&quot;https://github.com/studiomohawk/fakebrain/wiki/podcasts-for-front-end-developers&quot;&gt;フロントエンドデベロッパのためのPodcast - GitHub&lt;/a&gt;にまとめたポッドキャスト&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://twitter.com/#!/cssradar/following&quot;&gt;Twitter&lt;/a&gt; + &lt;a href=&quot;http://beta.strawberryj.am/&quot;&gt;Strawberryjam&lt;/a&gt; / Tweetを1日1回まとめて設定本数分を話題順に並べてメールを送信してくれるサービス。200人超はこうでもしないとさばけない。&lt;/li&gt;
+  &lt;li&gt;メールマガジン / fakebrain projectにてまとめ予定。多分10あるかないかくらい。&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.readability.com/cssradar/&quot;&gt;Readability&lt;/a&gt; / InstapaperでもRead It LaterでもなくReadabilityで「あとで読む」。ないと全部読めない。。&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://pinboard.in/u:studiomohawk/&quot;&gt;Pinboard&lt;/a&gt; / 情報の集積所。タグは情報を集めるのにも便利。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;更新系&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://bufferapp.com/r/a01f9&quot;&gt;buffer&lt;/a&gt; / 時間指定でTweetできるウェブサービス。&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://ifttt.com/&quot;&gt;ifttt / Put the internet to work for you.&lt;/a&gt; / if this then thatを様々なAPIを介して実行できるウェブサービス。Pinboardからbufferへの投稿などを自動で行うようにしている。&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/mojombo/jekyll&quot;&gt;Jekyll&lt;/a&gt; / CSS Radarのブログエンジン。詳しくは&lt;a href=&quot;http://css.studiomohawk.com/tool/2011/06/11/jekyll-101.tool/&quot;&gt;こちら&lt;/a&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;CSS Radar以外のプロジェクト&lt;/h3&gt;
 
 &lt;p&gt;CSS Radarではなかなか新しい記事が更新されません。&lt;br /&gt;
 最新の情報は&lt;a href=&quot;https://twitter.com/intent/user?user_id=107867741&quot;&gt;Twitter@cssradar&lt;/a&gt;にて1日5件以内で紹介しています。&lt;br /&gt;
-また&lt;a href=&quot;http://tinyletter.com/cssradar&quot;&gt;CSS Radar Newsletter&lt;/a&gt;にて1週間分のつぶやきをまとめてメールマガジンとしてまとめています。&lt;br /&gt;
-Google+でCSS
-Radar用のページも作成してみましたので&lt;a href=&quot;https://plus.google.com/u/0/b/109704095110060909968/&quot;&gt;こちら&lt;/a&gt;でも。&lt;/p&gt;
+また&lt;a href=&quot;http://tinyletter.com/cssradar&quot;&gt;CSS Radar Newsletter&lt;/a&gt;にて1週間分のつぶやきをまとめてメールマガジンとしてまとめています。  &lt;/p&gt;
+
+&lt;p&gt;コラボキュレーションと名前を付けた&lt;a href=&quot;https://github.com/studiomohawk/fakebrain/wiki&quot;&gt;fakebrain project&lt;/a&gt;を始めました。
+fakebrain projectはキューレションをコラボレートして、多数のコラボレータからBest ofを集めていきます。&lt;br /&gt;
+世の中“まとめ”が百花絢爛ですが、10も20も同じ系列のまとめがあったら、それをまとめるまとめが必要になってしまう。&lt;br /&gt;
+いたちごっこは火を見るよりも明らかなので、wikiを使ってコラボすることでそれを未然に防ごうというチャレンジです。&lt;br /&gt;
+コラボレータは常に募集中です。githubのアカウントが必要になりますが無料ですので、是非。&lt;/p&gt;
+
+&lt;h2 id=&quot;about-question&quot;&gt;記事のリクエスト、質問など&lt;/h2&gt;
 
 &lt;p&gt;記事への質問、リクエストなどは、&lt;a href=&quot;https://twitter.com/intent/user?user_id=107867741&quot;&gt;Twitter@cssradar&lt;/a&gt;か、cssradar+ask@gmail.comにて受け付けているのでお気軽にどうぞ。&lt;/p&gt;
 
