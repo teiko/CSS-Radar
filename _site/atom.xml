@@ -4,7 +4,7 @@
 	<title>CSS Radar | For Front End Developers</title>
 	<link href="http://css.studiomohawk.com/atom.xml" rel="self"/>
 	<link href="http://css.studiomohawk.com"/>
-	<updated>2011-12-14T00:14:55+09:00</updated>
+	<updated>2011-12-27T22:54:21+09:00</updated>
 	<id>http://css.studiomohawk.com/</id>
 	<author>
 		<name>Yuya Saito</name>
@@ -14,7 +14,7 @@
 		<entry>
 			<title>Vim</title>
 			<link href="http://css.studiomohawk.com/tool/2011/07/24/vim-bits-and-pieces/"/>
-			<updated>2011-12-03 01:07:36 +0900</updated>
+			<updated>2011-12-25 12:58:27 +0900</updated>
 			<id>http://css.studiomohawk.com/tool/2011/07/24/vim-bits-and-pieces</id>
 			<content type="html">
 				&lt;h2 id=&quot;preface&quot;&gt;はじめに&lt;/h2&gt;
@@ -256,6 +256,7 @@ imap &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;C&lt;span class=&quot;
 &lt;h2 id=&quot;link&quot;&gt;参考リンク&lt;/h2&gt;
 
 &lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://sontek.net/turning-vim-into-a-modern-python-ide&quot;&gt;John Anderson ( sontek ) - Turning Vim into a modern Python IDE&lt;/a&gt; / VimをPython IDEとして使うための設定。Python使いではなくても参考になる(英語)&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://mwop.net/blog/249-Vim-Toolbox,-2010-Edition&quot;&gt;Vim Toolbox, 2010 Edition :: phly, boy, phly&lt;/a&gt; / 10年ほどVimを利用しているというMatthew Weier O’Phinney氏のVimについての記事(英語)&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://stevelosh.com/blog/2010/09/coming-home-to-vim/&quot;&gt;Coming Home to Vim / Steve Losh&lt;/a&gt; / 様々なテキストエディタからVimに落ち着いた経緯と細かい設定の解説がおすすめ(英語)&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://vim.runpaint.org/toc/&quot;&gt;Vim Recipes&lt;/a&gt; / 基本から応用まで非常にシンプルでミニマムなフォーマットで丁寧に解説してくれる (英語)&lt;/li&gt;

@@ -3,7 +3,7 @@ layout: post
 category: tool
 title: Vim
 date: 2011-07-24 00:57:55 +0900
-update: 2011-12-03T01:07:36+09:00
+update: 2011-12-25T12:58:27+09:00
 toc:
 - {text: はじめに, hash: preface}
 - {text: コマンド, hash: command}
@@ -224,6 +224,7 @@ imap <C-t> <Esc>:tabnew<CR>
 
 ## 参考リンク {#link}
 
+- [John Anderson ( sontek ) - Turning Vim into a modern Python IDE](http://sontek.net/turning-vim-into-a-modern-python-ide) / VimをPython IDEとして使うための設定。Python使いではなくても参考になる(英語)
 - [Vim Toolbox, 2010 Edition :: phly, boy, phly](http://mwop.net/blog/249-Vim-Toolbox,-2010-Edition) / 10年ほどVimを利用しているというMatthew Weier O'Phinney氏のVimについての記事(英語)
 - [Coming Home to Vim / Steve Losh](http://stevelosh.com/blog/2010/09/coming-home-to-vim/) / 様々なテキストエディタからVimに落ち着いた経緯と細かい設定の解説がおすすめ(英語)
 - [Vim Recipes](http://vim.runpaint.org/toc/) / 基本から応用まで非常にシンプルでミニマムなフォーマットで丁寧に解説してくれる (英語)

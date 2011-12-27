@@ -11,16 +11,11 @@ namespace :juicer do
     end
 end
 
-namespace :rsync do
-  desc "--dry-run rsync"
-    task :dryrun do
-      system('rsync _site/ -ave ssh --dry-run --delete studiomo@studiomohawk.com:www/css/')
-    end
-  desc "rsync"
-    task :live do
-      system('rsync _site/ -ave ssh --delete studiomo@studiomohawk.com:www/css/')
-    end
+desc "rsync"
+task :rsync do
+  system('rsync _site/ -ave ssh --delete studiomo@studiomohawk.com:www/css/')
 end
+
 
 namespace :post do
   desc "Given a title as an argument, create a new post file"
@@ -74,7 +69,12 @@ task :package do
 
   print "Compressing assets..."
   system "jammit -o assets -c _assets.yml"
-  puts "done."
+  puts "done and rsync "
+
+  Rake::Task["rsync"].invoke
+
+  puts "rsync is done"
+
 end
 
 desc "Deploy Amazon s3 Using s3Sync"
