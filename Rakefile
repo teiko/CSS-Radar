@@ -69,12 +69,7 @@ task :package do
 
   print "Compressing assets..."
   system "jammit -o assets -c _assets.yml"
-  puts "done and rsync "
-
-  Rake::Task["rsync"].invoke
-
-  puts "rsync is done"
-
+  puts "done "
 end
 
 desc "Deploy Amazon s3 Using s3Sync"
