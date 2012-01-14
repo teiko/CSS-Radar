@@ -1,21 +1,32 @@
 <!DOCTYPE html>
-<!--[if lt IE 7 ]> <html lang="ja" class="post no-js ie6" itemscope itemtype="http://schema.org/Blog"> <![endif]-->
-<!--[if IE 7 ]>    <html lang="ja" class="post no-js ie7" itemscope itemtype="http://schema.org/Blog"> <![endif]-->
-<!--[if IE 8 ]>    <html lang="na" class="post no-js ie8" itemscope itemtype="http://schema.org/Blog"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--> <html lang="ja" class="post no-js" itemscope itemtype="http://schema.org/Blog"> <!--<![endif]-->
+<!--[if lt IE 7]> <html class="page-post no-js lt-ie9 lt-ie8 lt-ie7 ie" lang="ja" itemscope itemtype="http://schema.org/Blog" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml"
+> <![endif]-->
+<!--[if IE 7]>    <html class="page-post no-js lt-ie9 lt-ie8 ie" lang="ja" itemscope itemtype="http://schema.org/Blog" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml"
+> <![endif]-->
+<!--[if IE 8]>    <html class="page-post no-js lt-ie9 ie" lang="ja" itemscope itemtype="http://schema.org/Blog" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml"
+> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="page-post no-js" lang="ja" itemscope itemtype="http://schema.org/Blog" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml"
+> <!--<![endif]-->
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta name="google-site-verification" content="VCjPu4enLtZl8QXpuPVxY6vMufxe68UrchkhHkzz1zA">
 	<link href="https://plus.google.com/109704095110060909968" rel="publisher">
 	<link href="http://feeds.feedburner.com/CssRadar" rel="alternate" title="CSS Radar | Mini Books For Front End Developers" type="application/atom+xml">
-	<meta name="readability-verification" content="YZKuTJCa8wM55jALZnYAyDaCzM3kJ329RTQNCpF2">
-	<link href='/assets/master.css' rel="stylesheet" media="all">
+	<link href='/style/base.css' rel="stylesheet" media="all">
+<link href='/style/module.css' rel="stylesheet" media="all">
+<link href='/style/style.css' rel="stylesheet" media="all">
+<link href='/style/syntaxhighlighter.css' rel="stylesheet" media="all">
+<link href='/style/helper.css' rel="stylesheet" media="all">
 	<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
 	
 	<title itemprop="name" content="コマンドライン | CSS Radar">コマンドライン | CSS Radar | Mini Books For Front End Developers</title>
-	<meta itemprop="description" name="description" content="コマンドラインについて Terminal.appは怖い。 GUIでなんだって出来る時代にパソコンに出会った私にとっても、それは変わらない。 Macをメインで使い始める前、たっぷり3年以上もUbuntuというLinuxディストリビューションをメインで使っていた私でも、Terminalで何かをしなければならない時しか開くことはなかった。 MacVimをメインのエディタにしてから3ヶ月ほど、年明けからJekyllを使ってブログを作成しはじめた。Rubyを覚えてみようと今年から勉強中。 自分自身考えてもいなかったが、それらすべてがターミナルの便利さを教えてくれた。 MacVimでは、もちろんコマンドを実行できるが、コマンドそのものとは関係なく、インサートモードとノーマルモードの切り替えというメンタリティはGUIとCUIのメンタリティと似てる。それに覚えるのに時間はかかるかもしれないが、一旦覚えてしまうともう戻れない中毒性に近い利便性を手に入れる楽しみも覚えられた。 Jekyllはターミナルを使わなければブログの更新すら出来なくなる。基本的なコマンドはJekyllを使ううちに覚えてしまった。 Rubyはirbで実際にRubyを使って気楽に自分の書いたコードをテストしたりするのにターミナルを利用している。 ソースコードリーディングのテキストとしてお気に入りのHTML5 Boilerplateで、Build Scriptが追加され、フロントエンドデベロッパの間でも、自前のオートメーションを作ることが当たり前になってきそうな流れもある。 そんなタイミングだからこそ、ターミナルを使いこなせる人になろうと、こんな時代に提言したい。 私のように家ではMacで会社ではWindowsという人も多いだろう、今回はMacについての紹介になるがきっかけさえつかんでしまえばどうにかなる。ちなみに私はWindowsではCygwinをConsoleから利用している。 まずは見た目からカスタマイズ 私はGUIアプリでも、たとえそれがいかに便利でも見た目が悪いと長続きしないタチ。本末転倒かもしれないがそんな性格がウェブデザイナとしての自分を支えていると思い込んでいる。 だからこそターミナルにも見た目を要求したい。 Visor Visorはターミナルをショートカットキーで呼び出すことが出来るTerminal.appのヘルパ。control+controlで画面の1/3ほどのターミナル画面がスライドしてくる便利でかつ、おしゃれなツール。 MacではiTerm2というターミナル互換アプリも人気があるようで、こちらはVisorとは連動できないが、同じようにショートカットキーで呼び出すことができるオプションがある。 .bashrc(リンク先は私が利用している.bashrcファイルの一部) デフォルトでTerminalを開くと黒い背景に白い文字。あまりにも地味なので私はもう少しだけカラフルにしている。 そのついでにGitをターミナルで使いやすくなるようにブランチ名や変更を知らせてくれるマークもカラーをつけて表示している。 ちょっとカスタマイズしてあげるだけで気持ちよく利用することができる。 Mac...">
+	<meta itemprop="description" name="description" property="og:description" content="コマンドラインについて Terminal.appは怖い。 GUIでなんだって出来る時代にパソコンに出会った私にとっても、それは変わらない。 Macをメインで使い始める前、たっぷり3年以上もUbuntuというLinuxディストリビューションをメインで使っていた私でも、Terminalで何かをしなければならない時しか開くことはなかった。 MacVimをメインのエディタにしてから3ヶ月ほど、年明けからJekyllを使ってブログを作成しはじめた。Rubyを覚えてみようと今年から勉強中。 自分自身考えてもいなかったが、それらすべてがターミナルの便利さを教えてくれた。 MacVimでは、もちろんコマンドを実行できるが、コマンドそのものとは関係なく、インサートモードとノーマルモードの切り替えというメンタリティはGUIとCUIのメンタリティと似てる。それに覚えるのに時間はかかるかもしれないが、一旦覚えてしまうともう戻れない中毒性に近い利便性を手に入れる楽しみも覚えられた。 Jekyllはターミナルを使わなければブログの更新すら出来なくなる。基本的なコマンドはJekyllを使ううちに覚えてしまった。 Rubyはirbで実際にRubyを使って気楽に自分の書いたコードをテストしたりするのにターミナルを利用している。 ソースコードリーディングのテキストとしてお気に入りのHTML5 Boilerplateで、Build Scriptが追加され、フロントエンドデベロッパの間でも、自前のオートメーションを作ることが当たり前になってきそうな流れもある。 そんなタイミングだからこそ、ターミナルを使いこなせる人になろうと、こんな時代に提言したい。 私のように家ではMacで会社ではWindowsという人も多いだろう、今回はMacについての紹介になるがきっかけさえつかんでしまえばどうにかなる。ちなみに私はWindowsではCygwinをConsoleから利用している。 まずは見た目からカスタマイズ 私はGUIアプリでも、たとえそれがいかに便利でも見た目が悪いと長続きしないタチ。本末転倒かもしれないがそんな性格がウェブデザイナとしての自分を支えていると思い込んでいる。 だからこそターミナルにも見た目を要求したい。 Visor Visorはターミナルをショートカットキーで呼び出すことが出来るTerminal.appのヘルパ。control+controlで画面の1/3ほどのターミナル画面がスライドしてくる便利でかつ、おしゃれなツール。 MacではiTerm2というターミナル互換アプリも人気があるようで、こちらはVisorとは連動できないが、同じようにショートカットキーで呼び出すことができるオプションがある。 .bashrc(リンク先は私が利用している.bashrcファイルの一部) デフォルトでTerminalを開くと黒い背景に白い文字。あまりにも地味なので私はもう少しだけカラフルにしている。 そのついでにGitをターミナルで使いやすくなるようにブランチ名や変更を知らせてくれるマークもカラーをつけて表示している。 ちょっとカスタマイズしてあげるだけで気持ちよく利用することができる。 Mac...">
 	
+	<meta property="og:type" content="blog">
+	<meta property="og:url" content="http://css.studiomohawk.com">
+	<meta property="og:image" content="http://css.studiomohawk.com/img/cssradar-icon-200.png">
+	<meta property="og:site_name" content="CSS Radar | Mini Books For Front End Developers">
 	<script>
 	var _gaq = _gaq || [];
 	_gaq.push(['_setAccount', 'UA-61203-11']);
@@ -33,33 +44,58 @@
 
 <body>
 	<div id="page">
-		<header id="head">
-<div class="head-inner">
-	<ul class="logo-area">
-		<li class="logo"><a href="/">CSS Radar</a></li>
-		<li class="tagline">Mini Books For Front End Developers</li>
-	</ul>
+		<header id="head" class="unit-the-head">
+<div class="unit-inner unit-the-head-inner">
+	<div class="logo-area">
+		<p class="logo h2"><a href="/">CSS Radar</a></p>
+		<p class="tagline">Mini Books For Front End Developers</p>
+	</div>
+	<nav class="nav-global">
+		<ul>
+			<li class="home"><a href="/" class="icon-pictos" data-icon="H">Home</a></li>
+			<li class="ask"><a href="http://newsletter.studiomohawk.com" class="icon-pictos" data-icon="M">Newsletter</a></li>
+			<li class="ask"><a href="/ask/" class="icon-pictos" data-icon="?">Ask</a></li>
+			<li class="about"><a href="/about/" class="icon-pictos" data-icon="i">About</a></li>
+		</ul>
+	</nav>
 </div>
 </header><!-- id="head" -->
 
-		<div id="main" role="main">
-			<article class="the-article hentry">
-			<div class="article-inner">
+		<div id="main" role="main" class="unit-main">
+			<div class="unit-inner unit-main-inner">
+				<article class="the-article hentry">
+				<div class="article-inner">
 				<div class="content">
-					<header>
-					<div class="head-inner">
-						<h1 class="entry-title">コマンドライン</h1>
-						<div class="meta">
-							
-							<date class="date-pub" title="2011-02-13T00:00:00+09:00" datetime="2011-02-13T00:00:00+09:00" pubdate>
-								<span class="day">13</span>
-								<span class="month"><abbr>Feb</abbr></span>
-								<span class="year">2011</span>
-							</date>
-							<span class="category"><a href="/categories/tool/" class="tool" title="tool">tool</a></span>
-						</div>
-						<div class="readability">
-							<div class="rdbWrapper" data-show-read="1" data-show-send-to-kindle="0" data-show-print="0" data-show-email="1" data-orientation="0" data-version="1" data-bg-color="#444E51" data-text-color="#FAFAFA"></div>
+					<header class="unit-head">
+					<div class="unit-inner unit-head-inner">
+						<h1 class="h2 entry-title">コマンドライン</h1>
+						
+						<p class="tldr"></p>
+						<div class="hasGrid">
+							<p class="meta">
+								
+									<date class="date-pub" title="2011-02-13T00:00:00+09:00" datetime="2011-02-13T00:00:00+09:00" pubdate>
+										<span class="day">13</span>
+										<span class="month"><abbr>Feb</abbr></span>
+										<span class="year">2011</span>
+									</date>
+							</p>
+							<div class="toc js-toc-switch">
+								<a href="#" class="js-toc-control">目次 <span class="icon-pictos" data-icon="+"></span></a>
+								<ul class="js-toc-list">
+									
+										<li><a href="/tool/2011/02/13/terminal-101/#whatis">コマンドラインについて</a></li>
+									
+										<li><a href="/tool/2011/02/13/terminal-101/#custom">まずは見た目からカスタマイズ</a></li>
+									
+										<li><a href="/tool/2011/02/13/terminal-101/#howto">ターミナルの使い方</a></li>
+									
+										<li><a href="/tool/2011/02/13/terminal-101/#package">パッケージマネジャ</a></li>
+									
+										<li><a href="/tool/2011/02/13/terminal-101/#conclusion">ターミナルの世界へようこそ</a></li>
+									
+								</ul>
+							</div>
 						</div>
 					</div>
 					</header>
@@ -242,23 +278,25 @@ cURL</a>)</p>
 <p>どこかの本で読んだことの受け売りだが60分かかるタスクがあるとしたら、59分かけてそのタスクを行うスクリプトを書いて、1分で実行する。これからのウェブデザイン/フロントエンドデベロッパにはそんな心構えが必要になってくるだろう。</p>
 
 						</div>
-						<div class="social">
+						<div class="misc-content">
+							<div class="social">
 	<ul class="list-linear">
-		<li><div class="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="cssradar">Tweet</a></div></li>
+		<li><div class="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="cssradar" data-lang="en">Tweet</a></div></li>
 		<li><div class="g-plusone" data-size="medium"></div></li>
-		<li><div class="twitter-follow"><a href="https://twitter.com/cssradar" class="twitter-follow-button" data-button="grey" data-text-color="#FFFFFF" data-link-color="#00AEFF"></a></div></li>
+		<li><div class="twitter-follow"><a href="https://twitter.com/cssradar" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
 	</ul>
 </div>
 
-						<div class="ask">
+							<div class="ask">
 	<h3>Ask Me Anything via E-mail</h3>
 	<p class="btn-3d"><a class="askme" href="mailto:cssradar+ask@gmail.com">質問やコメントはEメールにて cssradar+ask@gmail.com</a><small><a href="/ask/">コメントについて</a></small></p>
 </div>
 
+						</div>
 					</div>
-					<footer>
-					<div class="foot-inner">
-						<nav class="pagenation left">
+					<footer class="unit-foot">
+					<div class="unit-inner unit-foot-inner">
+						<nav class="pagination">
 							<ul>
 								
 								<li class="prev"><a class="internal" rel="prev"  href="/tool/2011/01/29/git-version-control/" title="View Git バージョンコントロール">&laquo; Git バージョンコントロール</a></li>
@@ -271,21 +309,20 @@ cURL</a>)</p>
 								
 							</ul>
 						</nav>
-						<nav class="archive right">
-							<ul>
-								<li><a href="/">記事一覧</a></li>
-							</ul>
-						</nav>
+						<p class="archive">
+							<a href="/">一覧にもどる</a>
+						</p>
 					</div>
 					</footer>
 				</div>
 			</div>
 			</article>
+		</div>
 		</div><!-- id="main" -->
-	<footer id="foot">
-<div class="foot-inner">
+	<footer id="foot" class="unit-the-foot">
+<div class="unit-inner unit-the-foot-inner">
 	<div class="hasGrid">
-		<div class="left"><h4>about</h4>
+		<div class="about"><h4>about</h4>
 <p>
 現役フロントエンドデベロッパ/ウェブデザイナ、斉藤祐也がフロントエンドにまつわる情報やTipsを紹介。2〜3年は遅れているという日本のウェブをアップデートしたい。そんな思いで更新していきます。
 </p>
@@ -297,25 +334,25 @@ cURL</a>)</p>
 </p>
 <p>もっと詳しくCSS Radarと私について知りたいかたは、<a href="http://css.studiomohawk.com/cssradar/2011/01/23/about-cssrader/">こちらから</a></p>
 </div>
-		<div class="right">
+		<div class="misc">
+			<h4 id="newsletter">CSS Radar Newsletter</h4>
+<form action="http://tinyletter.com/cssradar" method="post" target="popupwindow" onsubmit="window.open('http://tinyletter.com/cssradar', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+	<input type="text" name="emailaddress" class="input-text" placeholder="メールアドレス">
+	<input type="hidden" value="1" name="embed">
+	<input type="submit" value="登録 (無料)" class="input-submit">
+	<p><a href="http://newsletter.studiomohawk.com/">バックナンバはこちらから</a></p>
+</form>
+
 			<h4>elsewhere</h4>
 <ul>
 	<li><a href="http://twitter.com/#!/cssradar" rel="me" title="cssradar@twitter">cssradar@twitter</a> / 1日5件以内のウェブデザイン情報をつぶやきます</li>
-	<li><a href="http://tinyletter.com/cssradar" rel="me" title="Newsletter">CSS Radar Newsletter</a> / CSS Radarニュースレター。Twitterまとめ + α</li>
+	<li><a href="http://eepurl.com/iicCE" rel="me" title="Newsletter">CSS Radar Newsletter</a> / CSS Radarニュースレター。Twitterまとめ + α</li>
 	<li><a href="https://github.com/studiomohawk/fakebrain/wiki" rel="me" title="fakebrain project">fakebrain</a> / コラボキュレーションプロジェクト。参加者募集中</li>
 	<li><a href="https://github.com/studiomohawk" rel="me" title="github">github</a> / このブログのソースも公開してます</li>
 	<li><a href="http://www.flickr.com/photos/studiomohawk/" rel="me" title="Flickr">Flickr</a> / 趣味は写真。Nikon D90ユーザ</li>
 	<li><a href="http://pinboard.in/u:studiomohawk" rel="me" title="Pinboard">Pinboard</a> / カオスにならないようきちんとモニタ</li>
 	<li><a href="http://www.layouts-the.me/" rel="me" title="_layouts - themes for jekyll">_layouts</a> / Jekyllテーマギャラリー(英語)</li>
 </ul>
-
-			<h4>CSS Radar Newsletter</h4>
-<form action="http://tinyletter.com/cssradar" method="post" target="popupwindow" onsubmit="window.open('http://tinyletter.com/cssradar', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
-	<input type="text" name="emailaddress" class="input-text" placeholder="メールアドレス">
-	<input type="hidden" value="1" name="embed">
-	<input type="submit" value="登録 (無料)" class="input-submit">
-	<p><a href="http://studiomohawk.calepin.co/">バックナンバはこちらから</a></p>
-</form>
 
 		</div>
 	</div>
@@ -330,19 +367,22 @@ Theme: <a href="https://github.com/studiomohawk/CSS-Radar">the_radar</a> created
 </footer><!-- id="foot" -->
 
 	</div><!-- id="page" -->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
-<script src='/assets/master.js'></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src='/js/common.js'></script>
 <script>
 	(function(d, s) {
-	 var js, fjs = d.getElementsByTagName(s)[0], load = function(url, id) {
-	 if (d.getElementById(id)) {return;}
-	 js = d.createElement(s); js.src = url; js.id = id;
-	 fjs.parentNode.insertBefore(js, fjs);
-	 };
-	 load('//www.readability.com/embed.js', 'rdb');
-	 load('https://apis.google.com/js/plusone.js', 'gplus1js');
-	 load('//platform.twitter.com/widgets.js', 'tweetjs');
-	 }(document, 'script'));
+		var js, fjs = d.getElementsByTagName(s)[0], load = function(url, id) {
+		if (d.getElementById(id)) {return;}
+		js = d.createElement(s); js.src = url; js.id = id;
+		fjs.parentNode.insertBefore(js, fjs);
+		};
+	load('https://apis.google.com/js/plusone.js', 'gplus1js');
+	load('//platform.twitter.com/widgets.js', 'tweetjs');
+	}(document, 'script'));
+</script>
+<script>
+/*! A fix for the iOS orientationchange zoom bug.Script by @scottjehl, rebound by @wilto. MIT License.*/
+(function(j){var i=j.document;if(!i.querySelectorAll){return}var l=i.querySelectorAll("meta[name=viewport]")[0],a=l&&l.getAttribute("content"),h=a+", maximum-scale=1.0",d=a+", maximum-scale=10.0",g=true,c=j.orientation,k=0;if(!l){return}function f(){l.setAttribute("content",d);g=true}function b(){l.setAttribute("content",h);g=false}function e(m){c=Math.abs(j.orientation);k=Math.abs(m.gamma);if(k>8&&c===0){if(g){b()}}else{if(!g){f()}}}j.addEventListener("orientationchange",f,false);j.addEventListener("deviceorientation",e,false)})(this);
 </script>
 
 </body>

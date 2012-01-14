@@ -6,7 +6,7 @@
 		http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
 <loc>http://css.studiomohawk.com</loc>
-	<lastmod>2011-12-31T11:09:34+09:00</lastmod>
+	<lastmod>2012-01-09T18:07:08+09:00</lastmod>
 	<priority>1.0</priority>
 </url>
 
@@ -63,11 +63,6 @@
 <url>
 	<loc>http://css.studiomohawk.com/css/2011/01/24/about-responsive-web-design/</loc>
 	<lastmod>2011-01-24T00:00:00+09:00</lastmod>
-</url>
-
-<url>
-	<loc>http://css.studiomohawk.com/cssradar/2011/01/23/about-cssrader/</loc>
-	<lastmod>2011-01-23T00:00:00+09:00</lastmod>
 </url>
 
 </urlset>

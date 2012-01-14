@@ -1,6 +1,9 @@
-_site/
 _site/*
-_site/**/*
-assets/
 assets/*
-assets/**/*
+
+Thumbs.db
+.DS_Store
+
+!.gitkeep
+
+.rbenv-version

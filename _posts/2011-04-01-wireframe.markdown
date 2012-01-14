@@ -12,9 +12,9 @@ toc:
 - {text: 参考リンク, hash: link}
 ---
 
-![Image]({% postfile protoplate.png %}){:class='huge'}
-
 ## ワイヤフレームとは {#whatis}
+
+![Image]({% postfile protoplate.png %}){:class='huge'}
 
 ワイヤフレームって作ったことありますか？  
 ワイヤフレームはウェブページのコンテントを視覚的に表現するドキュメントの中核を担う存在。

@@ -84,7 +84,7 @@ Jekyllでは、記事の作成は.markdownまたは.textileという軽量マー
 例えば、2011年5月14日に作成したウェブデザイナのためのRuby入門という記事なら、``2011-05-22-ruby-for-designer.markdown``というファイル名になる。  
 URLに入るタイトル名はアルファベットにしておいた方が無難だろう。2バイト文字を利用できるかは試してみた事はない。
 
-{% highlight sh %}
+{% highlight ruby %}
 ---
 layout: post
 category: tool 
@@ -105,7 +105,7 @@ categoryにはカテゴリ、titleにはもちろんタイトル、そしてdate
 
 テンプレート定義ファイルは何の変哲もないHTMLで記述される。例外は記事ファイル内のYAML front matterに記述するlayoutの部分で利用するテンプレート名をこちらも同じく、
 
-{% highlight sh %}
+{% highlight ruby %}
 ---
 layout: post
 ---
@@ -125,11 +125,30 @@ Liquidで利用できるタグについては[こちら](https://github.com/tobi
 
 先ほどのthe_minimumのpost.htmlを見ながらLiquidテンプレートタグで必須になるもタグと、便利なタグについて紹介しよう。
 
-<script src="https://gist.github.com/1021183.js?file=liquid.required.tag.html"></script>
+{% highlight html %}
+{% raw %}
+{{ page.title }} <!-- 記事のYAML front matterでtitleに設定した値を取得 -->
+{{ content }} <!-- 記事本文を取得 -->
+{% endraw %}
+{% endhighlight %}
 
 必須になるのは上記2つというやはりシンプル設計。
 
-<script src="https://gist.github.com/1021118.js?file=liquid.html"></script>
+{% highlight html %}
+{% raw %}
+<!-- インクルード -->
+{% include header.html %} <!--
+includeフォルダ内のheader.htmlファイルをインクルードする -->
+
+<!-- ページネーション -->
+{% if page.previous %}
+<li class="before left"><a rel="prev" href="{{ page.previous.url }}" class="btn" title="View {{ page.previous.title }}">Before</a></li>
+{% endif %}
+{% if page.next %}
+<li class="next right"><a rel="next" href="{{ page.next.url }}" class="btn" title="View {{ page.next.title }}">Next</a></li>
+{% endif %}
+{% endraw %}
+{% endhighlight %}
 
 インクルードはメンテナンスのために覚えておきたいタグで、  
 オフィシャルページにもあまり説明のないページネーションについてはもっともシンプルな例ながら利用できるタグについてはほぼ網羅しているので、カスタマイズする際の参考になれば。

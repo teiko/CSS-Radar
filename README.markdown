@@ -2,12 +2,12 @@
 * Theme URI: [http://www.layouts-the.me](http://www.layouts-the.me)
 * Description: A minimum theme for [jekyll](https://github.com/mojombo/jekyll).
 * Author: Yuya Saito
-* Version: 1.0
+* Version: 3.0
 * Tags: diy,minimum
 
 ### About Theme:
 
-[Jekyll](https://github.com/mojombo/jekyll)テーマ、the_radarは読みやすいテキストをメインフォーカスにおいたシンプルでミニマムなテーマ。  
+[Jekyll](https://github.com/mojombo/jekyll)テーマ、the\_radarは読みやすいテキストをメインフォーカスにおいたシンプルでミニマムなテーマ。  
 HTML5とCSS3をフル活用し、シンプルなマークアップとスタイルも実現しています。  
 テーマファイルは自由に利用できます。  
 もし、テーマファイルを利用してサイトを作成した場合、このページか、あるいは、[CSS Radar](http://css.studiomohawk.com/)へのリンクをどこかにいれて貰えるとうれしいですが、強制はしません。
