@@ -6,7 +6,7 @@
 		http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
 <loc>http://css.studiomohawk.com</loc>
-	<lastmod>2012-01-27T08:32:26+09:00</lastmod>
+	<lastmod>2012-01-27T08:34:43+09:00</lastmod>
 	<priority>1.0</priority>
 </url>
 
@@ -46,12 +46,12 @@
 </url>
 
 <url>
-	<loc>http://css.studiomohawk.com/html5 boilerplate/2011/03/15/html5boilerplate/</loc>
+	<loc>http://css.studiomohawk.com/html5-boilerplate/2011/03/15/html5boilerplate/</loc>
 	<lastmod>2011-03-15T00:00:00+09:00</lastmod>
 </url>
 
 <url>
-	<loc>http://css.studiomohawk.com/command line/2011/02/13/terminal-101/</loc>
+	<loc>http://css.studiomohawk.com/commandline/2011/02/13/terminal-101/</loc>
 	<lastmod>2011-02-13T00:00:00+09:00</lastmod>
 </url>
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: HTML5 Boilerplate
-category: html5 boilerplate
+category: html5-boilerplate
 date: 2011-03-15 00:00:00
 tldr: "HTML5を使っていく上でのベストプラクティスを集める、というコンセプトで始まったHTML5
 BoilerplateプロジェクトはもはやHTML5だけにとどまらずフロントエンドデベロッパのベストプラクティスの集積所となった。ただコピペするだけじゃなく、きちんと理解して使いこなすために知っておきたいことを紹介していく。"

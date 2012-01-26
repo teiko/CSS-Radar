@@ -4,7 +4,7 @@
 	<title>CSS Radar | Mini Books For Front End Developers</title>
 	<link href="http://css.studiomohawk.com/atom.xml" rel="self"/>
 	<link href="http://css.studiomohawk.com"/>
-	<updated>2012-01-27T08:32:26+09:00</updated>
+	<updated>2012-01-27T08:34:43+09:00</updated>
 	<id>http://css.studiomohawk.com/</id>
 	<author>
 		<name>Yuya Saito</name>
@@ -1861,9 +1861,9 @@ If the wireframe starts as a wireframe and then morphs into the actual design, g
 	
 		<entry>
 			<title>HTML5 Boilerplate</title>
-			<link href="http://css.studiomohawk.com/html5 boilerplate/2011/03/15/html5boilerplate/"/>
+			<link href="http://css.studiomohawk.com/html5-boilerplate/2011/03/15/html5boilerplate/"/>
 			<updated></updated>
-			<id>http://css.studiomohawk.com/html5 boilerplate/2011/03/15/html5boilerplate</id>
+			<id>http://css.studiomohawk.com/html5-boilerplate/2011/03/15/html5boilerplate</id>
 			<content type="html">
 				&lt;h2 id=&quot;whatis&quot;&gt;HTML5 Boilderplateとは&lt;/h2&gt;
 
@@ -1952,9 +1952,9 @@ BoilerplateにPull Requestを送ってくださいませ。&lt;/p&gt;
 	
 		<entry>
 			<title>コマンドライン</title>
-			<link href="http://css.studiomohawk.com/command line/2011/02/13/terminal-101/"/>
+			<link href="http://css.studiomohawk.com/commandline/2011/02/13/terminal-101/"/>
 			<updated></updated>
-			<id>http://css.studiomohawk.com/command line/2011/02/13/terminal-101</id>
+			<id>http://css.studiomohawk.com/commandline/2011/02/13/terminal-101</id>
 			<content type="html">
 				&lt;h2 id=&quot;whatis&quot;&gt;コマンドラインについて&lt;/h2&gt;
 
