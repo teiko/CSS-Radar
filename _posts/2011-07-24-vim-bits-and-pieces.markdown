@@ -1,6 +1,6 @@
 ---
 layout: post
-category: tool
+category: vim
 title: "Vim"
 date: 2011-07-24 00:57:55 +0900
 update: 2011-12-25T12:58:27+09:00

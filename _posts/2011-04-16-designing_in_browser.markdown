@@ -1,9 +1,10 @@
 ---
 layout: post
 title: インブラウザ デザイン
-category: webdesign
+category: in-browser design
 date: 2011-04-16 10:53:05
 update: 2011-10-29 22:37:19
+tldr: "ブラウザでデザインする。ウェブデザインが紙っぽいスタティックなデザインからダイナミックなデザインに生まれ変わる時期が来た。そんな時代に最適なデザインツールは実はブラウザ。ブラウザでデザインすることの利点、欠点、便利なツールについて紹介。"
 toc:
 - {text: インブラウザ デザインとは, hash: whatis}
 - {text: プロセス, hash: process}

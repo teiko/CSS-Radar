@@ -4,7 +4,7 @@
 	<title>CSS Radar | Mini Books For Front End Developers</title>
 	<link href="http://css.studiomohawk.com/atom.xml" rel="self"/>
 	<link href="http://css.studiomohawk.com"/>
-	<updated>2012-01-09T18:07:08+09:00</updated>
+	<updated>2012-01-18T11:25:16+09:00</updated>
 	<id>http://css.studiomohawk.com/</id>
 	<author>
 		<name>Yuya Saito</name>
@@ -13,9 +13,9 @@
 	
 		<entry>
 			<title>Vim</title>
-			<link href="http://css.studiomohawk.com/tool/2011/07/24/vim-bits-and-pieces/"/>
+			<link href="http://css.studiomohawk.com/vim/2011/07/24/vim-bits-and-pieces/"/>
 			<updated>2011-12-25 12:58:27 +0900</updated>
-			<id>http://css.studiomohawk.com/tool/2011/07/24/vim-bits-and-pieces</id>
+			<id>http://css.studiomohawk.com/vim/2011/07/24/vim-bits-and-pieces</id>
 			<content type="html">
 				&lt;h2 id=&quot;preface&quot;&gt;はじめに&lt;/h2&gt;
 
@@ -113,7 +113,7 @@ snipMateはTextMateのスニペット機能を模したプラグイン。特定�
 
 &lt;h3&gt;&lt;a href=&quot;https://github.com/mbadran/headlights&quot;&gt;Headlights&lt;/a&gt;&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/tool/2011/07/24/vim-bits-and-pieces/headlights.png&quot; alt=&quot;Image&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/vim/2011/07/24/vim-bits-and-pieces/headlights.png&quot; alt=&quot;Image&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Headlightsはbundlesというメニュを追加するプラグイン。ハードコアVimmerには総スカンかも知れないが、インストールしてあるプラグイン達でできることをマウスで追いかけられる。&lt;br /&gt;
 プラグインがインストールされているかのチェックにもなるし、いまいちヘルプもわかりづらいという初心者におすすめ。&lt;/p&gt;
@@ -277,9 +277,9 @@ imap &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;C&lt;span class=&quot;
 	
 		<entry>
 			<title>Jekyll</title>
-			<link href="http://css.studiomohawk.com/tool/2011/06/11/jekyll-101.tool/"/>
+			<link href="http://css.studiomohawk.com/jekyll/2011/06/11/jekyll/"/>
 			<updated></updated>
-			<id>http://css.studiomohawk.com/tool/2011/06/11/jekyll-101.tool</id>
+			<id>http://css.studiomohawk.com/jekyll/2011/06/11/jekyll</id>
 			<content type="html">
 				&lt;h2 id=&quot;whatis&quot;&gt;Jekyllとは&lt;/h2&gt;
 
@@ -585,9 +585,9 @@ rsync:dryrun&lt;/code&gt;はテスト用で実際には何もサーバには同�
 	
 		<entry>
 			<title>ウェブデザイナのためのRuby</title>
-			<link href="http://css.studiomohawk.com/tool/2011/05/14/ruby_for_designer_frontend_dev/"/>
+			<link href="http://css.studiomohawk.com/ruby/2011/05/14/ruby_for_designer_frontend_dev/"/>
 			<updated></updated>
-			<id>http://css.studiomohawk.com/tool/2011/05/14/ruby_for_designer_frontend_dev</id>
+			<id>http://css.studiomohawk.com/ruby/2011/05/14/ruby_for_designer_frontend_dev</id>
 			<content type="html">
 				&lt;h2 id=&quot;rubyis&quot;&gt;Rubyはウェブデザイナに優しい&lt;/h2&gt;
 
@@ -950,9 +950,9 @@ Adobe Suitesを使いこなし、HTML/CSS/JSを駆使し、ユーザビリティ
 	
 		<entry>
 			<title>インブラウザ デザイン</title>
-			<link href="http://css.studiomohawk.com/webdesign/2011/04/16/designing_in_browser/"/>
+			<link href="http://css.studiomohawk.com/in-browser design/2011/04/16/designing_in_browser/"/>
 			<updated>2011-10-29 22:37:19</updated>
-			<id>http://css.studiomohawk.com/webdesign/2011/04/16/designing_in_browser</id>
+			<id>http://css.studiomohawk.com/in-browser design/2011/04/16/designing_in_browser</id>
 			<content type="html">
 				&lt;h2 id=&quot;whatis&quot;&gt;インブラウザ デザインとは&lt;/h2&gt;
 
@@ -1196,9 +1196,9 @@ CS5.5になるほどイテレーションを繰り返しすばらしいプロダ
 	
 		<entry>
 			<title>パフォーマンス最適化</title>
-			<link href="http://css.studiomohawk.com/frontend/2011/04/09/why_speed_matters/"/>
+			<link href="http://css.studiomohawk.com/optimization/2011/04/09/why_speed_matters/"/>
 			<updated></updated>
-			<id>http://css.studiomohawk.com/frontend/2011/04/09/why_speed_matters</id>
+			<id>http://css.studiomohawk.com/optimization/2011/04/09/why_speed_matters</id>
 			<content type="html">
 				&lt;h2 id=&quot;whatis&quot;&gt;パフォーマンス最適化の意味&lt;/h2&gt;
 
@@ -1333,61 +1333,66 @@ Amazonのクラウドサービスを使ってみるというのもいい経験�
 	
 		<entry>
 			<title>LESS - CSSプリプロフェッサ</title>
-			<link href="http://css.studiomohawk.com/css/2011/04/03/use_less_to_clean_up_your_css/"/>
-			<updated></updated>
-			<id>http://css.studiomohawk.com/css/2011/04/03/use_less_to_clean_up_your_css</id>
+			<link href="http://css.studiomohawk.com/less/2011/04/03/use_less_to_clean_up_your_css/"/>
+			<updated>2012-01-18 10:57:14 +0900</updated>
+			<id>http://css.studiomohawk.com/less/2011/04/03/use_less_to_clean_up_your_css</id>
 			<content type="html">
-				&lt;h2 id=&quot;whatis&quot;&gt;LESSとは&lt;/h2&gt;
+				&lt;h2&gt;時短、効率、スピードアップのためのはじめてのLESS入門 @ SwapSkills&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://swapskills.info/month/25.html&quot;&gt;&lt;img src=&quot;http://swapskills.info/banner/25.png&quot; alt=&quot;SwapSkills2012(25)時短、効率、スピードアップのためのはじめての LESS 入門&quot; class=&quot;right&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://swapskills.info/month/25.html&quot;&gt;SwapSkills&lt;/a&gt;にてLESSについての勉強会にて2012年2月18日（土）13:30 ～ 私が登壇することになりました。&lt;br /&gt;
+この勉強会ではLESSをこれまで使ったことがない人に向けてLESSの導入の利点、欠点など(このパートはGoogleの小久保 浩大郎さんが担当します)を説明し、私は後半のLESSの文法についての担当になります。&lt;br /&gt;
+この勉強会をきっかけに&lt;a href=&quot;http://lesscss.org/&quot;&gt;LESS&lt;/a&gt;のページを丸ごと&lt;a href=&quot;http://less-ja.studiomohawk.com/&quot;&gt;日本語訳&lt;/a&gt;したりして改めて勉強しなおしました。&lt;br /&gt;
+LESSについて勉強しなきゃな、と思っている方はぜひこの機会にどうぞ!&lt;/p&gt;
+
+&lt;h2 id=&quot;whatis&quot;&gt;CSSプリプロフェッサとは&lt;/h2&gt;
 
 &lt;p&gt;If it ain’t broken, don’t fix it.&lt;/p&gt;
 
 &lt;p&gt;壊れてないなら、直す必要はない。&lt;br /&gt;
-CSSは追加してほしい仕様はあるけど、壊れている、とまでは感じない。プログラミングの何たるかをまったく理解していなかった私にも簡単に覚えられた。  &lt;/p&gt;
+CSSは追加してほしい仕様はあるけど、壊れている、とまでは感じない。プログラミングの何たるかをまったく理解していなかった私にも覚えられた。  &lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://sass-lang.com/&quot;&gt;SASS&lt;/a&gt;や&lt;a href=&quot;http://lesscss.org/&quot;&gt;LESS&lt;/a&gt;のようなCSSの拡張が完全に悪だとは思わないが、絶対に必要だとも感じない。&lt;br /&gt;
-でも知っておくともっとシンプルに、もっとパワフルに、もっと素早くCSSを書くことができるプラスアルファの便利ツールであることは間違いない。  &lt;/p&gt;
+&lt;p&gt;LESSやSASSに代表されるCSSプリプロセッサは、CSSにはないプログラミング言語的な機能を追加してくれるツール。&lt;br /&gt;
+絶対に必要かというとそうでもないが、使いこなすとよりシンプルに、パワフルなスタイルシートを実現することができる。&lt;br /&gt;
+実際に私もこのブログを始め様々な個人のプロジェクトではLESSを使い始めている。&lt;/p&gt;
 
-&lt;p&gt;実際このブログでもほかの幾つかの個人プロジェクトでは私はLESSを使い始めている。&lt;br /&gt;
-SASSもLESSもほぼ同じ概念で、ほぼ同じ文法で書かれているが、LESSはJSを使ってダイナミックにCSSへ変換してくれたりもでき、すこしだけ開発時に楽をできるので私はLESSを選んだ。&lt;br /&gt;
-もちろん今話題の&lt;a href=&quot;http://nodejs.org/&quot;&gt;Node.js&lt;/a&gt;でも利用できるという点もはやり好きモノの私にはぴったりだ。&lt;br /&gt;
-ちなみにSASSでも&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;sh&quot;&gt;sass --watch style.scss:style.css
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;とコマンドラインから実行すれば、SASSファイルを保存するたびにCSSへ変換してくれるそうだから、自分の好みに合わせて利用してほしい。  &lt;/p&gt;
+&lt;p&gt;私がSASSよりLESSを選んだのは制作者である&lt;a href=&quot;http://cloudhead.io/&quot;&gt;cloudhead&lt;/a&gt;氏はLESSをCSSとはまったく異なる言語にしないようにかなり気を使っているからだ。&lt;br /&gt;
+CSSは宣言型プログラミングの流れを組む言語であり、cloudhead氏はLESSも同じ流れを保ったままで言語を拡張しようとしている。&lt;br /&gt;
+CSSを開発する人は必ずしもプログラム言語に詳しいとは限らないからcloudhead氏のアプローチを選択した。  &lt;/p&gt;
 
 &lt;h2 id=&quot;feature&quot;&gt;LESSでできること&lt;/h2&gt;
 
 &lt;p&gt;LESSでは、&lt;strong&gt;変数&lt;/strong&gt;、&lt;strong&gt;ミックスイン&lt;/strong&gt;、&lt;strong&gt;入れ子ルール&lt;/strong&gt;、&lt;strong&gt;名前空間&lt;/strong&gt;、&lt;strong&gt;四則演算と関数&lt;/strong&gt;などをCSSに追加することができる。&lt;br /&gt;
 プログラミングの経験があるならそれぞれ覚えがあるだろう機能達ばかりでCSSには存在しない機能。&lt;/p&gt;
 
-&lt;p&gt;オフィシャルサイトに詳しく利用法については説明があるので詳細は&lt;a href=&quot;http://lesscss.org/&quot;&gt;こちら&lt;/a&gt;を確認してほしい。&lt;br /&gt;
-もちろん英語なので日本語訳が必要な場合はメールか&lt;a href=&quot;http://twitter.com/#!/cssradar&quot;&gt;Twitter@cssradar&lt;/a&gt;でリクエストを。&lt;/p&gt;
+&lt;p&gt;オフィシャルサイトに詳しく利用法については説明があるので詳細は&lt;a href=&quot;http://lesscss.org/&quot;&gt;こちら&lt;/a&gt;。&lt;br /&gt;
+制作者の了承を得てオフィシャルサイトの日本語化を行ったので英語が苦手な方は&lt;a href=&quot;http://less-ja.studiomohawk.com/&quot;&gt;こちら&lt;/a&gt;。  &lt;/p&gt;
+
+&lt;p&gt;ここではLESSの基本機能とそのシンタックスについて紹介していこう。  &lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;変数&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;css&quot;&gt;&lt;span class=&quot;k&quot;&gt;@color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#4D926F&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;nf&quot;&gt;#header&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;h2&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text&quot;&gt;@color: #4D926F;
+#header {
+  color: @color;
+}
+h2 {
+  color: @color;
+}
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;p&gt;というLESSは、&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;css&quot;&gt;&lt;span class=&quot;nf&quot;&gt;#header&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#4D926F&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;h2&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#4D926F&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text&quot;&gt;#header {
+  color: #4D926F;
+}
+h2 {
+  color: #4D926F;
+}
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
@@ -1397,18 +1402,18 @@ SASSもLESSもほぼ同じ概念で、ほぼ同じ文法で書かれているが
 
 &lt;p&gt;で定義できる。正確には変数というよりは定数に近い使われ方をしている。  &lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;css&quot;&gt;&lt;span class=&quot;k&quot;&gt;@var&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;red&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text&quot;&gt;@var: red;
 
-&lt;span class=&quot;nf&quot;&gt;#page&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;white&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;m&quot;&gt;#header&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;//&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;white&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;
+#page {
+  @var: white;
+  #header {
+    color: @var; // white
+  }
+}
 
-&lt;span class=&quot;nf&quot;&gt;#footer&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;//&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;red&lt;/span&gt;  
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+#footer {
+  color: @var; // red  
+}
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
@@ -1416,36 +1421,34 @@ SASSもLESSもほぼ同じ概念で、ほぼ同じ文法で書かれているが
 このスコープに関しては変数だけではなくミックスインの定義についても同様に扱われる。&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;ミックスイン&lt;/strong&gt;&lt;/p&gt;
-
-    &lt;p&gt;こちらも実際にどのようにLESSで記述し実際にCSSでどのように解釈されるのかを見た方が早いだろう。&lt;/p&gt;
-  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;ミックスイン&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;css&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.bordered&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;border-top&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;dotted&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1px&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;black&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;border-bottom&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;solid&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2px&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;black&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;p&gt;こちらも実際にどのようにLESSで記述し実際にCSSでどのように解釈されるのかを見た方が早いだろう。&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text&quot;&gt;.bordered {
+  border-top: dotted 1px black;
+  border-bottom: solid 2px black;
+}
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;p&gt;というLESSで定義したミックスインを&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;css&quot;&gt;&lt;span class=&quot;nf&quot;&gt;#menu&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#111&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bordered&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text&quot;&gt;#menu a {
+  color: #111;
+  .bordered;
+}
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;p&gt;にしてルールセットの中に追加すると、&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;css&quot;&gt;&lt;span class=&quot;nf&quot;&gt;#menu&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#111&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;border-top&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;dotted&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1px&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;black&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;border-bottom&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;solid&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2px&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;black&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text&quot;&gt;#menu a {
+  color: #111;
+  border-top: dotted 1px black;
+  border-bottom: solid 2px black;
+}
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
@@ -1454,37 +1457,35 @@ SASSもLESSもほぼ同じ概念で、ほぼ同じ文法で書かれているが
 &lt;p&gt;CSS3を利用する場合、まだまだ多くのベンダープリフィックスを追加しなければいけないのが現実。&lt;br /&gt;
 そんな際にこのミックスインは威力を発揮する。&lt;br /&gt;
 ミックスインはパラメータを渡したりデフォルトを定義することもできるので、使い回しが効く機能でもある。&lt;br /&gt;
-詳しい説明は&lt;a href=&quot;http://lesscss.org/#-parametric-mixins&quot;&gt;こちら&lt;/a&gt;から。&lt;/p&gt;
+詳しい説明は&lt;a href=&quot;http://studiomohawk.github.com/ja-lesscss-org/#-ミックスインの引数利用&quot;&gt;こちら&lt;/a&gt;から。&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;入れ子ルール&lt;/strong&gt;&lt;/p&gt;
-
-    &lt;p&gt;変数やミックスインももちろん強力な追加機能ではあるが私の一番のお気に入りがこの入れ子ルール。  &lt;/p&gt;
-  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;入れ子ルール&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;css&quot;&gt;&lt;span class=&quot;nf&quot;&gt;#header&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;black&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;nf&quot;&gt;#header&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.navigation&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;12px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;nf&quot;&gt;#header&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.logo&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; 
-  &lt;span class=&quot;k&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;300px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;nf&quot;&gt;#header&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.logo&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:hover&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;text-decoration&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;none&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;p&gt;ルールセットを入れ子にすることで通常であればなんども繰り返し書かなければならないセレクタを省略できるのが入れ子ルール。  &lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text&quot;&gt;#header { color: black; }
+#header .navigation {
+  font-size: 12px;
+}
+#header .logo { 
+  width: 300px; 
+}
+#header .logo:hover {
+  text-decoration: none;
+}
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;p&gt;という&lt;strong&gt;CSS&lt;/strong&gt;は、LESSでは&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;css&quot;&gt;&lt;span class=&quot;nf&quot;&gt;#header&lt;/span&gt;        &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;black&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;navigation&lt;/span&gt;  &lt;span class=&quot;err&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;12px&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;nc&quot;&gt;.logo&lt;/span&gt;        &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;300px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;&amp;amp;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hover&lt;/span&gt;    &lt;span class=&quot;err&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;text-decoration&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;none&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text&quot;&gt;#header        { color: black;
+  .navigation  { font-size: 12px }
+  .logo        { width: 300px;
+    &amp;amp;:hover    { text-decoration: none }
+  }
+}
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
@@ -1494,7 +1495,7 @@ SASSもLESSもほぼ同じ概念で、ほぼ同じ文法で書かれているが
 &lt;strong&gt;&amp;amp;&lt;/strong&gt;という結合子は、入れ子になったセレクタを子孫として扱わず親セレクタに追加することができる。&lt;br /&gt;
 なので疑似クラスだけではなく、&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;css&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.float.left&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text&quot;&gt;.float.left {...}
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
@@ -1504,48 +1505,161 @@ SASSもLESSもほぼ同じ概念で、ほぼ同じ文法で書かれているが
   &lt;li&gt;&lt;strong&gt;名前空間&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;　こちらは変数やミックスインをまとめる際に活用できる機能。&lt;/p&gt;
+&lt;p&gt;こちらは変数やミックスインをまとめる際に活用できる機能。&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;css&quot;&gt;&lt;span class=&quot;nf&quot;&gt;#bundle&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;button&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;block&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;border&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1px&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;solid&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;black&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;background-color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;grey&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;&amp;amp;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hover&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;background-color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;white&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text&quot;&gt;#bundle {
+  .button () {
+    display: block;
+    border: 1px solid black;
+    background-color: grey;
+    &amp;amp;:hover { background-color: white }
+  }
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;p&gt;&lt;strong&gt;#bundle&lt;/strong&gt;という名前空間の中に&lt;strong&gt;.button&lt;/strong&gt;というミックスインを定義する。&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;css&quot;&gt;&lt;span class=&quot;nf&quot;&gt;#header&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;orange&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;m&quot;&gt;#bundle&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;button&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text&quot;&gt;#header a {
+  color: orange;
+  #bundle &amp;gt; .button;
+}
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;このようにして呼び出すことが可能。&lt;/p&gt;
+&lt;p&gt;このようにして呼び出すことが可能。&lt;br /&gt;
+例では&lt;strong&gt;#bundle&lt;/strong&gt;とIDをバンドル化しているが、実際にはクラス名でも要素名でもバンドル化は可能。&lt;br /&gt;
+つまりスタイルシート内にあるすべてのミックスインは名前空間を持つことができる。&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;四則演算と関数&lt;/strong&gt;&lt;/p&gt;
-
-    &lt;p&gt;こちらは使ったことがまだないので&lt;a href=&quot;http://lesscss.org/#-color-functions&quot;&gt;オフィシャルサイトで例&lt;/a&gt;を見てほしい。&lt;/p&gt;
-  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;四則演算と関数&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;まずは演算から見ていこう。&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text&quot;&gt;@base: 5%;
+@filler: @base * 2;
+@other: @base + @filler;
+
+color: #888 / 4;
+background-color: @base-color + #111;
+height: 100% / 2 + @filler;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;計算機がデスクの上におかれていたりしないだろうか？ 私はおいてある。&lt;br /&gt;
+ウェブデザイナには計算機を手放せない人も多いことだろう。&lt;br /&gt;
+その必要をなくしてくれるのが演算。その名前の通り、足し算、引き算、かけ算、割り算を行うことができる。&lt;/p&gt;
+
+&lt;p&gt;ただの計算機とは違い色の演算もすることができる。&lt;br /&gt;
+しかし&lt;strong&gt;#888 / 4&lt;/strong&gt;の答えは予想できても、&lt;strong&gt;#c28381 * #fafafa&lt;/strong&gt;はどんな色になるのかわからない。&lt;br /&gt;
+よりわかりやすく色を操作するためにあるのが&lt;strong&gt;関数&lt;/strong&gt;だ。&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text&quot;&gt;lighten(@color, 10%);     // @colorより10%明度が*高い*値を返します
+darken(@color, 10%);      // @colorより10%明度が*低い*値を返します
+
+saturate(@color, 10%);    // @colorに10%の彩度を*追加*した値を返します
+desaturate(@color, 10%);  // @colorから10%の彩度を*削減*した値を返します
+
+fadein(@color, 10%);      // @colorから10%透明度が*高い*値を返します
+fadeout(@color, 10%);     // @colorから10%透明度が*低い*値を返します
+fade(@color, 50%);        // @colorの50%の透明度を持つ値を返します
+
+spin(@color, 10);         // @colorから10度色相が大きい値を返します
+spin(@color, -10);        // @colorから10度色相が小さい値を返します
+
+mix(@color1, @color2);    // @color1 と @color2 をミックスした値を返します
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;変数と演算、そして色の関数の組み合わせはスタイルシートにより明確な意味を持たせることもできる。&lt;br /&gt;
+15pxや#fefefeは作った本人以外、もしかすると作った本人ですら2週間も経てばその意味を忘れてしまうだろう。&lt;br /&gt;
+しかし以下の例を見てほしい、&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text&quot;&gt;@base-color: #fefefe;
+@accent-color: #f99157;
+@subtle-accent: lighten(@accent-color:, 20%);
+@dark-accent: darken(@accent-color:, 20%);
+@base-font-size: 16px;
+@base-height: @base-font-size * 1.618;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;このようにデザインの基礎になる部分を変数化して、演算や色の関数を使ってバリエーションを作るということもできる。&lt;br /&gt;
+データに名前を付けるのが変数の本当の実力でそれぞれに名前がついていれば16pxが大事な値であるかも一目瞭然にすることもできる。&lt;/p&gt;
 
 &lt;h2 id=&quot;mixin&quot;&gt;便利なミックスインのコレクション&lt;/h2&gt;
 
 &lt;p&gt;自分がよく利用するルールのミックスインを定義しておけば飛躍的にCSSの開発はスピードアップする。&lt;br /&gt;
-フロントエンドデベロッパやウェブデザイナはいつだって時間が足りない職種なので自分なりのコレクションを作って&lt;a href=&quot;https://gist.github.com/&quot;&gt;Gist&lt;/a&gt;などに置いておくと便利だ。&lt;/p&gt;
+フロントエンドデベロッパやウェブデザイナはいつだって時間が足りない職種なので自分なりのコレクションを作っておくといいだろう。&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://markdotto.com/bootstrap/&quot;&gt;Bootstrap.less&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://lesselements.com/&quot;&gt;LESS Elements&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://markdotto.com/bootstrap/&quot;&gt;Preboot.less&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;すでに便利なミックスインを公開している人もいるのでそれらから自分の派生を作るほうが早いかも知れないのでソースを見てみるといいだろう。&lt;/p&gt;
+&lt;p&gt;TwitterのBoostrapでも利用しているミックスイン/変数コレクションの先駆者&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.stuffandnonsense.co.uk/blog/about/less&quot;&gt;LESS by Stuff &amp;amp; Nonsense&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Andy Clarkeも記事中に非常に便利なミックスインを紹介している。&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text&quot;&gt;.font-size(@font-size: 16) {
+	@rem: (@font-size / 10);
+	font-size: @font-size * 1px;
+	font-size: ~&amp;quot;@rem&amp;quot;;
+}
+// pixelをremに変換しつつ、remが使えない場合のフォールバックを入れる
+
+h1 { .font-size(32); }
+
+// CSS
+// h1 {
+//    font-size:32px;
+//    font-size:3.2rem;
+// }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;また、以下のカラースキーム生成もCSSなら大変だがLESSならより自由度が高く使い回しができて便利。&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text&quot;&gt;@col : #468DB6;			// Base colour
+@comp : spin(@col, 180);  	// Complementary colour
+
+@Col_l1 : lighten(@col, 5%);	// Lighten base
+@Col_l2 : lighten(@col, 10%);
+@Col_l3 : lighten(@col, 15%);
+@Col_l4 : lighten(@col, 20%);
+
+@Col_d1 : darken(@col, 5%);	// Darken base
+@Col_d2 : darken(@col, 10%);
+@Col_d3 : darken(@col, 15%);
+@Col_d4 : darken(@col, 20%);
+
+@Comp_l1 : lighten(@comp, 5%);	// Lighten complementary
+@Comp_l2 : lighten(@comp, 10%);
+@Comp_l3 : lighten(@comp, 15%);
+@Comp_l4 : lighten(@comp, 20%);
+
+@Comp_d1 : darken(@comp, 5%);	// Darken complementary
+@Comp_d2 : darken(@comp, 10%);
+@Comp_d3 : darken(@comp, 15%);
+@Comp_d4 : darken(@comp, 20%);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;加えて、彼のモバイルファーストアプローチのBoilerplateである&lt;a href=&quot;https://github.com/malarkey/320andup/&quot;&gt;320 and Up&lt;/a&gt;に他のミックスインがあるので参考に。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://lesselements.com/&quot;&gt;LESS Elements&lt;/a&gt; &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Preboot.lessと重複する部分も多いけれどぜひチェックしておいてほしい。&lt;/p&gt;
+
+&lt;p&gt;大事なことは自分で自分が使いやすいミックスイン/変数コレクションを作ること。&lt;br /&gt;
+二度使えないコードを書かないことは大切なこと。何度も使えるコードを何度も書かないことも同じくらい大事。&lt;br /&gt;
+D.R.Y(Don’t Repeat
+Yourself)はプログラミングにおける基本的なプリンシパルの1つだが、CSSではなかなか難しいのでLESSでそれを補完できるのは非常に心強い。&lt;/p&gt;
 
 &lt;h2 id=&quot;usage&quot;&gt;使い方&lt;/h2&gt;
 
@@ -1557,47 +1671,47 @@ SASSもLESSもほぼ同じ概念で、ほぼ同じ文法で書かれているが
 &lt;/div&gt;
 
 &lt;p&gt;と使い方はとても簡単。&lt;br /&gt;
-注意してほしいのは、&lt;strong&gt;rel=”stylesheet/less”&lt;/strong&gt;の部分だけだ。&lt;/p&gt;
+注意してほしいのは、&lt;strong&gt;rel=”stylesheet/less”&lt;/strong&gt;の部分だけ。&lt;/p&gt;
 
-&lt;p&gt;ちなみにGoogle Codeにレポジトリを持っているので、&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;stylesheet/less&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;text/css&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;/stylesheets/styles.less&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;http://lesscss.googlecode.com/files/less-1.0.41.min.js&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;とすると何もダウンロードせずともLESSを使うことができる。&lt;/p&gt;
-
-&lt;p&gt;さらに&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;charset=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;utf-8&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;less&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;env&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;development&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;less&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;watch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;この記述をHTMLに追記しておけばlessファイルが保存されるとCSSがリフレッシュなしに変更が適応される。&lt;br /&gt;
-毎回毎回リフレッシュするのは面倒な上意外と時間の無駄なので、開発中はぜひ利用してほしい。&lt;/p&gt;
-
-&lt;p&gt;なお、URLの末尾に&lt;strong&gt;#!watch&lt;/strong&gt;としても同じことができるので開発後に記述を削除するのを忘れそうな人は、こちらをおすすめする。&lt;/p&gt;
+&lt;p&gt;さらにLESS.jsを実際に呼び出している場合は、&lt;code&gt;#!watch&lt;/code&gt;という文字列をURLの後ろにつけると、LESSファイルの保存に合わせてスタイルをしてくれる。&lt;br /&gt;
+なお、ローカルファイルではChromeで動作しないかも知れないので、そんな場合はChromeに&lt;code&gt;-allow-file-access-from-files&lt;/code&gt;のパラメータを渡して起動すれば動作する。&lt;br /&gt;
+毎回毎回リフレッシュするのは面倒な上、意外と時間の無駄なので開発中はぜひ利用してほしい。&lt;/p&gt;
 
 &lt;h2 id=&quot;compile&quot;&gt;CSSへのコンパイル&lt;/h2&gt;
 
-&lt;p&gt;node.jsで動作するサイトでない限りは、LESSの記述はCSSに展開する必要があるだろう。&lt;/p&gt;
+&lt;p&gt;node.jsで動作するサイトでない限りはLESSの記述はCSSに展開する必要があるだろう。&lt;/p&gt;
 
-&lt;p&gt;MacではGUIのアプリで行うこともできるが(&lt;a href=&quot;http://incident57.com/less/&quot;&gt;LESS.app&lt;/a&gt;)、WindowsではGUIアプリは見当たらない。おそらくLinuxでも同じだろう。&lt;br /&gt;
-SASSではJavaで動作するクロスプラットフォームのUIがある。(&lt;a href=&quot;http://compass.handlino.com/&quot;&gt;Compass.app&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;node.jsを使ったサーバサイドでのコンパイル以外ではLESSファイルをCSSへコンパイルするには大きく2つの方法がある。&lt;/p&gt;
 
-&lt;p&gt;私はnode.jsをコマンドラインから利用してLESSをCSSに展開している。&lt;br /&gt;
-node.jsは恐ろしいほどのスピードで開発が進んでいるのでどの環境でも簡単にインストールすることができるようになってきた。&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;GUIツール&lt;/li&gt;
+  &lt;li&gt;コマンドライン&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;p&gt;node.jsのインストールについては&lt;a href=&quot;https://github.com/joyent/node/wiki/Installation&quot;&gt;こちら&lt;/a&gt;を参考に。&lt;/p&gt;
+&lt;p&gt;GUIツールから紹介しよう。
+GUIツールは大体同じ動作で、.lessファイルがあるディレクトリをツール上で指定すると自動でコンパイルしてくれる。&lt;br /&gt;
+おそらく全部のツールで.lessファイルを保存するたびにCSSに自動でコンパイルされるので実際に呼び出すファイルはCSSで問題ない。&lt;br /&gt;
+詳しい使い方はツールのヘルプを参照。&lt;/p&gt;
 
-&lt;p&gt;Macを利用しているなら、Homebrewから0.40をインストールすることができる。&lt;br /&gt;
-また、node.jsにもNPMというパッケージマネージャがあり、こちらでless.jsをインストールすることも簡単にできる。&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://winless.org/online-less-compiler&quot;&gt;WinLess - Windows GUI for less.js&lt;/a&gt; / Windowsのネイティブアプリで無料&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://wearekiss.com/simpless&quot;&gt;SimpLESS - Your LESS CSS Compiler&lt;/a&gt; / Win、Linux、Macで動作するAdobe Airアプリ。無料&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://crunchapp.net/&quot;&gt;Crunch! - The tastiest LESS editor&lt;/a&gt; / Win、Linux、Macで動作するAdobe Airアプリ。無料&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://incident57.com/less/&quot;&gt;LESS.app For Mac OS X&lt;/a&gt; / Macのネイティブアプリ、無料&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;インストールが終わったら、&lt;/p&gt;
+&lt;p&gt;他にも幾つかGUIツールはあるが無料のツールは知る限りこの4つ。  &lt;/p&gt;
+
+&lt;p&gt;LESS.appを作成したBryan
+Jones氏は&lt;a href=&quot;http://incident57.com/codekit/&quot;&gt;CodeKit&lt;/a&gt;という新しいアプリを作成していてベータ版の間は無料。LESSをCSSに変換するだけでなく、SASSやStylusにも対応し、HAML、Coffee
+Script、画像の最適化など様々な機能が満載の夢のようなアプリ。Macのみ。&lt;/p&gt;
+
+&lt;p&gt;また同じくMacのみになってしまうが、&lt;a href=&quot;http://livereload.com/?t=1320397070&quot;&gt;LiveReload&lt;/a&gt;というアプリもLESS、SASS、Coffee Scriptを保存と同時にブラウザをアップデートしながら変換してくれる。&lt;/p&gt;
+
+&lt;p&gt;コマンドラインでの利用にはもちろんNode.jsが必要。&lt;br /&gt;
+Mac、Windowsともに&lt;a href=&quot;http://nodejs.org/&quot;&gt;node.js&lt;/a&gt;からパッケージがダウンロードできるので、あとはダブルクリックするだけ。簡単。&lt;/p&gt;
+
+&lt;p&gt;インストールが終わったらターミナルアプリから&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;sh&quot;&gt;lessc styles.less &amp;gt; styles.css
 &lt;/code&gt;&lt;/pre&gt;
@@ -1609,17 +1723,21 @@ node.jsは恐ろしいほどのスピードで開発が進んでいるのでど�
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;のように、&lt;strong&gt;-x&lt;/strong&gt;オプションをつけると圧縮したCSSとして展開される。&lt;/p&gt;
+&lt;p&gt;のように、&lt;strong&gt;-x&lt;/strong&gt;オプションをつけると圧縮したCSSとして展開される。  &lt;/p&gt;
 
 &lt;h2 id=&quot;link&quot;&gt;参考リンク&lt;/h2&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://markdotto.com/bootstrap/&quot;&gt;Bootstrap.less&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://lesscss.org/&quot;&gt;LESS&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.stuffandnonsense.co.uk/blog/about/less&quot;&gt;LESS by Stuff &amp;amp; Nonsense&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://markdotto.com/bootstrap/&quot;&gt;Preboot.less&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://lesselements.com/&quot;&gt;LESS Elements&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://fadeyev.net/2010/06/19/lessjs-will-obsolete-css/&quot;&gt;Less.js Will Obsolete CSS&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://lesscss.org/&quot;&gt;LESS&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://sass-lang.com/&quot;&gt;SASS&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;script src=&quot;/js/hiless.js&quot;&gt;&lt;/script&gt;
+
 
 				&lt;hr /&gt;
 				&lt;h5&gt;Elsewhere&lt;/h5&gt;
@@ -1633,13 +1751,13 @@ node.jsは恐ろしいほどのスピードで開発が進んでいるのでど�
 	
 		<entry>
 			<title>ワイヤフレーム</title>
-			<link href="http://css.studiomohawk.com/webdesign/2011/04/01/wireframe/"/>
+			<link href="http://css.studiomohawk.com/wireframe/2011/04/01/wireframe/"/>
 			<updated></updated>
-			<id>http://css.studiomohawk.com/webdesign/2011/04/01/wireframe</id>
+			<id>http://css.studiomohawk.com/wireframe/2011/04/01/wireframe</id>
 			<content type="html">
 				&lt;h2 id=&quot;whatis&quot;&gt;ワイヤフレームとは&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;/webdesign/2011/04/01/wireframe/protoplate.png&quot; alt=&quot;Image&quot; class=&quot;huge&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/wireframe/2011/04/01/wireframe/protoplate.png&quot; alt=&quot;Image&quot; class=&quot;huge&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;ワイヤフレームって作ったことありますか？&lt;br /&gt;
 ワイヤフレームはウェブページのコンテントを視覚的に表現するドキュメントの中核を担う存在。
@@ -1743,9 +1861,9 @@ If the wireframe starts as a wireframe and then morphs into the actual design, g
 	
 		<entry>
 			<title>HTML5 Boilerplate</title>
-			<link href="http://css.studiomohawk.com/tool/2011/03/15/html5boilerplate/"/>
+			<link href="http://css.studiomohawk.com/html5 boilerplate/2011/03/15/html5boilerplate/"/>
 			<updated></updated>
-			<id>http://css.studiomohawk.com/tool/2011/03/15/html5boilerplate</id>
+			<id>http://css.studiomohawk.com/html5 boilerplate/2011/03/15/html5boilerplate</id>
 			<content type="html">
 				&lt;h2 id=&quot;whatis&quot;&gt;HTML5 Boilderplateとは&lt;/h2&gt;
 
@@ -1834,9 +1952,9 @@ BoilerplateにPull Requestを送ってくださいませ。&lt;/p&gt;
 	
 		<entry>
 			<title>コマンドライン</title>
-			<link href="http://css.studiomohawk.com/tool/2011/02/13/terminal-101/"/>
+			<link href="http://css.studiomohawk.com/command line/2011/02/13/terminal-101/"/>
 			<updated></updated>
-			<id>http://css.studiomohawk.com/tool/2011/02/13/terminal-101</id>
+			<id>http://css.studiomohawk.com/command line/2011/02/13/terminal-101</id>
 			<content type="html">
 				&lt;h2 id=&quot;whatis&quot;&gt;コマンドラインについて&lt;/h2&gt;
 
@@ -2026,9 +2144,9 @@ cURL&lt;/a&gt;)&lt;/p&gt;
 	
 		<entry>
 			<title>Git バージョンコントロール</title>
-			<link href="http://css.studiomohawk.com/tool/2011/01/29/git-version-control/"/>
+			<link href="http://css.studiomohawk.com/git/2011/01/29/git-version-control/"/>
 			<updated>2011-12-03 01:40:50 +0900</updated>
-			<id>http://css.studiomohawk.com/tool/2011/01/29/git-version-control</id>
+			<id>http://css.studiomohawk.com/git/2011/01/29/git-version-control</id>
 			<content type="html">
 				&lt;h2 id=&quot;whatis&quot;&gt;バージョンコントロールについて&lt;/h2&gt;
 

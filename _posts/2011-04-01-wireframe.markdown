@@ -1,8 +1,9 @@
 ---
 layout: post
 title: ワイヤフレーム
-category: webdesign
+category: wireframe
 date: 2011-04-01 00:00:00
+tldr: "問題点を発見する。そのためにもっとも便利なツールがワイヤフレーム。何故ワイヤフレームが必要なのか、そしてワイヤフレームを作るために便利なツールを紹介。"
 toc:
 - {text: ワイヤフレームとは, hash: whatis}
 - {text: ワイヤフレームの使用法, hash: usage}

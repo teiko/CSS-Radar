@@ -1,8 +1,9 @@
 ---
 layout: post
 title: パフォーマンス最適化
-category: frontend
+category: optimization
 date: 2011-04-09 11:46:40
+tldr: "サイトのロード時間の早さはもはや大事な機能の1つ。最適化はバックエンドの人がやる、そんな風に思ってたりはしないだろうか？ ページロード時間の80%はフロントエンドで最適化できる。最適化の意味とその実践について紹介。"
 toc:
 - {text: パフォーマンス最適化の意味, hash: whatis}
 - {text: ページのロード時間で失うモノ, hash: why}

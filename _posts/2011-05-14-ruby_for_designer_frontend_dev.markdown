@@ -1,8 +1,9 @@
 ---
 layout: post
-category: tool
+category: ruby
 title: ウェブデザイナのためのRuby
 date: 2011-05-14 00:03:59
+tldr: "ウェブデザイナ/フロントエンドデベロッパだからといってプラグラム言語を知らなくてもいい、ということではない。簡単に導入できて便利に使えるRubyを覚えてルーチン作業を自動化したりして、問題を解決する時間を作るウェブデザイナのためのRubyの使い方を紹介していく。"
 toc:
 - {text: Rubyはウェブデザイナに優しい, hash: rubyis}
 - {text: Rubyのインストール, hash: install}
