@@ -4,7 +4,7 @@
 	<title>CSS Radar | Mini Books For Front End Developers</title>
 	<link href="http://css.studiomohawk.com/atom.xml" rel="self"/>
 	<link href="http://css.studiomohawk.com"/>
-	<updated>2012-01-18T11:25:16+09:00</updated>
+	<updated>2012-01-27T08:21:26+09:00</updated>
 	<id>http://css.studiomohawk.com/</id>
 	<author>
 		<name>Yuya Saito</name>
@@ -950,9 +950,9 @@ Adobe Suitesを使いこなし、HTML/CSS/JSを駆使し、ユーザビリティ
 	
 		<entry>
 			<title>インブラウザ デザイン</title>
-			<link href="http://css.studiomohawk.com/in-browser design/2011/04/16/designing_in_browser/"/>
+			<link href="http://css.studiomohawk.com/in-browser-design/2011/04/16/designing_in_browser/"/>
 			<updated>2011-10-29 22:37:19</updated>
-			<id>http://css.studiomohawk.com/in-browser design/2011/04/16/designing_in_browser</id>
+			<id>http://css.studiomohawk.com/in-browser-design/2011/04/16/designing_in_browser</id>
 			<content type="html">
 				&lt;h2 id=&quot;whatis&quot;&gt;インブラウザ デザインとは&lt;/h2&gt;
 
