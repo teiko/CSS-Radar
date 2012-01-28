@@ -368,6 +368,7 @@ a:hover {
 .the-article .article-inner li blockquote,
 .the-article .article-inner li .hasGrid {
   margin-left: 0;
+  margin-right: 0;
 }
 .the-article .article-inner p code, .the-article .article-inner li code {
   background-color: rgba(75, 77, 69, 0.8);
