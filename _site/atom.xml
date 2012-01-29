@@ -4,7 +4,7 @@
 	<title>CSS Radar | Mini Books For Front End Developers</title>
 	<link href="http://css.studiomohawk.com/atom.xml" rel="self"/>
 	<link href="http://css.studiomohawk.com"/>
-	<updated>2012-01-28T10:34:05+09:00</updated>
+	<updated>2012-01-29T16:40:48+09:00</updated>
 	<id>http://css.studiomohawk.com/</id>
 	<author>
 		<name>Yuya Saito</name>
@@ -110,13 +110,6 @@ snipMateはTextMateのスニペット機能を模したプラグイン。特定�
 
 &lt;p&gt;MatchTagはNotePad++で使えたあの便利なHTMLタグを選ぶとセットになっているタグをハイライトしてくれるプラグイン。
 ずーとこれだけが気になっていたけれど、これで完璧。HTMLを生業にしている人は必携。&lt;/p&gt;
-
-&lt;h3&gt;&lt;a href=&quot;https://github.com/mbadran/headlights&quot;&gt;Headlights&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/vim/2011/07/24/vim-bits-and-pieces/headlights.png&quot; alt=&quot;Image&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Headlightsはbundlesというメニュを追加するプラグイン。ハードコアVimmerには総スカンかも知れないが、インストールしてあるプラグイン達でできることをマウスで追いかけられる。&lt;br /&gt;
-プラグインがインストールされているかのチェックにもなるし、いまいちヘルプもわかりづらいという初心者におすすめ。&lt;/p&gt;
 
 &lt;h3&gt;&lt;a href=&quot;https://github.com/mr-szymanski/prefixr&quot;&gt;Prefixr&lt;/a&gt;&lt;/h3&gt;
 

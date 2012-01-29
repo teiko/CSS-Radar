@@ -14,8 +14,11 @@ namespace :post do
 ---
 layout: post
 category: 
-title: #{args.title}
+title: "#{args.title}"
 date: #{Time.now.strftime('%Y-%m-%d %k:%M:%S')}
+tldr: ""
+toc:
+- {text: , hash: }
 ---
 EOS
     end

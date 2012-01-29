@@ -91,13 +91,6 @@ snipMateはTextMateのスニペット機能を模したプラグイン。特定�
 MatchTagはNotePad++で使えたあの便利なHTMLタグを選ぶとセットになっているタグをハイライトしてくれるプラグイン。
 ずーとこれだけが気になっていたけれど、これで完璧。HTMLを生業にしている人は必携。
 
-### [Headlights](https://github.com/mbadran/headlights)
-
-![Image]({% postfile headlights.png %})
-
-Headlightsはbundlesというメニュを追加するプラグイン。ハードコアVimmerには総スカンかも知れないが、インストールしてあるプラグイン達でできることをマウスで追いかけられる。  
-プラグインがインストールされているかのチェックにもなるし、いまいちヘルプもわかりづらいという初心者におすすめ。
-
 ### [Prefixr](https://github.com/mr-szymanski/prefixr)
 
 CSS3をクロスブラウザで適応するにはブラウザプリフィックス(-o-や、-webkit-など)を記述する必要がある。  
