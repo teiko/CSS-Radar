@@ -4,12 +4,175 @@
 	<title>CSS Radar | Mini Books For Front End Developers</title>
 	<link href="http://css.studiomohawk.com/atom.xml" rel="self"/>
 	<link href="http://css.studiomohawk.com"/>
-	<updated>2012-01-29T16:43:02+09:00</updated>
+	<updated>2012-01-31T09:50:59+09:00</updated>
 	<id>http://css.studiomohawk.com/</id>
 	<author>
 		<name>Yuya Saito</name>
 		<email>cssradar@gmail.com</email>
 	</author>
+	
+		<entry>
+			<title>ウェブデベロッパのための英語</title>
+			<link href="http://css.studiomohawk.com/english/2012/01/29/reading-english-is-not-so-hard/"/>
+			<updated></updated>
+			<id>http://css.studiomohawk.com/english/2012/01/29/reading-english-is-not-so-hard</id>
+			<content type="html">
+				&lt;h2 id=&quot;preface&quot;&gt;はじめに&lt;/h2&gt;
+
+&lt;p&gt;ウェブ界隈で仕事をしているとどうしても逃れられないのが英語。&lt;br /&gt;
+ウェブが英語圏を中心に生み出されたからという理由だけではない。インターネットの共通言語が英語なのだ。&lt;/p&gt;
+
+&lt;p&gt;ここでは英語を話すことができるようになる魔法の教材を売ったりはしない。&lt;br /&gt;
+英語を読むためのちょっとしたコツを共有する。&lt;/p&gt;
+
+&lt;p&gt;断っておくが、私は英語を留学することで話すことができるようになり、読むことも、書くことも、最近では翻訳すること、逐次であれば通訳もある程度であればできるが、ものすごく高いTOIECのスコアを誇るとか、誰でも知ってる進学校を卒業したとか、よもやアメリカの有名大学を卒業したということもない。もちろん、教育学部を卒業し、英語を毎日教えているということもない。&lt;br /&gt;
+ここで紹介するのはあくまでも私の経験から得たコツ。&lt;/p&gt;
+
+&lt;h2 id=&quot;firststep&quot;&gt;はじめの一歩&lt;/h2&gt;
+
+&lt;p&gt;わかる単語だけで文章を読んでしまう。そしてわからない単語は辞書を引く。&lt;br /&gt;
+多くの人はわからない単語をがあるから、とそこで一旦読むことをとめてしまう。&lt;/p&gt;
+
+&lt;p&gt;まずは文章の流れを追うこと。意味が分かるかは二の次でいい。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Many years ago the great British explorer George Mallory, who was to die on Mount Everest, was asked why did he want to climb it. He said, “Because it is there.”&lt;br /&gt;
+Well, space is there, and we’re going to climb it, and the moon and the planets are there, and new hopes for knowledge and peace are there. And, therefore, as we set sail we ask God’s blessing on the most hazardous and dangerous and greatest adventure on which man has ever embarked.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;これはJohn F Kennedyが1932年、9月12日にRice Universityで演説したあの有名な”Moon Speach”の一節。&lt;/p&gt;
+
+&lt;p&gt;まずは辞書なしにどれくらい理解できるか読んでみてほしい。  &lt;/p&gt;
+
+&lt;p&gt;そして、簡単にすぐに引ける辞書を用意する。  &lt;/p&gt;
+
+&lt;p&gt;私はGoogle ChromeのExtensionである&lt;a href=&quot;https://chrome.google.com/webstore/detail/odncdkhnnoclkbomkbflglagdibfeede?utm_source=chrome-ntp-icon&quot;&gt;英辞郎 on the WEB Pro&lt;/a&gt;を利用している。選択した単語を右クリックから英辞郎 on the WEBの検索をしてくれる便利なツール。Pro版は月額課金なので気をつけてほしい。&lt;br /&gt;
+Pro版の詳しい説明は&lt;a href=&quot;http://eowp.alc.co.jp/info2/&quot;&gt;こちらから&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;understanding&quot;&gt;80/20の法則&lt;/h2&gt;
+
+&lt;p&gt;大まかに言って20%くらいの単語の意味が理解できれば大体何を言っているのかわかり始める。&lt;/p&gt;
+
+&lt;p&gt;ではその20%の見分け方について。&lt;/p&gt;
+
+&lt;p&gt;日本語もそうだが、英語にももちろん文章構造がある。&lt;br /&gt;
+文章構造をミクロで見るとすべては1文。つまり文の始まりからピリオドまでがその範囲になる。&lt;br /&gt;
+人は単語だけでは情報を理解することができない。&lt;br /&gt;
+1000014という数字だけみて、国会議事堂の郵便番号だとピンとこないのと同じことだ。&lt;/p&gt;
+
+&lt;p&gt;まずは文そのものを見るくせをつける。&lt;br /&gt;
+その1文を全体で見渡して文における主人公とそのアクションを見つけ出す。&lt;br /&gt;
+シンプルな文章であれば必ずその2つが存在する。&lt;br /&gt;
+受験的な英語ではそれらを巧妙に隠したりするが、実際の文章はそれほどややこしい構造にはなっていない。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Many years ago the great British explorer George Mallory, who was to die on Mount Everest, was asked why did he want to climb it.&lt;br /&gt;
+He said, “Because it is there.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;ここでは2つの文を例にしてみてみよう。(それぞれの文にはつながりがあるので)&lt;/p&gt;
+
+&lt;p&gt;この2文における主人公はGeorge Mallory。&lt;br /&gt;
+そして彼のアクションはsaid, “Because it is there.”&lt;/p&gt;
+
+&lt;p&gt;George Malloryが誰であろうと、なぜならそこにあるから、と言ったことがわかる。&lt;/p&gt;
+
+&lt;p&gt;実はこの文章は短い割にすこしややこしくて主人公はどうやらメインのアクション以前にそこにたどり着くために必要なサブアクションがあるらしい。
+主人公とそのアクションだけで意味をなさない場合は、そのアクションを引き起こすためのきっかけが必要になる。&lt;/p&gt;
+
+&lt;p&gt;今回でいうと、was asked why did he want to climb itがそれにあたる。
+細かく言うと、was askedがサブアクション。
+何かを聞かれたわけで、その何かがその後に続いている。  &lt;/p&gt;
+
+&lt;p&gt;何故彼はそれに登るのか、と聞かれた様子をつかんだだろうか？&lt;/p&gt;
+
+&lt;p&gt;それってなんだ。とその前を見てみると、Mount Everestという著名な山があるしそれ以外にモノは文章に出てこないので、it == Mount Everestであることがわかるだろう。&lt;/p&gt;
+
+&lt;p&gt;あとの単語はわからなくてもいいし、調べる必要もない。&lt;/p&gt;
+
+&lt;p&gt;文章にして書くと非常に長いプロセスのように思うかもしれないが実際にはそれほどかからない。ある程度文章を読むことに(日本語でも、英語でも)慣れていればこの2文なら30秒もかからないでそこまでたどり着くだろう。&lt;/p&gt;
+
+&lt;h2 id=&quot;forrest&quot;&gt;森を見て、木を見ない&lt;/h2&gt;
+
+&lt;p&gt;知っている単語の数は多ければ多いほど調べるという時間を削減できるから英語を読むのにあたっては知らないよりは知っておいたほうがいい。&lt;br /&gt;
+しかし、単語だけを無用に覚えるのはよくない。&lt;/p&gt;
+
+&lt;p&gt;生きている文章の中で単語を覚える癖を付けるといいだろう。&lt;br /&gt;
+実際に読んでいる文章ごと単語を覚えてしまうということだ。&lt;/p&gt;
+
+&lt;p&gt;日本語とは違って英語はルールが多い。&lt;br /&gt;
+ペアや3単語1チームとかで意味を生むことが多い。だから文章で単語を覚えてしまった方が効率的だ。よく言うところの熟語と呼ばれるやつだ(私はなんでもかんでも熟語としてそれを覚えようとするのはよろしくないと思っている)。  &lt;/p&gt;
+
+&lt;p&gt;単語の意味もgetという単語を調べたときの辞書に書いてある意味すべてをおぼえてるのではなく、getという単語がもつそのものの意味を理解するようにする。&lt;br /&gt;
+原義にフォーカスして単語を覚えるというのは私だけが提唱している方法論ではなく、&lt;a href=&quot;http://www.amazon.co.jp/dp/4523310424&quot;&gt;語源中心英単語辞典&lt;/a&gt;という辞典が発売されていることからも一般的な手法であることがわかる。&lt;br /&gt;
+原義を理解することで熟語とよばれる単語達チームの達も自然に意味が分かるようになってくる。(だから熟語として覚えるのはあまり意味がない)&lt;br /&gt;
+英語も漢字と同じくパーツで意味がわかることが多い。語源を中心に単語を覚えていくとこのパーツを見破ることができるようになる。&lt;br /&gt;
+この方式の感覚をつかむとボキャブラリが飛躍的に増える。  &lt;/p&gt;
+
+&lt;p&gt;単語だけに捕われず文章全体でどういう意味になるのかを理解するようにする。単語も意味だけに捕われず、単語が持つ方向性を理解するようにする。&lt;/p&gt;
+
+&lt;p&gt;木を見て、森を見ずは英語においても落とし穴で、その反対に解決がある。&lt;/p&gt;
+
+&lt;h2 id=&quot;justdoit&quot;&gt;ならうより慣れろ&lt;/h2&gt;
+
+&lt;p&gt;1日1記事。長さは関係ない。&lt;br /&gt;
+とにかく読むことだけが英語を読めるようになる最終的なコツ。  &lt;/p&gt;
+
+&lt;p&gt;続けるためには2つの要素が必要だ。&lt;br /&gt;
+1つはなんであれ読むだけの価値があること。&lt;br /&gt;
+もう１つは内容をある程度知っていること。&lt;/p&gt;
+
+&lt;p&gt;ウェブデベロップメントの世界で生きている人にとってこの2点を満たすのは難しいことではない。プロフェッショナルな文章で毎日のようにすばらしい記事を提供しているメディアが非常に多く、特にチュートリアル系の記事だと見たことがあるスニペットが大部分を占めるのである程度は内容が理解できるはず。  &lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.smashingmagazine.com/&quot;&gt;Smashing Magazine&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://net.tutsplus.com/&quot;&gt;Nettuts+&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.netmagazine.com/&quot;&gt;.net magazine&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;ほんの一例ながら上記の3メディアは非常にわかりやすい単語で書かれており、文法チェックも通しているので変な部分で悩まなくても済む。&lt;br /&gt;
+この3メディアをRSSに入れておけば確実に毎日何かしら自分の役に立つ情報を得ることもできる。&lt;br /&gt;
+Twitterは文にならない場合も多いし、制限による特殊な表現、そして会話的な文体が多いのでそれほどおすすめはできない。&lt;/p&gt;
+
+&lt;p&gt;私が毎日読んでいる記事達は&lt;a href=&quot;https://github.com/studiomohawk/fakebrain/wiki/feeds-for-front-end-developers&quot;&gt;フロントエンドデベロッパのためのフィード&lt;/a&gt;で大部分を共有している。&lt;br /&gt;
+メディアによっては科学技術書のような体裁で書かれている記事もあるが、大抵は平易な単語、文章で書かれているのでどのフィードもおすすめできる。&lt;/p&gt;
+
+&lt;p&gt;もちろん私が運営している&lt;a href=&quot;http://newsletter.studiomohawk.com/&quot;&gt;CSS Radar Newsletter&lt;/a&gt;は毎週10以上の記事を紹介しているから、週末に届くこのメールで紹介されている記事を次の週の間に読んでいけば毎日何かしら読めることになる。&lt;br /&gt;
+辞書で引いてもわからなかった文の解釈などあればNewsletterで紹介している記事であればすべて読んでいるので気軽に聞いてください。&lt;/p&gt;
+
+&lt;h2 id=&quot;tools&quot;&gt;読み続けるためのツール&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.instapaper.com/&quot;&gt;Instapaper&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://readitlaterlist.com/&quot;&gt;Read It Later&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.readability.com/&quot;&gt;Readability&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;ウェブでもiPhoneでもiPadでも記事を読みやすい形式に変換し、オフラインでも記事を読むことを可能にするこの3ツールのうち1つは有料版を手元に持っておくことをおすすめする。&lt;br /&gt;
+慣れるまではデスクトップのブラウザ上で辞書へのアクセスが簡単にできる環境で記事を読むほうがいいだろう。&lt;br /&gt;
+私はすべての有料版を試したが最終的には&lt;a href=&quot;http://www.readability.com/&quot;&gt;Readability&lt;/a&gt;を利用している。&lt;/p&gt;
+
+&lt;h2 id=&quot;books&quot;&gt;おすすめの本&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.amazon.co.jp/dp/4900790052&quot;&gt;DUO 3.0&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;私が買った英語教育系で唯一の本。私が買った時代は2.0だったけれど。&lt;br /&gt;
+この本は非常に優れた本で、さきほど書いた一文で英語単語、熟語を覚えるために作られた本。&lt;br /&gt;
+560英文から重要単語1600語と重要熟語1000語を覚えることができる。  &lt;/p&gt;
+
+&lt;p&gt;アメリカの新聞は大まかに言って2000単語から3000単語を知っていれば読むことができることになっている。少なくとも私はジャーナリズム学科でその単語以内で記事を書くことを訓練した。&lt;br /&gt;
+ということは、DUOに収録されている単語さえ覚えてしまえばなんとか読めるレベルになる。&lt;br /&gt;
+私の小遣い稼ぎのために書いているのではない。アフィリエイトのコードもつけていないし、買うなら古い本なので古本屋にいけばそこそこおいてあるはずだから探してみてほしい。仮に2.0しか見つからなくても構わない。大きくは変わらないはずだ。&lt;/p&gt;
+
+				&lt;hr /&gt;
+				&lt;h5&gt;Elsewhere&lt;/h5&gt;
+				&lt;ul&gt;
+					&lt;li&gt;&lt;a href=&quot;http://twitter.com/#!/cssradar&quot; rel=&quot;me&quot; title=&quot;cssradar@twitter&quot;&gt;cssradar@twitter&lt;/a&gt; / 1日5件以内のウェブデザイン情報をつぶやきます&lt;/li&gt;
+					&lt;li&gt;&lt;a href=&quot;http://tinyletter.com/cssradar&quot; rel=&quot;me&quot; title=&quot;Newsletter&quot;&gt;CSS Radar Newsletter&lt;/a&gt; / CSS Radarニュースレター。Twitterまとめ + α&lt;/li&gt;
+					&lt;li&gt;&lt;a href=&quot;https://plus.google.com/b/109704095110060909968/&quot; rel=&quot;me&quot; title=&quot;Google+ Page&quot;&gt;Google +&lt;/a&gt; / どんな風に使っていくかアイデア募集中&lt;/li&gt;
+				&lt;/ul&gt;
+			</content>
+		</entry>
 	
 		<entry>
 			<title>Vim</title>
