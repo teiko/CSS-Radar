@@ -650,6 +650,10 @@ a:hover {
 .ie .the-article .misc-content blockquote {
   margin-right: 210px;
 }
+.ie .the-article .unit-head-inner .js-toc-list, .ie .the-article .entry-content .js-toc-list, .ie .the-article .misc-content .js-toc-list {
+  margin-left: 0;
+  margin-right: 0;
+}
 .ie .the-article .unit-head-inner .meta {
   width: 20.625em;
   float: right;
@@ -844,6 +848,10 @@ a:hover {
   .the-article .entry-content blockquote,
   .the-article .misc-content blockquote {
     margin-right: 270px;
+  }
+  .the-article .unit-head-inner .js-toc-list, .the-article .entry-content .js-toc-list, .the-article .misc-content .js-toc-list {
+    margin-left: 0;
+    margin-right: 0;
   }
   .the-article .unit-head-inner .meta {
     margin-bottom: 0;
