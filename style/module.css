@@ -69,3 +69,6 @@ No styleguide reference.
 	vertical-align: middle;
 }
 .list-linear li:last-child { margin-right: 0; }
+.list-linear-top li {
+	vertical-align: top;
+}

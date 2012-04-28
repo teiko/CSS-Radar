@@ -13,7 +13,7 @@ namespace :post do
       file.write <<-EOS
 ---
 layout: post
-category: 
+category:
 title: "#{args.title}"
 date: #{Time.now.strftime('%Y-%m-%d %k:%M:%S')}
 tldr: ""
@@ -53,7 +53,7 @@ end
 desc "Package app for production"
 task :package do
   ENV['JEKYLL_ENV'] = 'production'
-  
+
   Rake::Task["build"].invoke
 
   print "Compressing assets..."

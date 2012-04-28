@@ -19,8 +19,8 @@ toc:
 Photoshopはウェブデザインのデファクトアプリとして君臨してきた。もちろん今も私のMac MiniにCS4がインストールされている。
 
 しかし、個人プロジェクトはもちろんすでに会社のプロジェクトでも私はPhotoshopを卒業しつつある。  
-Firefox
-+ Firebugとお気に入りのエディタ(Vim)。そしてCSS3があればPhotoshopを使わなくてもデザインができる。
+
+ブラウザとお気に入りのエディタ。そしてCSS3があればPhotoshopを使わなくてもデザインができる。
 
 [Hardboiled Web Design](http://www.amazon.com/gp/product/1907828001/ref=as_li_ss_tl?ie=UTF8&tag=studiomohawk-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=1907828001)の作者であるAndy Clarkeは[I don’t care about Responsive Web Design](http://stuffandnonsense.co.uk/blog/about/i_dont_care_about_responsive_web_design/)にて、
 

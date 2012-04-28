@@ -13,7 +13,11 @@
 	<meta name="google-site-verification" content="VCjPu4enLtZl8QXpuPVxY6vMufxe68UrchkhHkzz1zA">
 	<link href="https://plus.google.com/109704095110060909968" rel="publisher">
 	<link href="http://feeds.feedburner.com/CssRadar" rel="alternate" title="CSS Radar | Mini Books For Front End Developers" type="application/atom+xml">
-	<link href='/assets/master.css' rel="stylesheet" media="all">
+	<link href='/style/base.css' rel="stylesheet" media="all">
+<link href='/style/module.css' rel="stylesheet" media="all">
+<link href='/style/style.css' rel="stylesheet" media="all">
+<link href='/style/syntaxhighlighter.css' rel="stylesheet" media="all">
+<link href='/style/helper.css' rel="stylesheet" media="all">
 	<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
 	
 	<title itemprop="name" content="レスポンシブウェブデザイン | CSS Radar">レスポンシブウェブデザイン | CSS Radar | Mini Books For Front End Developers</title>
@@ -382,13 +386,15 @@ Boltonの考えで、彼の提案は掲載位置とそれに伴うサイズで�
 						</div>
 						<div class="misc-content">
 							<div class="social">
-	<ul class="list-linear">
+	<ul class="list-linear list-linear-top">
 		<li><div class="twitter-follow"><a href="https://twitter.com/cssradar" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
 		<li><div class="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="cssradar" data-lang="en">Tweet</a></div></li>
+		<li>
+			<div class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="90" data-show-faces="false" data-colorscheme="dark" data-font="lucida grande"></div></div>
+		</li>
 		<li><div class="g-plusone" data-size="medium"></div></li>
 	</ul>
 </div>
-
 							<div class="ask">
 	<h3>Ask Me Anything via E-mail</h3>
 	<p class="btn-3d"><a class="askme" href="mailto:cssradar+ask@gmail.com">質問やコメントはEメールにて cssradar+ask@gmail.com</a><small><a href="/ask/">コメントについて</a></small></p>
@@ -448,11 +454,11 @@ CSS Radarでは記事を短編の技術書のように編集して、記事は�
 <ul>
 	<li><a href="http://twitter.com/#!/cssradar" rel="me" title="cssradar@twitter">cssradar@twitter</a> / 1日5件以内でウェブデザイン情報をつぶやきます</li>
 	<li><a href="http://newsletter.studiomohawk.com/" rel="me" title="Newsletter">CSS Radar Newsletter</a> / CSS Radarニュースレター。Twitterまとめ + α</li>
-	<li><a href="http://www.studiomohawk.com/" rel="me" title="Studio Mohawk">Studio Mohawk</a> / (ウェブ)テクノロジ系オピニオンブログ</li>
+	<li><a href="http://enja.studiomohawk.com/" rel="me" title="en.ja">en.ja</a> / フロントエンダのための翻訳記事</li>
 	<li><a href="https://github.com/studiomohawk/fakebrain/wiki" rel="me" title="fakebrain project">fakebrain</a> / コラボキュレーションプロジェクト。参加者募集中</li>
 	<li><a href="https://github.com/studiomohawk" rel="me" title="github">github</a> / このブログのソースも公開してます</li>
 	<li><a href="http://pinboard.in/u:studiomohawk" rel="me" title="Pinboard">Pinboard</a> / カオスにならないようきちんとモニタ</li>
-	<li><a href="http://www.flickr.com/photos/studiomohawk/" rel="me" title="Flickr">Flickr</a> / 趣味は写真。Nikon D90ユーザ</li>
+	<li><a href="http://500px.com/studiomohawk/photos" rel="me" title="500px">500px</a> / 趣味は写真。Nikon D90ユーザ</li>
 </ul>
 
 		</div>
@@ -469,18 +475,18 @@ Theme: <a href="https://github.com/studiomohawk/CSS-Radar">the_radar</a> created
 
 	</div><!-- id="page" -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script src='/assets/master.js'></script>
-<script>
-	(function(d, s) {
-		var js, fjs = d.getElementsByTagName(s)[0], load = function(url, id) {
-		if (d.getElementById(id)) {return;}
-		js = d.createElement(s); js.src = url; js.id = id;
-		fjs.parentNode.insertBefore(js, fjs);
-		};
-	load('https://apis.google.com/js/plusone.js', 'gplus1js');
-	load('//platform.twitter.com/widgets.js', 'tweetjs');
-	}(document, 'script'));
-</script>
+<script src='/js/common.js'></script>
+<div id="fb-root"></div><!-- fb needs this -->
+<script>(function(d, s) {
+  var js, fjs = d.getElementsByTagName(s)[0], load = function(url, id) {
+    if (d.getElementById(id)) {return;}
+    js = d.createElement(s); js.src = url; js.id = id;
+    fjs.parentNode.insertBefore(js, fjs);
+  };
+  load('//connect.facebook.net/en_US/all.js#xfbml=1', 'fbjssdk');
+  load('https://apis.google.com/js/plusone.js', 'gplus1js');
+  load('//platform.twitter.com/widgets.js', 'tweetjs');
+}(document, 'script'));</script>
 <script>
 /*! A fix for the iOS orientationchange zoom bug.Script by @scottjehl, rebound by @wilto. MIT License.*/
 (function(j){var i=j.document;if(!i.querySelectorAll){return}var l=i.querySelectorAll("meta[name=viewport]")[0],a=l&&l.getAttribute("content"),h=a+", maximum-scale=1.0",d=a+", maximum-scale=10.0",g=true,c=j.orientation,k=0;if(!l){return}function f(){l.setAttribute("content",d);g=true}function b(){l.setAttribute("content",h);g=false}function e(m){c=Math.abs(j.orientation);k=Math.abs(m.gamma);if(k>8&&c===0){if(g){b()}}else{if(!g){f()}}}j.addEventListener("orientationchange",f,false);j.addEventListener("deviceorientation",e,false)})(this);

@@ -386,6 +386,7 @@ a:hover {
   border-top: 1px solid #444e51;
   padding: 6px;
   background: #444e51;
+  max-width: 100%;
 }
 .the-article .article-inner img.left {
   margin-right: 16px;
@@ -479,7 +480,7 @@ a:hover {
   margin-bottom: 0;
   padding-left: 20px;
 }
-.page-about h1, .page-404 h1 {
+.page-about h1, .page-404 h1, .page-misc h1 {
   margin-bottom: 0;
 }
 /* FOOTER
@@ -795,7 +796,7 @@ a:hover {
   }
 }
 /*
-	Not that old computer layout 
+	Not that old computer layout
 */
 @media only screen and (min-width: 1280px) {
   .unit-the-head .unit-inner {
@@ -896,7 +897,7 @@ a:hover {
   }
 }
 /*
-	Huge-screen layout 
+	Huge-screen layout
 */
 @media only screen and (min-width: 1410px) {
   .unit-the-head .unit-inner {
